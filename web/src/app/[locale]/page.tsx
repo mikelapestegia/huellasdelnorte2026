@@ -6,7 +6,8 @@ import HomeMap from "@/components/HomeMap";
 import { techProducts } from "@/data/techProducts";
 import LegalHealthPanel from "@/components/LegalHealthPanel";
 import AssistanceCentersPanel from "@/components/AssistanceCentersPanel";
-import { ArrowRight, Calendar, MapPin, Users, Store, PawPrint, ShieldCheck, Radio, Film, BookOpen, Dog, Cpu } from "lucide-react";
+import Footer from "@/components/Footer";
+import { ArrowRight, Calendar, MapPin, Users, Store, PawPrint, ShieldCheck, Radio, Film, BookOpen, Dog, Cpu, Heart, AlertTriangle } from "lucide-react";
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
 import { Link } from "@/navigation";
 import { getTranslations } from "next-intl/server";
@@ -14,7 +15,6 @@ import { getTranslations } from "next-intl/server";
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations("home");
-  const tf = await getTranslations("footer");
 
   const pageUrl = `${SITE_URL}/${locale}`;
   const structuredData = {
@@ -81,7 +81,77 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       />
       <Hero />
 
-      {/* Highlights Section */}
+      {/* ═══════ ADOPTION & SOS — Highest emotional impact ═══════ */}
+      <Section id="adopcion-sos" className="bg-gradient-to-b from-background to-secondary/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {/* Adoption CTA */}
+          <Link
+            href="/adopcion"
+            className="group relative rounded-2xl border border-border bg-card/80 p-8 shadow-lg hover:shadow-2xl hover:border-emerald-500/30 transition-all overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity" />
+            <div className="relative z-10">
+              <div className="h-14 w-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-5">
+                <Heart className="h-7 w-7 text-emerald-400" />
+              </div>
+              <h2 className="font-serif text-3xl font-bold text-foreground mb-3">
+                {t("highlights_badge") === "Lo Que Vas A Encontrar" ? "Adopta un compañero" : t("highlight_community_title")}
+              </h2>
+              <p className="text-foreground/70 leading-relaxed mb-6">
+                {t("highlight_community_desc")}
+              </p>
+              <span className="inline-flex items-center text-emerald-400 font-bold text-sm group-hover:gap-3 transition-all gap-2">
+                {t("highlights_badge") === "Lo Que Vas A Encontrar" ? "Ver perros en adopción" : t("highlights_badge")}
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
+            </div>
+          </Link>
+
+          {/* SOS Lost Dogs CTA */}
+          <Link
+            href="/perros-perdidos"
+            className="group relative rounded-2xl border border-border bg-card/80 p-8 shadow-lg hover:shadow-2xl hover:border-amber-500/30 transition-all overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558929996-da64ba858215?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity" />
+            <div className="relative z-10">
+              <div className="h-14 w-14 rounded-2xl bg-amber-500/10 flex items-center justify-center mb-5">
+                <AlertTriangle className="h-7 w-7 text-amber-400" />
+              </div>
+              <h2 className="font-serif text-3xl font-bold text-foreground mb-3">
+                {t("assistance_title")}
+              </h2>
+              <p className="text-foreground/70 leading-relaxed mb-6">
+                {t("assistance_desc")}
+              </p>
+              <span className="inline-flex items-center text-amber-400 font-bold text-sm group-hover:gap-3 transition-all gap-2">
+                {t("assistance_badge")}
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
+            </div>
+          </Link>
+        </div>
+      </Section>
+
+      {/* ═══════ INTERACTIVE MAP — Core utility ═══════ */}
+      <Section id="mapa-interactivo" className="bg-background relative overflow-hidden py-24">
+        <div className="flex flex-col items-center text-center mb-12 animate-fade-in-up">
+          <span className="text-accent font-semibold tracking-widest uppercase mb-4 text-sm">
+            {t("map_badge")}
+          </span>
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground">
+            {t("map_title")}
+          </h2>
+          <p className="mt-4 max-w-2xl text-lg text-foreground/80">
+            {t("map_desc")}
+          </p>
+        </div>
+
+        <div className="max-w-6xl mx-auto px-4 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+          <HomeMap />
+        </div>
+      </Section>
+
+      {/* ═══════ HIGHLIGHTS — What you'll find ═══════ */}
       <Section id="mapa" className="bg-background">
         <div className="flex flex-col items-center text-center mb-16 animate-fade-in-up">
           <span className="text-accent font-semibold tracking-widest uppercase mb-4 text-sm">
@@ -100,7 +170,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </Section>
 
-      {/* Map Layers Section */}
+      {/* ═══════ MAP LAYERS — Verified data ═══════ */}
       <Section id="capas" className="bg-background">
         <div className="flex flex-col items-center text-center mb-16 animate-fade-in-up">
           <span className="text-accent font-semibold tracking-widest uppercase mb-4 text-sm">
@@ -150,115 +220,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </Section>
 
-      {/* Legal & Health Section */}
-      <Section id="salud-legal" className="bg-secondary/20 relative overflow-hidden">
-        <div className="flex flex-col items-center text-center mb-16 animate-fade-in-up">
-          <span className="text-accent font-semibold tracking-widest uppercase mb-4 text-sm">
-            {t("legal_badge")}
-          </span>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground">
-            {t("legal_title")}
-          </h2>
-          <p className="mt-4 max-w-3xl text-lg text-foreground/80">
-            {t("legal_desc")}
-          </p>
-        </div>
-
-        <LegalHealthPanel />
-      </Section>
-
-      {/* Assistance Centers Section */}
-      <Section id="apoyo" className="bg-background">
-        <div className="flex flex-col items-center text-center mb-12 animate-fade-in-up">
-          <span className="text-accent font-semibold tracking-widest uppercase mb-4 text-sm">
-            {t("assistance_badge")}
-          </span>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground">
-            {t("assistance_title")}
-          </h2>
-          <p className="mt-4 max-w-3xl text-lg text-foreground/80">
-            {t("assistance_desc")}
-          </p>
-        </div>
-
-        <AssistanceCentersPanel />
-      </Section>
-
-      {/* Businesses Section */}
-      <Section id="negocios" className="bg-secondary/20 relative overflow-hidden">
-        {/* Decorative background element */}
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-secondary/10 -skew-x-12 transform translate-x-20 pointer-events-none" />
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="relative h-[560px] w-full rounded-2xl overflow-hidden shadow-2xl animate-fade-in-up md:order-1 order-2">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1507146426996-ef05306b995a?q=80&w=2670&auto=format&fit=crop")' }}
-            />
-          </div>
-
-          <div className="space-y-8 animate-fade-in-up md:order-2 order-1" style={{ animationDelay: '200ms' }}>
-            <div>
-              <span className="text-accent font-semibold tracking-widest uppercase mb-2 block text-sm">
-                {t("business_badge")}
-              </span>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground leading-tight">
-                {t("business_title")} <br /> {t("business_title2")}
-              </h2>
-            </div>
-
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              {t("business_desc")}
-            </p>
-
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-foreground/80">
-              {businessItems.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <Store className="h-5 w-5 text-accent mt-1" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            <div className="rounded-2xl border border-border bg-background/80 p-6 shadow-lg">
-              <div className="flex items-center gap-3 mb-3">
-                <ShieldCheck className="h-5 w-5 text-primary" />
-                <p className="font-semibold text-foreground">{t("biz_subs_title")}</p>
-              </div>
-              <p className="text-sm text-foreground/70 mb-4">
-                {t("biz_subs_desc")}
-              </p>
-              <Link
-                href="/profesionales"
-                className="inline-flex items-center text-primary font-bold text-sm hover:text-primary/80 transition-colors group"
-              >
-                {t("biz_subs_cta")} <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* Map Section */}
-      <Section id="mapa-interactivo" className="bg-background relative overflow-hidden py-24">
-        <div className="flex flex-col items-center text-center mb-12 animate-fade-in-up">
-          <span className="text-accent font-semibold tracking-widest uppercase mb-4 text-sm">
-            {t("map_badge")}
-          </span>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground">
-            {t("map_title")}
-          </h2>
-          <p className="mt-4 max-w-2xl text-lg text-foreground/80">
-            {t("map_desc")}
-          </p>
-        </div>
-
-        <div className="max-w-6xl mx-auto px-4 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
-          <HomeMap />
-        </div>
-      </Section>
-
-      {/* Leisure Section */}
+      {/* ═══════ LEISURE — Routes, beaches, events ═══════ */}
       <Section id="ocio" className="bg-background relative overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8 animate-fade-in-up">
@@ -319,7 +281,95 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </Section>
 
-      {/* Community Section */}
+      {/* ═══════ BUSINESSES — B2B ═══════ */}
+      <Section id="negocios" className="bg-secondary/20 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-secondary/10 -skew-x-12 transform translate-x-20 pointer-events-none" />
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="relative h-[560px] w-full rounded-2xl overflow-hidden shadow-2xl animate-fade-in-up md:order-1 order-2">
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1507146426996-ef05306b995a?q=80&w=2670&auto=format&fit=crop")' }}
+            />
+          </div>
+
+          <div className="space-y-8 animate-fade-in-up md:order-2 order-1" style={{ animationDelay: '200ms' }}>
+            <div>
+              <span className="text-accent font-semibold tracking-widest uppercase mb-2 block text-sm">
+                {t("business_badge")}
+              </span>
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground leading-tight">
+                {t("business_title")} <br /> {t("business_title2")}
+              </h2>
+            </div>
+
+            <p className="text-lg text-foreground/80 leading-relaxed">
+              {t("business_desc")}
+            </p>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-foreground/80">
+              {businessItems.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <Store className="h-5 w-5 text-accent mt-1" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="rounded-2xl border border-border bg-background/80 p-6 shadow-lg">
+              <div className="flex items-center gap-3 mb-3">
+                <ShieldCheck className="h-5 w-5 text-primary" />
+                <p className="font-semibold text-foreground">{t("biz_subs_title")}</p>
+              </div>
+              <p className="text-sm text-foreground/70 mb-4">
+                {t("biz_subs_desc")}
+              </p>
+              <Link
+                href="/profesionales"
+                className="inline-flex items-center text-primary font-bold text-sm hover:text-primary/80 transition-colors group"
+              >
+                {t("biz_subs_cta")} <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* ═══════ LEGAL & HEALTH ═══════ */}
+      <Section id="salud-legal" className="bg-secondary/20 relative overflow-hidden">
+        <div className="flex flex-col items-center text-center mb-16 animate-fade-in-up">
+          <span className="text-accent font-semibold tracking-widest uppercase mb-4 text-sm">
+            {t("legal_badge")}
+          </span>
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground">
+            {t("legal_title")}
+          </h2>
+          <p className="mt-4 max-w-3xl text-lg text-foreground/80">
+            {t("legal_desc")}
+          </p>
+        </div>
+
+        <LegalHealthPanel />
+      </Section>
+
+      {/* ═══════ ASSISTANCE CENTERS ═══════ */}
+      <Section id="apoyo" className="bg-background">
+        <div className="flex flex-col items-center text-center mb-12 animate-fade-in-up">
+          <span className="text-accent font-semibold tracking-widest uppercase mb-4 text-sm">
+            {t("assistance_badge")}
+          </span>
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground">
+            {t("assistance_title")}
+          </h2>
+          <p className="mt-4 max-w-3xl text-lg text-foreground/80">
+            {t("assistance_desc")}
+          </p>
+        </div>
+
+        <AssistanceCentersPanel />
+      </Section>
+
+      {/* ═══════ COMMUNITY & NEWSLETTER ═══════ */}
       <Section id="comunidad" className="bg-primary text-primary-foreground text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10" />
 
@@ -364,29 +414,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </Section>
 
-      {/* Footer */}
-      <footer className="w-full bg-background border-t border-border py-12 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-2">
-            <Dog className="h-8 w-8 bg-primary rounded-full flex items-center justify-center text-white font-serif font-bold" />
-            <span className="font-serif text-xl font-bold text-foreground">Huellas del Norte</span>
-          </div>
-
-          <div className="flex gap-8 text-sm font-medium text-foreground/60">
-            <a href="#mapa" className="hover:text-primary transition-colors">{tf("map")}</a>
-            <a href="#capas" className="hover:text-primary transition-colors">{tf("layers")}</a>
-            <a href="#mapa-interactivo" className="hover:text-primary transition-colors">{tf("interactive")}</a>
-            <a href="#salud-legal" className="hover:text-primary transition-colors">{tf("legal")}</a>
-            <a href="#negocios" className="hover:text-primary transition-colors">{tf("business")}</a>
-            <a href="#apoyo" className="hover:text-primary transition-colors">{tf("support")}</a>
-            <a href="#comunidad" className="hover:text-primary transition-colors">{tf("community")}</a>
-          </div>
-
-          <p className="text-sm text-foreground/40">
-            {tf("copyright")}
-          </p>
-        </div>
-      </footer>
+      {/* ═══════ FOOTER ═══════ */}
+      <Footer />
     </main>
   );
 }

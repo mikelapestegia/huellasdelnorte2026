@@ -6,10 +6,30 @@
     },
     "nav": {
         "home": "首页",
+        "adoption": "领养",
+        "lost_dogs": "走失救助",
+        "map": "地图",
         "routes": "路线",
-        "accomodation": "住宿",
+        "services": "服务",
+        "kennels": "住宿",
+        "vets": "兽医",
+        "hospitality": "餐饮",
+        "explore": "发现",
+        "events": "活动",
+        "creators": "创作者",
+        "cinema": "电影",
+        "audio": "音频",
+        "marketplace": "商店",
+        "blog": "博客",
         "community": "社区",
-        "store": "商店"
+        "forum": "论坛",
+        "danger_alerts": "警报",
+        "passport": "护照",
+        "enter": "登录",
+        "login": "登录",
+        "pro": "我是专业人士",
+        "pro_mobile": "您是专业人士吗？加入我们",
+        "more": "更多"
     },
     "hero": {
         "badge": "地图、计划和犬类社区",
@@ -90,13 +110,39 @@
         "newsletter_note": "真实提醒，零垃圾邮件。"
     },
     "footer": {
-        "map": "地图",
-        "layers": "图层",
-        "interactive": "互动",
-        "legal": "法律",
-        "business": "商户",
-        "support": "支持",
-        "community": "社区",
-        "copyright": "© 2026 Huellas del Norte."
+        "tagline": "北方犬类社区",
+        "description": "地图、路线、领养和宠物友好服务，覆盖西班牙北部和大西洋弧。",
+        "newsletter_placeholder": "输入邮箱获取更新",
+        "subscribe": "加入",
+        "copyright": "© 2026 Huellas del Norte. 保留所有权利。",
+        "made_with": "用",
+        "in_north": "制作于北方",
+        "sections": {
+            "explore": "探索",
+            "community": "社区",
+            "about": "关于我们"
+        },
+        "links": {
+            "routes": "宠物友好路线",
+            "adoption": "领养",
+            "kennels": "犬类住宿",
+            "hospitality": "宠物友好餐饮",
+            "vets": "兽医",
+            "events": "活动日历",
+            "lost_dogs": "走失犬",
+            "danger_alerts": "危险警报",
+            "forum": "论坛",
+            "blog": "博客",
+            "creators": "创作者",
+            "community_page": "社区网络",
+            "about_us": "关于我们",
+            "how_it_works": "如何运作",
+            "transparency": "透明度",
+            "partners": "合作伙伴",
+            "accessibility": "无障碍",
+            "contact": "联系我们",
+            "privacy": "隐私",
+            "terms": "条款"
+        }
     }
 }

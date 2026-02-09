@@ -5,11 +5,31 @@
         "loading": "Cargando..."
     },
     "nav": {
-        "home": "Entamu",
+        "home": "Aniciu",
+        "adoption": "Adopción",
+        "lost_dogs": "SOS Perdíos",
+        "map": "Mapa",
         "routes": "Rutes",
-        "accomodation": "Allugamientu",
+        "services": "Servicios",
+        "kennels": "Allugamientos",
+        "vets": "Veterinarios",
+        "hospitality": "Hostelería",
+        "explore": "Descubre",
+        "events": "Axenda",
+        "creators": "Creadores",
+        "cinema": "Cine",
+        "audio": "Audio",
+        "marketplace": "Tienda",
+        "blog": "Blog",
         "community": "Comunidá",
-        "store": "Tienda"
+        "forum": "Foru",
+        "danger_alerts": "Alertes",
+        "passport": "Pasaporte",
+        "enter": "Entrar",
+        "login": "Aniciar sesión",
+        "pro": "Soi Profesional",
+        "pro_mobile": "¿Yes profesional? Únete equí",
+        "more": "Más"
     },
     "hero": {
         "badge": "Mapa, planes y comunidá perruna",
@@ -90,13 +110,39 @@
         "newsletter_note": "Avisos reales, cero spam."
     },
     "footer": {
-        "map": "Mapa",
-        "layers": "Capes",
-        "interactive": "Interactivu",
-        "legal": "Llegal",
-        "business": "Negocios",
-        "support": "Apoyu",
-        "community": "Comunidá",
-        "copyright": "© 2026 Huellas del Norte."
+        "tagline": "Comunidá canina del norte",
+        "description": "Mapa, rutes, adopción y servicios pet friendly pal norte peninsular y l'Arcu Atlánticu.",
+        "newsletter_placeholder": "El to email pa novedaes",
+        "subscribe": "Únete",
+        "copyright": "© 2026 Huellas del Norte. Tolos drechos reservaos.",
+        "made_with": "Fecho con",
+        "in_north": "nel norte",
+        "sections": {
+            "explore": "Esplorar",
+            "community": "Comunidá",
+            "about": "Sobre nós"
+        },
+        "links": {
+            "routes": "Rutes pet friendly",
+            "adoption": "Adopción",
+            "kennels": "Allugamientos caninos",
+            "hospitality": "Hostelería pet friendly",
+            "vets": "Veterinarios",
+            "events": "Axenda y eventos",
+            "lost_dogs": "Perros perdíos",
+            "danger_alerts": "Alertes de peligru",
+            "forum": "Foru",
+            "blog": "Blog",
+            "creators": "Creadores",
+            "community_page": "Rede comunitaria",
+            "about_us": "Quién somos",
+            "how_it_works": "Cómo funciona",
+            "transparency": "Tresparencia",
+            "partners": "Collaboradores",
+            "accessibility": "Accesibilidá",
+            "contact": "Contactu",
+            "privacy": "Privacidá",
+            "terms": "Términos"
+        }
     }
 }

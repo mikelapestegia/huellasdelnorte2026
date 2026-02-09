@@ -6,10 +6,30 @@
     },
     "nav": {
         "home": "Inicio",
+        "adoption": "Adopción",
+        "lost_dogs": "SOS Perdidos",
+        "map": "Mapa",
         "routes": "Rutas",
-        "accomodation": "Aloxamento",
+        "services": "Servizos",
+        "kennels": "Aloxamentos",
+        "vets": "Veterinarios",
+        "hospitality": "Hostalería",
+        "explore": "Descubre",
+        "events": "Axenda",
+        "creators": "Creadores",
+        "cinema": "Cine",
+        "audio": "Audio",
+        "marketplace": "Tenda",
+        "blog": "Blog",
         "community": "Comunidade",
-        "store": "Tenda"
+        "forum": "Foro",
+        "danger_alerts": "Alertas",
+        "passport": "Pasaporte",
+        "enter": "Entrar",
+        "login": "Iniciar sesión",
+        "pro": "Son Profesional",
+        "pro_mobile": "¿Es profesional? Únete aquí",
+        "more": "Máis"
     },
     "hero": {
         "badge": "Mapa, plans e comunidade canina",
@@ -90,13 +110,39 @@
         "newsletter_note": "Avisos reais, cero spam."
     },
     "footer": {
-        "map": "Mapa",
-        "layers": "Capas",
-        "interactive": "Interactivo",
-        "legal": "Legal",
-        "business": "Negocios",
-        "support": "Apoio",
-        "community": "Comunidade",
-        "copyright": "© 2026 Huellas del Norte."
+        "tagline": "Comunidade canina do norte",
+        "description": "Mapa, rutas, adopción e servizos pet friendly para o norte peninsular e o Arco Atlántico.",
+        "newsletter_placeholder": "O teu email para novidades",
+        "subscribe": "Únete",
+        "copyright": "© 2026 Huellas del Norte. Todos os dereitos reservados.",
+        "made_with": "Feito con",
+        "in_north": "no norte",
+        "sections": {
+            "explore": "Explorar",
+            "community": "Comunidade",
+            "about": "Sobre nós"
+        },
+        "links": {
+            "routes": "Rutas pet friendly",
+            "adoption": "Adopción",
+            "kennels": "Aloxamentos caninos",
+            "hospitality": "Hostalería pet friendly",
+            "vets": "Veterinarios",
+            "events": "Axenda e eventos",
+            "lost_dogs": "Cans perdidos",
+            "danger_alerts": "Alertas de perigo",
+            "forum": "Foro",
+            "blog": "Blog",
+            "creators": "Creadores",
+            "community_page": "Rede comunitaria",
+            "about_us": "Quen somos",
+            "how_it_works": "Como funciona",
+            "transparency": "Transparencia",
+            "partners": "Colaboradores",
+            "accessibility": "Accesibilidade",
+            "contact": "Contacto",
+            "privacy": "Privacidade",
+            "terms": "Termos"
+        }
     }
 }

@@ -6,10 +6,30 @@
     },
     "nav": {
         "home": "Inici",
+        "adoption": "Adopció",
+        "lost_dogs": "SOS Perduts",
+        "map": "Mapa",
         "routes": "Rutes",
-        "accomodation": "Allotjament",
+        "services": "Serveis",
+        "kennels": "Allotjaments",
+        "vets": "Veterinaris",
+        "hospitality": "Hostaleria",
+        "explore": "Descobreix",
+        "events": "Agenda",
+        "creators": "Creadors",
+        "cinema": "Cinema",
+        "audio": "Àudio",
+        "marketplace": "Botiga",
+        "blog": "Blog",
         "community": "Comunitat",
-        "store": "Botiga"
+        "forum": "Fòrum",
+        "danger_alerts": "Alertes",
+        "passport": "Passaport",
+        "enter": "Entrar",
+        "login": "Iniciar sessió",
+        "pro": "Soc Professional",
+        "pro_mobile": "Ets professional? Uneix-te aquí",
+        "more": "Més"
     },
     "hero": {
         "badge": "Mapa, plans i comunitat canina",
@@ -90,13 +110,39 @@
         "newsletter_note": "Avisos reals, zero spam."
     },
     "footer": {
-        "map": "Mapa",
-        "layers": "Capes",
-        "interactive": "Interactiu",
-        "legal": "Legal",
-        "business": "Negocis",
-        "support": "Suport",
-        "community": "Comunitat",
-        "copyright": "© 2026 Huellas del Norte."
+        "tagline": "Comunitat canina del nord",
+        "description": "Mapa, rutes, adopció i serveis pet friendly per al nord peninsular i l'Arc Atlàntic.",
+        "newsletter_placeholder": "El teu email per a novetats",
+        "subscribe": "Uneix-te",
+        "copyright": "© 2026 Huellas del Norte. Tots els drets reservats.",
+        "made_with": "Fet amb",
+        "in_north": "al nord",
+        "sections": {
+            "explore": "Explorar",
+            "community": "Comunitat",
+            "about": "Sobre nosaltres"
+        },
+        "links": {
+            "routes": "Rutes pet friendly",
+            "adoption": "Adopció",
+            "kennels": "Allotjaments canins",
+            "hospitality": "Hostaleria pet friendly",
+            "vets": "Veterinaris",
+            "events": "Agenda i esdeveniments",
+            "lost_dogs": "Gossos perduts",
+            "danger_alerts": "Alertes de perill",
+            "forum": "Fòrum",
+            "blog": "Blog",
+            "creators": "Creadors",
+            "community_page": "Xarxa comunitària",
+            "about_us": "Qui som",
+            "how_it_works": "Com funciona",
+            "transparency": "Transparència",
+            "partners": "Col·laboradors",
+            "accessibility": "Accessibilitat",
+            "contact": "Contacte",
+            "privacy": "Privacitat",
+            "terms": "Condicions"
+        }
     }
 }

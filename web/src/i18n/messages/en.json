@@ -6,10 +6,30 @@
     },
     "nav": {
         "home": "Home",
-        "routes": "Routes",
-        "accomodation": "Accommodation",
+        "adoption": "Adoption",
+        "lost_dogs": "SOS Lost",
+        "map": "Map",
+        "routes": "Trails",
+        "services": "Services",
+        "kennels": "Accommodation",
+        "vets": "Vets",
+        "hospitality": "Dining",
+        "explore": "Explore",
+        "events": "Events",
+        "creators": "Creators",
+        "cinema": "Cinema",
+        "audio": "Audio",
+        "marketplace": "Shop",
+        "blog": "Blog",
         "community": "Community",
-        "store": "Shop"
+        "forum": "Forum",
+        "danger_alerts": "Alerts",
+        "passport": "Passport",
+        "enter": "Sign in",
+        "login": "Sign in",
+        "pro": "I'm a Professional",
+        "pro_mobile": "Are you a professional? Join here",
+        "more": "More"
     },
     "hero": {
         "badge": "Map, plans and dog community",
@@ -90,13 +110,39 @@
         "newsletter_note": "Real alerts, zero spam."
     },
     "footer": {
-        "map": "Map",
-        "layers": "Layers",
-        "interactive": "Interactive",
-        "legal": "Legal",
-        "business": "Businesses",
-        "support": "Support",
-        "community": "Community",
-        "copyright": "© 2026 Huellas del Norte."
+        "tagline": "Northern canine community",
+        "description": "Map, trails, adoption and pet-friendly services for Northern Spain and the Atlantic Arc.",
+        "newsletter_placeholder": "Your email for updates",
+        "subscribe": "Join",
+        "copyright": "© 2026 Huellas del Norte. All rights reserved.",
+        "made_with": "Made with",
+        "in_north": "in the North",
+        "sections": {
+            "explore": "Explore",
+            "community": "Community",
+            "about": "About us"
+        },
+        "links": {
+            "routes": "Pet-friendly trails",
+            "adoption": "Adoption",
+            "kennels": "Dog accommodation",
+            "hospitality": "Pet-friendly dining",
+            "vets": "Veterinarians",
+            "events": "Events calendar",
+            "lost_dogs": "Lost dogs",
+            "danger_alerts": "Danger alerts",
+            "forum": "Forum",
+            "blog": "Blog",
+            "creators": "Creators",
+            "community_page": "Community network",
+            "about_us": "About us",
+            "how_it_works": "How it works",
+            "transparency": "Transparency",
+            "partners": "Partners",
+            "accessibility": "Accessibility",
+            "contact": "Contact",
+            "privacy": "Privacy",
+            "terms": "Terms"
+        }
     }
 }

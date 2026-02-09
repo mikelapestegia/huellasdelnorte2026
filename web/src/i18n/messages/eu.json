@@ -6,10 +6,30 @@
     },
     "nav": {
         "home": "Hasiera",
+        "adoption": "Adopzioa",
+        "lost_dogs": "SOS Galduta",
+        "map": "Mapa",
         "routes": "Ibilbideak",
-        "accomodation": "Ostatuak",
+        "services": "Zerbitzuak",
+        "kennels": "Ostatuak",
+        "vets": "Albaitariak",
+        "hospitality": "Ostalaritza",
+        "explore": "Aurkitu",
+        "events": "Agenda",
+        "creators": "Sortzaileak",
+        "cinema": "Zinema",
+        "audio": "Audioa",
+        "marketplace": "Denda",
+        "blog": "Bloga",
         "community": "Komunitatea",
-        "store": "Denda"
+        "forum": "Foroa",
+        "danger_alerts": "Alertak",
+        "passport": "Pasaportea",
+        "enter": "Sartu",
+        "login": "Saioa hasi",
+        "pro": "Profesionala naiz",
+        "pro_mobile": "Profesionala zara? Batu hemen",
+        "more": "Gehiago"
     },
     "hero": {
         "badge": "Mapa, planak eta txakur komunitatea",
@@ -90,13 +110,39 @@
         "newsletter_note": "Benetako abisuak, zero spam."
     },
     "footer": {
-        "map": "Mapa",
-        "layers": "Geruzak",
-        "interactive": "Interaktiboa",
-        "legal": "Legea",
-        "business": "Negozioak",
-        "support": "Laguntza",
-        "community": "Komunitatea",
-        "copyright": "© 2026 Huellas del Norte."
+        "tagline": "Iparraldeko txakur komunitatea",
+        "description": "Mapa, ibilbideak, adopzioa eta pet friendly zerbitzuak penintsula iparraldean eta Arku Atlantikoan.",
+        "newsletter_placeholder": "Zure emaila berriak jasotzeko",
+        "subscribe": "Batu",
+        "copyright": "© 2026 Huellas del Norte. Eskubide guztiak erreserbatuak.",
+        "made_with": "Egina",
+        "in_north": "iparraldean",
+        "sections": {
+            "explore": "Arakatu",
+            "community": "Komunitatea",
+            "about": "Guri buruz"
+        },
+        "links": {
+            "routes": "Pet friendly ibilbideak",
+            "adoption": "Adopzioa",
+            "kennels": "Txakur ostatuak",
+            "hospitality": "Pet friendly ostalaritza",
+            "vets": "Albaitariak",
+            "events": "Agenda eta ekitaldiak",
+            "lost_dogs": "Galdutako txakurrak",
+            "danger_alerts": "Arrisku alertak",
+            "forum": "Foroa",
+            "blog": "Bloga",
+            "creators": "Sortzaileak",
+            "community_page": "Komunitate sarea",
+            "about_us": "Nor gara",
+            "how_it_works": "Nola funtzionatzen du",
+            "transparency": "Gardentasuna",
+            "partners": "Kolaboratzaileak",
+            "accessibility": "Irisgarritasuna",
+            "contact": "Kontaktua",
+            "privacy": "Pribatutasuna",
+            "terms": "Baldintzak"
+        }
     }
 }

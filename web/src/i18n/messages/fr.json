@@ -6,10 +6,30 @@
     },
     "nav": {
         "home": "Accueil",
-        "routes": "Itinéraires",
-        "accomodation": "Hébergement",
+        "adoption": "Adoption",
+        "lost_dogs": "SOS Perdus",
+        "map": "Carte",
+        "routes": "Sentiers",
+        "services": "Services",
+        "kennels": "Hébergements",
+        "vets": "Vétérinaires",
+        "hospitality": "Restauration",
+        "explore": "Découvrir",
+        "events": "Agenda",
+        "creators": "Créateurs",
+        "cinema": "Cinéma",
+        "audio": "Audio",
+        "marketplace": "Boutique",
+        "blog": "Blog",
         "community": "Communauté",
-        "store": "Boutique"
+        "forum": "Forum",
+        "danger_alerts": "Alertes",
+        "passport": "Passeport",
+        "enter": "Connexion",
+        "login": "Se connecter",
+        "pro": "Je suis Professionnel",
+        "pro_mobile": "Vous êtes professionnel ? Rejoignez-nous",
+        "more": "Plus"
     },
     "hero": {
         "badge": "Carte, plans et communauté canine",
@@ -90,13 +110,39 @@
         "newsletter_note": "Alertes réelles, zéro spam."
     },
     "footer": {
-        "map": "Carte",
-        "layers": "Couches",
-        "interactive": "Interactif",
-        "legal": "Juridique",
-        "business": "Commerces",
-        "support": "Assistance",
-        "community": "Communauté",
-        "copyright": "© 2026 Huellas del Norte."
+        "tagline": "Communauté canine du nord",
+        "description": "Carte, itinéraires, adoption et services pet friendly pour le nord de l'Espagne et l'Arc Atlantique.",
+        "newsletter_placeholder": "Votre email pour les nouveautés",
+        "subscribe": "Rejoindre",
+        "copyright": "© 2026 Huellas del Norte. Tous droits réservés.",
+        "made_with": "Fait avec",
+        "in_north": "dans le nord",
+        "sections": {
+            "explore": "Explorer",
+            "community": "Communauté",
+            "about": "À propos"
+        },
+        "links": {
+            "routes": "Sentiers pet friendly",
+            "adoption": "Adoption",
+            "kennels": "Hébergements canins",
+            "hospitality": "Restauration pet friendly",
+            "vets": "Vétérinaires",
+            "events": "Agenda et événements",
+            "lost_dogs": "Chiens perdus",
+            "danger_alerts": "Alertes de danger",
+            "forum": "Forum",
+            "blog": "Blog",
+            "creators": "Créateurs",
+            "community_page": "Réseau communautaire",
+            "about_us": "Qui sommes-nous",
+            "how_it_works": "Comment ça marche",
+            "transparency": "Transparence",
+            "partners": "Partenaires",
+            "accessibility": "Accessibilité",
+            "contact": "Contact",
+            "privacy": "Confidentialité",
+            "terms": "Conditions"
+        }
     }
 }
