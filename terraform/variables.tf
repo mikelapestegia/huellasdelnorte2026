@@ -199,3 +199,22 @@ variable "project_tags" {
     "Version"     = "Feb2026"
   }
 }
+
+# ===== NUEVAS VARIABLES PARA SEGURIDAD =====
+
+variable "project_name" {
+  description = "Nombre del proyecto para prefijos"
+  type        = string
+  default     = "huellasdelnorte"
+}
+
+variable "environment" {
+  description = "Entorno (dev/staging/prod)"
+  type        = string
+  default     = "prod"
+
+  validation {
+    condition     = contains(["dev", "staging", "prod"], var.environment)
+    error_message = "Environment debe ser dev, staging o prod."
+  }
+}
