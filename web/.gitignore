@@ -30,6 +30,13 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# build/dev logs and temp reports
+build_log.txt
+build_output*.log
+devserver*.log
+tsc_errors*.txt
+LINK_CHECK_REPORT.md
+
 # env files (can opt-in for committing if needed)
 .env*
 
