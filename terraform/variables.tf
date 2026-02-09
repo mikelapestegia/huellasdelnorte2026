@@ -115,6 +115,48 @@ variable "db_name" {
   default     = "huellas26ai"
 }
 
+variable "db_display_name" {
+  description = "Nombre visible de la base de datos en la consola OCI"
+  type        = string
+  default     = "Huellas del Norte AI DB"
+}
+
+variable "db_version" {
+  description = "Versión de la base de datos (ej: 19c, 21c, 23ai)"
+  type        = string
+  default     = "19c"  # OCI Free Tier suele ser 19c o 21c, ajusta según disponibilidad
+}
+
+variable "db_workload_type" {
+  description = "Tipo de carga de trabajo (OLTP o DW)"
+  type        = string
+  default     = "OLTP"
+}
+
+variable "db_is_free_tier" {
+  description = "Indica si se usa el nivel gratuito"
+  type        = bool
+  default     = true
+}
+
+variable "db_cpu_core_count" {
+  description = "Número de núcleos CPU para la DB"
+  type        = number
+  default     = 1
+}
+
+variable "db_data_storage_size_in_tbs" {
+  description = "Tamaño de almacenamiento en TBs"
+  type        = number
+  default     = 0.02 # 20GB para Always Free
+}
+
+variable "db_license_model" {
+  description = "Modelo de licencia"
+  type        = string
+  default     = "LICENSE_INCLUDED"
+}
+
 variable "db_require_mtls" {
   description = "Si es true, la base de datos requiere mTLS (recomendado para producción)."
   type        = bool
