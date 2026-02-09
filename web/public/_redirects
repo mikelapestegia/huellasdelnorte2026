@@ -1,0 +1,8 @@
+# Canonical: www → sin www (mejora SEO, evita contenido duplicado)
+https://www.huellasdelnorte.com/* https://huellasdelnorte.com/:splat 301
+
+# Trailing slashes (consistency)
+/adopciones/ /adopciones 301
+/rutas/ /rutas 301
+/perreras/ /perreras 301
+/contacto/ /contacto 301

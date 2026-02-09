@@ -15,6 +15,7 @@
 .env
 .env.*
 !.env.example
+SECRETS.md
 
 # Terraform state / vars sensibles (defensa adicional al .gitignore local)
 *.tfvars
