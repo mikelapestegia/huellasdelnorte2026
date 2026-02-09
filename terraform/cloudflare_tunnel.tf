@@ -1,5 +1,12 @@
 # Configuración del Túnel de Cloudflare para HuellasdelNorte V2
 # Infraestructura HuellasdelNorte V2 - Febrero 2026
+#
+# ARQUITECTURA:
+#   - Frontend (root, www) → Cloudflare Pages (automático, no necesita tunnel)
+#   - Backend (api.*)      → Cloudflare Tunnel → OCI ARM (Docker, puerto 30080)
+#
+# Los DNS records para root/www/app son gestionados por Cloudflare Pages.
+# Este tunnel SOLO encamina tráfico API al backend en OCI.
 
 resource "random_id" "tunnel_secret" {
   byte_length = 32
@@ -20,53 +27,21 @@ resource "cloudflare_tunnel_config" "huellas_v2_config" {
   tunnel_id  = cloudflare_tunnel.huellas_v2_tunnel.id
 
   config {
-    ingress_rule {
-      hostname = var.domain_name
-      service  = "http://localhost:80"
-    }
-    ingress_rule {
-      hostname = "www.${var.domain_name}"
-      service  = "http://localhost:80"
-    }
-    ingress_rule {
-      hostname = "app.${var.domain_name}"
-      service  = "http://localhost:80"
-    }
+    # Solo API backend — Cloudflare Pages maneja el frontend
     ingress_rule {
       hostname = "api.${var.domain_name}"
-      service  = "http://localhost:80"
+      service  = "http://localhost:30080"
     }
+
+    # Catch-all: todo lo demás devuelve 404
     ingress_rule {
       service = "http_status:404"
     }
   }
 }
 
-# Registros DNS para el Túnel
-resource "cloudflare_record" "root_cname" {
-  zone_id = var.cloudflare_zone_id
-  name    = "@"
-  value   = "${cloudflare_tunnel.huellas_v2_tunnel.id}.cfargotunnel.com"
-  type    = "CNAME"
-  proxied = true
-}
-
-resource "cloudflare_record" "www_cname" {
-  zone_id = var.cloudflare_zone_id
-  name    = "www"
-  value   = "${cloudflare_tunnel.huellas_v2_tunnel.id}.cfargotunnel.com"
-  type    = "CNAME"
-  proxied = true
-}
-
-resource "cloudflare_record" "app_cname" {
-  zone_id = var.cloudflare_zone_id
-  name    = "app"
-  value   = "${cloudflare_tunnel.huellas_v2_tunnel.id}.cfargotunnel.com"
-  type    = "CNAME"
-  proxied = true
-}
-
+# DNS record SOLO para la API (el tunnel encamina api.* al backend OCI)
+# Los records de root/www son gestionados automáticamente por Cloudflare Pages.
 resource "cloudflare_record" "api_cname" {
   zone_id = var.cloudflare_zone_id
   name    = "api"

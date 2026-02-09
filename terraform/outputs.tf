@@ -36,12 +36,9 @@ output "tunnel_name" {
   value       = cloudflare_tunnel.huellas_v2_tunnel.name
 }
 
-output "dns_records" {
-  description = "DNS records created"
-  value = [
-    cloudflare_record.root_cname.hostname,
-    cloudflare_record.www_cname.hostname,
-    cloudflare_record.app_cname.hostname,
-    cloudflare_record.api_cname.hostname
-  ]
+# Solo el API record es gestionado por Terraform.
+# Los records de root/www son creados automáticamente por Cloudflare Pages.
+output "api_dns_record" {
+  description = "API DNS record managed by Terraform (tunnel)"
+  value       = cloudflare_record.api_cname.hostname
 }
