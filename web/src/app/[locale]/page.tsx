@@ -9,62 +9,67 @@ import AssistanceCentersPanel from "@/components/AssistanceCentersPanel";
 import { ArrowRight, Calendar, MapPin, Users, Store, PawPrint, ShieldCheck, Radio, Film, BookOpen, Dog, Cpu } from "lucide-react";
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
 import { Link } from "@/navigation";
+import { getTranslations } from "next-intl/server";
 
-export default function Home({ params }: { params: { locale: string } }) {
-  const pageUrl = `${SITE_URL}/${params.locale}`;
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations("home");
+  const tf = await getTranslations("footer");
+
+  const pageUrl = `${SITE_URL}/${locale}`;
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: SITE_NAME,
     url: pageUrl,
-    inLanguage: params.locale,
+    inLanguage: locale,
     description: "Plataforma con mapa, rutas, adopción y servicios pet friendly en el norte peninsular.",
   };
 
   const highlights = [
     {
-      title: "Mapa Pet Friendly",
-      description: "Descubre alojamientos, hostelería y rutas para perros con filtros por zona, tipo de servicio y accesibilidad.",
+      title: t("highlight_map_title"),
+      description: t("highlight_map_desc"),
       image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2670&auto=format&fit=crop",
       delay: 0,
     },
     {
-      title: "Calendario & Eventos",
-      description: "Quedadas perrunas, jornadas de adopción y actividades con agua para disfrutar todo el año.",
+      title: t("highlight_calendar_title"),
+      description: t("highlight_calendar_desc"),
       image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2670&auto=format&fit=crop",
       delay: 100,
     },
     {
-      title: "Comunidad & Adopciones",
-      description: "Conecta con protectoras, asociaciones y redes de ayuda para perros perdidos.",
+      title: t("highlight_community_title"),
+      description: t("highlight_community_desc"),
       image: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?q=80&w=2670&auto=format&fit=crop",
       delay: 200,
     },
   ];
 
   const businessItems = [
-    "Alojamientos y campings",
-    "Veterinarios 24h y peluquerías",
-    "Guarderías y hoteles caninos",
-    "Tiendas y alimentación",
-    "Adiestradores profesionales",
-    "Transporte pet friendly",
-    "Hostelería pet friendly",
+    t("biz_accommodation"),
+    t("biz_vets"),
+    t("biz_kennels"),
+    t("biz_shops"),
+    t("biz_trainers"),
+    t("biz_transport"),
+    t("biz_hospitality"),
   ];
 
   const ocioItems = [
-    "Rutas y rutas con agua",
-    "Playas y playas fluviales",
-    "Eventos apropiados y quedadas perrunas",
-    "Foro y comunidad",
-    "Canales de YouTube sobre perros",
-    "Comunidad, adopciones y perros perdidos",
-    "Podcasts y radio perruna",
-    "Libros, manuales y consejos",
-    "Perros de apoyo",
-    "Tecnología para perros",
-    "Leyes y ordenanzas caninas",
-    "Películas para amantes de perros",
+    t("leisure_routes"),
+    t("leisure_beaches"),
+    t("leisure_events"),
+    t("leisure_forum"),
+    t("leisure_youtube"),
+    t("leisure_adoption"),
+    t("leisure_podcasts"),
+    t("leisure_books"),
+    t("leisure_support"),
+    t("leisure_tech"),
+    t("leisure_laws"),
+    t("leisure_movies"),
   ];
 
   return (
@@ -80,10 +85,10 @@ export default function Home({ params }: { params: { locale: string } }) {
       <Section id="mapa" className="bg-background">
         <div className="flex flex-col items-center text-center mb-16 animate-fade-in-up">
           <span className="text-accent font-semibold tracking-widest uppercase mb-4 text-sm">
-            Lo Que Vas A Encontrar
+            {t("highlights_badge")}
           </span>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground">
-            Un Mapa Vivo Para Dueños De Perros
+            {t("highlights_title")}
           </h2>
           <div className="h-1 w-20 bg-primary mt-6 rounded-full" />
         </div>
@@ -99,15 +104,13 @@ export default function Home({ params }: { params: { locale: string } }) {
       <Section id="capas" className="bg-background">
         <div className="flex flex-col items-center text-center mb-16 animate-fade-in-up">
           <span className="text-accent font-semibold tracking-widest uppercase mb-4 text-sm">
-            Prioridades Norte 2026
+            {t("layers_badge")}
           </span>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground">
-            Mapa Por Capas Con Datos Verificados
+            {t("layers_title")}
           </h2>
           <p className="mt-4 max-w-3xl text-lg text-foreground/80">
-            Playas aptas, veterinarios 24h, guarderías con ocupación en tiempo real, rutas con agua/sombra,
-            restaurantes pet friendly, transporte con perro y ordenanzas municipales.
-            Cada punto se valida con fuentes públicas o integración directa.
+            {t("layers_desc")}
           </p>
         </div>
 
@@ -118,11 +121,11 @@ export default function Home({ params }: { params: { locale: string } }) {
             <div className="flex items-center gap-3 mb-4">
               <Cpu className="h-5 w-5 text-primary" />
               <h3 className="font-serif text-2xl font-bold text-foreground">
-                Productos tecnológicos populares
+                {t("tech_title")}
               </h3>
             </div>
             <p className="text-foreground/70 mb-6">
-              Curación inicial de tecnología útil para seguridad, salud y bienestar canino.
+              {t("tech_desc")}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {techProducts.map((product) => (
@@ -136,12 +139,12 @@ export default function Home({ params }: { params: { locale: string } }) {
           </div>
 
           <div className="rounded-2xl border border-border bg-card p-6 shadow-lg">
-            <h4 className="font-semibold text-foreground mb-3">Integraciones necesarias</h4>
+            <h4 className="font-semibold text-foreground mb-3">{t("integrations_title")}</h4>
             <ul className="space-y-3 text-sm text-foreground/70">
-              <li>API de ocupación para guarderías y hoteles caninos.</li>
-              <li>Fuente oficial de playas y ordenanzas por CCAA.</li>
-              <li>Directorio de colegios veterinarios y urgencias.</li>
-              <li>Rutas verificadas por comunidad y administraciones.</li>
+              <li>{t("integration_1")}</li>
+              <li>{t("integration_2")}</li>
+              <li>{t("integration_3")}</li>
+              <li>{t("integration_4")}</li>
             </ul>
           </div>
         </div>
@@ -151,13 +154,13 @@ export default function Home({ params }: { params: { locale: string } }) {
       <Section id="salud-legal" className="bg-secondary/20 relative overflow-hidden">
         <div className="flex flex-col items-center text-center mb-16 animate-fade-in-up">
           <span className="text-accent font-semibold tracking-widest uppercase mb-4 text-sm">
-            Legal + Salud
+            {t("legal_badge")}
           </span>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground">
-            Cumplimiento Y Atención Preventiva
+            {t("legal_title")}
           </h2>
           <p className="mt-4 max-w-3xl text-lg text-foreground/80">
-            Pasaporte digital, cursos obligatorios, seguros, telemedicina y triaje asistido por IA.
+            {t("legal_desc")}
           </p>
         </div>
 
@@ -168,13 +171,13 @@ export default function Home({ params }: { params: { locale: string } }) {
       <Section id="apoyo" className="bg-background">
         <div className="flex flex-col items-center text-center mb-12 animate-fade-in-up">
           <span className="text-accent font-semibold tracking-widest uppercase mb-4 text-sm">
-            Perros de apoyo
+            {t("assistance_badge")}
           </span>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground">
-            Centros y Asociaciones de Referencia
+            {t("assistance_title")}
           </h2>
           <p className="mt-4 max-w-3xl text-lg text-foreground/80">
-            Directorio curado de perros guía, asistencia y terapia con filtros por región y tipo.
+            {t("assistance_desc")}
           </p>
         </div>
 
@@ -197,15 +200,15 @@ export default function Home({ params }: { params: { locale: string } }) {
           <div className="space-y-8 animate-fade-in-up md:order-2 order-1" style={{ animationDelay: '200ms' }}>
             <div>
               <span className="text-accent font-semibold tracking-widest uppercase mb-2 block text-sm">
-                Negocios
+                {t("business_badge")}
               </span>
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground leading-tight">
-                Servicios Para Dueños <br /> De Perros
+                {t("business_title")} <br /> {t("business_title2")}
               </h2>
             </div>
 
             <p className="text-lg text-foreground/80 leading-relaxed">
-              Aquí se muestran las categorías que encontrarás en nuestro directorio. Todo pensado para la vida real con tu perro.
+              {t("business_desc")}
             </p>
 
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-foreground/80">
@@ -220,17 +223,16 @@ export default function Home({ params }: { params: { locale: string } }) {
             <div className="rounded-2xl border border-border bg-background/80 p-6 shadow-lg">
               <div className="flex items-center gap-3 mb-3">
                 <ShieldCheck className="h-5 w-5 text-primary" />
-                <p className="font-semibold text-foreground">Suscripciones y formularios</p>
+                <p className="font-semibold text-foreground">{t("biz_subs_title")}</p>
               </div>
               <p className="text-sm text-foreground/70 mb-4">
-                Los negocios pueden registrarse y actualizar su información con un formulario rápido. También ofrecemos
-                suscripciones para destacar en el mapa.
+                {t("biz_subs_desc")}
               </p>
               <Link
                 href="/profesionales"
                 className="inline-flex items-center text-primary font-bold text-sm hover:text-primary/80 transition-colors group"
               >
-                Quiero aparecer en el mapa <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                {t("biz_subs_cta")} <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
           </div>
@@ -241,14 +243,13 @@ export default function Home({ params }: { params: { locale: string } }) {
       <Section id="mapa-interactivo" className="bg-background relative overflow-hidden py-24">
         <div className="flex flex-col items-center text-center mb-12 animate-fade-in-up">
           <span className="text-accent font-semibold tracking-widest uppercase mb-4 text-sm">
-            Explora el Norte
+            {t("map_badge")}
           </span>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground">
-            Mapa Interactivo
+            {t("map_title")}
           </h2>
           <p className="mt-4 max-w-2xl text-lg text-foreground/80">
-            Descubre guarderías, veterinarios, playas caninas y perros en adopción cerca de ti.
-            Activa las capas que te interesen.
+            {t("map_desc")}
           </p>
         </div>
 
@@ -263,15 +264,15 @@ export default function Home({ params }: { params: { locale: string } }) {
           <div className="space-y-8 animate-fade-in-up">
             <div>
               <span className="text-accent font-semibold tracking-widest uppercase mb-2 block text-sm">
-                Ocio
+                {t("leisure_badge")}
               </span>
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground leading-tight">
-                Planes, Comunidad <br /> Y Contenido
+                {t("leisure_title")} <br /> {t("leisure_title2")}
               </h2>
             </div>
 
             <p className="text-lg text-foreground/80 leading-relaxed">
-              Desde rutas con agua hasta contenidos y recursos útiles: todo ordenado para que puedas planificar tu semana con tu perro.
+              {t("leisure_desc")}
             </p>
 
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-foreground/80">
@@ -288,30 +289,30 @@ export default function Home({ params }: { params: { locale: string } }) {
             <div className="rounded-2xl border border-border bg-secondary/20 p-6 shadow-lg">
               <div className="flex items-center gap-3 mb-3">
                 <Users className="h-5 w-5 text-primary" />
-                <p className="font-semibold text-foreground">BD de perros</p>
+                <p className="font-semibold text-foreground">{t("db_title")}</p>
               </div>
               <p className="text-sm text-foreground/70">
-                Fichas básicas, avisos de pérdida, adopciones y protectoras con información actualizada.
+                {t("db_desc")}
               </p>
             </div>
 
             <div className="rounded-2xl border border-border bg-secondary/20 p-6 shadow-lg">
               <div className="flex items-center gap-3 mb-3">
                 <Calendar className="h-5 w-5 text-primary" />
-                <p className="font-semibold text-foreground">Calendario compartido</p>
+                <p className="font-semibold text-foreground">{t("calendar_title")}</p>
               </div>
               <p className="text-sm text-foreground/70">
-                Publica eventos, quedadas y rutas con agua para que otros puedan sumarse.
+                {t("calendar_desc")}
               </p>
             </div>
 
             <div className="rounded-2xl border border-border bg-secondary/20 p-6 shadow-lg">
               <div className="flex items-center gap-3 mb-3">
                 <MapPin className="h-5 w-5 text-primary" />
-                <p className="font-semibold text-foreground">Mapa colaborativo</p>
+                <p className="font-semibold text-foreground">{t("collab_map_title")}</p>
               </div>
               <p className="text-sm text-foreground/70">
-                La comunidad puede sugerir nuevos lugares y verificar si siguen siendo pet friendly.
+                {t("collab_map_desc")}
               </p>
             </div>
           </div>
@@ -331,21 +332,21 @@ export default function Home({ params }: { params: { locale: string } }) {
 
           <div>
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-              Contenidos Para Amantes De Los Perros
+              {t("content_title")}
             </h2>
             <p className="text-primary-foreground/80 text-lg">
-              Podcasts, libros, manuales, canales de YouTube, tecnología canina y cine para quienes viven el mundo perruno al máximo.
+              {t("content_desc")}
             </p>
           </div>
 
           <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <label htmlFor="newsletter-email" className="sr-only">
-              Email para avisos y novedades
+              {t("newsletter_placeholder")}
             </label>
             <input
               type="email"
               id="newsletter-email"
-              placeholder="Recibe avisos y novedades"
+              placeholder={t("newsletter_placeholder")}
               className="flex-1 px-6 py-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-accent backdrop-blur-sm"
               required
             />
@@ -353,12 +354,12 @@ export default function Home({ params }: { params: { locale: string } }) {
               type="submit"
               className="px-8 py-4 rounded-lg bg-accent text-white font-bold hover:bg-accent/90 transition-colors shadow-lg"
             >
-              Suscribirme
+              {t("newsletter_cta")}
             </button>
           </form>
 
           <p className="text-xs opacity-60 mt-4">
-            Avisos reales, cero spam.
+            {t("newsletter_note")}
           </p>
         </div>
       </Section>
@@ -372,17 +373,17 @@ export default function Home({ params }: { params: { locale: string } }) {
           </div>
 
           <div className="flex gap-8 text-sm font-medium text-foreground/60">
-            <a href="#mapa" className="hover:text-primary transition-colors">Mapa</a>
-            <a href="#capas" className="hover:text-primary transition-colors">Capas</a>
-            <a href="#mapa-interactivo" className="hover:text-primary transition-colors">Interactivo</a>
-            <a href="#salud-legal" className="hover:text-primary transition-colors">Legal</a>
-            <a href="#negocios" className="hover:text-primary transition-colors">Negocios</a>
-            <a href="#apoyo" className="hover:text-primary transition-colors">Apoyo</a>
-            <a href="#comunidad" className="hover:text-primary transition-colors">Comunidad</a>
+            <a href="#mapa" className="hover:text-primary transition-colors">{tf("map")}</a>
+            <a href="#capas" className="hover:text-primary transition-colors">{tf("layers")}</a>
+            <a href="#mapa-interactivo" className="hover:text-primary transition-colors">{tf("interactive")}</a>
+            <a href="#salud-legal" className="hover:text-primary transition-colors">{tf("legal")}</a>
+            <a href="#negocios" className="hover:text-primary transition-colors">{tf("business")}</a>
+            <a href="#apoyo" className="hover:text-primary transition-colors">{tf("support")}</a>
+            <a href="#comunidad" className="hover:text-primary transition-colors">{tf("community")}</a>
           </div>
 
           <p className="text-sm text-foreground/40">
-            © 2026 Huellas del Norte.
+            {tf("copyright")}
           </p>
         </div>
       </footer>
