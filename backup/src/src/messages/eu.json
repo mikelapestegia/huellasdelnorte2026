@@ -1,0 +1,14 @@
+{
+    "common": {
+        "title": "Iparraldeko Oinatzak - Txakur Komunitatea",
+        "description": "Espainia iparraldean txakurrarekin gozatzeko behin betiko gida.",
+        "loading": "Kargatzen..."
+    },
+    "nav": {
+        "home": "Hasiera",
+        "routes": "Ibilbideak",
+        "accomodation": "Ostatuak",
+        "community": "Komunitatea",
+        "store": "Denda"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "common": {
+        "title": "Petjades del Nord - Comunitat Canina",
+        "description": "La guia definitiva per gaudir del nord d'Espanya amb el teu gos.",
+        "loading": "Carregant..."
+    },
+    "nav": {
+        "home": "Inici",
+        "routes": "Rutes",
+        "accomodation": "Allotjament",
+        "community": "Comunitat",
+        "store": "Botiga"
+    }
+}

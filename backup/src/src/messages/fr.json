@@ -1,0 +1,14 @@
+{
+    "common": {
+        "title": "Traces du Nord - Communauté Canine",
+        "description": "Le guide ultime pour profiter du nord de l'Espagne avec votre chien.",
+        "loading": "Chargement..."
+    },
+    "nav": {
+        "home": "Accueil",
+        "routes": "Itinéraires",
+        "accomodation": "Hébergement",
+        "community": "Communauté",
+        "store": "Boutique"
+    }
+}
