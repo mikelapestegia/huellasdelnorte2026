@@ -124,7 +124,7 @@ variable "db_display_name" {
 variable "db_version" {
   description = "Versión de la base de datos (ej: 19c, 21c, 23ai)"
   type        = string
-  default     = "19c"  # OCI Free Tier suele ser 19c o 21c, ajusta según disponibilidad
+  default     = "19c" # OCI Free Tier suele ser 19c o 21c, ajusta según disponibilidad
 }
 
 variable "db_workload_type" {

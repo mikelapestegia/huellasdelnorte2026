@@ -32,7 +32,7 @@ provider "cloudflare" {
 locals {
   # Adapter for compute_single.tf which expects local.subnet_id
   subnet_id = var.subnet_ocid
-  
+
   # Common tags merged with project tags
   common_tags = merge(var.project_tags, {
     ManagedBy = "Terraform"

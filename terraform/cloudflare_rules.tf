@@ -20,10 +20,10 @@ resource "cloudflare_ruleset" "rate_limiting_api" {
     expression  = "(http.request.uri.path matches \"^/api/\")"
     description = "Block API abuse > 100 req/min"
     enabled     = true
-    
+
     ratelimit {
-      characteristics = ["ip.src"]
-      period          = 60
+      characteristics     = ["ip.src"]
+      period              = 60
       requests_per_period = 100
       mitigation_timeout  = 60
     }
