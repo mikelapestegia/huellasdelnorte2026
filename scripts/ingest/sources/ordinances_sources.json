@@ -1,0 +1,101 @@
+[
+  {
+    "region": "Navarra",
+    "municipality": "Pamplona",
+    "source_name": "BON Navarra",
+    "source_url": "https://bon.navarra.es/",
+    "status": "verified",
+    "lon": -1.6442,
+    "lat": 42.8125
+  },
+  {
+    "region": "Gipuzkoa",
+    "municipality": "Donostia / San Sebastián",
+    "source_name": "BOG Gipuzkoa",
+    "source_url": "https://egoitza.gipuzkoa.eus/es/bog",
+    "status": "verified",
+    "lon": -1.9812,
+    "lat": 43.3230
+  },
+  {
+    "region": "Bizkaia",
+    "municipality": "Bilbao",
+    "source_name": "BOB Bizkaia",
+    "source_url": "https://www.bizkaia.eus/es/bob",
+    "status": "verified",
+    "lon": -2.9349,
+    "lat": 43.2630
+  },
+  {
+    "region": "Álava",
+    "municipality": "Vitoria-Gasteiz",
+    "source_name": "BOTHA Álava",
+    "source_url": "https://erriberagoitia.com/botha/",
+    "status": "needs_review",
+    "lon": -2.6736,
+    "lat": 42.8506
+  },
+  {
+    "region": "Cantabria",
+    "municipality": "Santander",
+    "source_name": "BOC Cantabria",
+    "source_url": "https://boc.cantabria.es/",
+    "status": "verified",
+    "lon": -3.80998,
+    "lat": 43.4623
+  },
+  {
+    "region": "Asturias",
+    "municipality": "Oviedo",
+    "source_name": "BOPA Asturias",
+    "source_url": "https://miprincipado.asturias.es/ast/bolet%C3%ADn-oficial-del-principado-de-asturias-copia-",
+    "status": "verified",
+    "lon": -5.8448,
+    "lat": 43.3619
+  },
+  {
+    "region": "A Coruña",
+    "municipality": "A Coruña",
+    "source_name": "BOP A Coruña",
+    "source_url": "https://bop.dacoruna.gal/",
+    "status": "verified",
+    "lon": -8.4092,
+    "lat": 43.3709
+  },
+  {
+    "region": "Pontevedra",
+    "municipality": "Pontevedra",
+    "source_name": "BOPPO Pontevedra",
+    "source_url": "https://boppo.depo.gal/",
+    "status": "verified",
+    "lon": -8.6443,
+    "lat": 42.4310
+  },
+  {
+    "region": "Lugo",
+    "municipality": "Lugo",
+    "source_name": "BOP Lugo",
+    "source_url": "http://bop.deputacionlugo.org/",
+    "status": "verified",
+    "lon": -7.5560,
+    "lat": 43.0125
+  },
+  {
+    "region": "Ourense",
+    "municipality": "Ourense",
+    "source_name": "BOP Ourense",
+    "source_url": "https://bop.depourense.es/",
+    "status": "verified",
+    "lon": -7.8639,
+    "lat": 42.3350
+  },
+  {
+    "region": "País Vasco francés",
+    "municipality": "Bayonne",
+    "source_name": "Data.gouv - CAPB",
+    "source_url": "https://www.data.gouv.fr/organizations/communaute-dagglomeration-pays-basque/",
+    "status": "verified",
+    "lon": -1.4750,
+    "lat": 43.4929
+  }
+]

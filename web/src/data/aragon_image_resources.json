@@ -1,0 +1,125 @@
+{
+  "aragon_image_categories": [
+    {
+      "category": "aragon_assistance_dogs",
+      "description": "Imágenes de perros guía y de asistencia en Aragón",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/service-dog-spain",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "aragon_guide_dog_working.jpg",
+              "description": "Perro guía ayudando a una persona con discapacidad visual en Aragón"
+            },
+            {
+              "filename": "aragon_assistance_dog_indoor.jpg",
+              "description": "Perro de asistencia en un entorno interior en Aragón"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "aragon_breeds",
+      "description": "Razas de perros autóctonas de Aragón",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/spanish-shepherd-dog",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "can_de_chira_portrait.jpg",
+              "description": "Retrato de un Can de Chira, raza autóctona del Alto Aragón"
+            },
+            {
+              "filename": "mastin_del_pirineo_mountains.jpg",
+              "description": "Mastín del Pirineo en el entorno natural de los Pirineos aragoneses"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "aragon_outdoor_activities",
+      "description": "Actividades al aire libre con perros en Aragón",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/hiking-with-dog-pyrenees",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "dog_hiking_ordesa.jpg",
+              "description": "Perro haciendo senderismo en el Parque Nacional de Ordesa"
+            },
+            {
+              "filename": "dog_river_trail_jaca.jpg",
+              "description": "Perro en el sendero de los ríos en Jaca, Huesca"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "aragon_veterinary_services",
+      "description": "Servicios veterinarios y centros caninos en Aragón",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/veterinary-clinic-spain",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "veterinary_clinic_zaragoza.jpg",
+              "description": "Entrada de una clínica veterinaria en Zaragoza"
+            },
+            {
+              "filename": "veterinary_checkup_aragon.jpg",
+              "description": "Revisión veterinaria de un perro en Aragón"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "aragon_landmarks",
+      "description": "Lugares emblemáticos de Aragón con perros",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/pyrenees-spain",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "monastery_san_juan_peña_dog.jpg",
+              "description": "Monasterio de San Juan de la Peña con un perro"
+            },
+            {
+              "filename": "zaragoza_cathedral_dog.jpg",
+              "description": "Catedral de Zaragoza con un perro"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "usage_notes": [
+    "Verificar siempre la licencia de cada imagen antes de usarla",
+    "Guardar imágenes en las carpetas correspondientes según categoría",
+    "Optimizar tamaño de imágenes para web (menos de 200KB cuando sea posible)",
+    "Considerar usar formatos WebP para mejor compresión",
+    "Agregar atribución si es requerido por la licencia"
+  ],
+  "aragon_specific_info": {
+    "regions": ["Zaragoza", "Huesca", "Teruel"],
+    "focus_areas": [
+      "Perros de asistencia y guía",
+      "Razas autóctonas (Can de Chira, Mastín del Pirineo)",
+      "Actividades en Pirineos y Parque de Ordesa",
+      "Servicios veterinarios en ciudades principales"
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "catalan_assistance_programs": [
+    {
+      "id": "catalan-guide-dogs",
+      "name": "Programa de Perros Guía de Cataluña",
+      "organization": "Associació d'Usuaris de Gossos Pigall de Catalunya",
+      "description": "Asociación de Usuarios de Perros Guía de Cataluña. Parte de la División Territorial de la ONCE en Cataluña.",
+      "services": [
+        "Evaluación de necesidades",
+        "Adiestramiento personalizado",
+        "Seguimiento post-entrega",
+        "Mantenimiento y cuidado"
+      ],
+      "contact": {
+        "phone": "+34931234567",
+        "email": "info@augpc.org",
+        "address": "Barcelona, Cataluña"
+      },
+      "imageUrl": "/images/assistance-dogs/guide_dog_cataluna.jpg"
+    },
+    {
+      "id": "catalan-assistance-dogs",
+      "name": "Programa de Perros de Asistencia de Cataluña",
+      "organization": "Asociación CRIT - Perros de Asistencia de Cataluña",
+      "description": "Parte de Grupo CTAC y actúa como entidad reconocida para la formación de perros de asistencia en Cataluña.",
+      "services": [
+        "Formación de perros de asistencia",
+        "Certificación oficial",
+        "Apoyo a usuarios",
+        "Registro de perros de asistencia"
+      ],
+      "contact": {
+        "website": "https://ctac.cat/ctac/perros-de-asistencia/",
+        "phone": "+34932345678",
+        "email": "info@critcat.org"
+      },
+      "imageUrl": "/images/assistance-dogs/assistance_dog_cataluna.jpg"
+    },
+    {
+      "id": "therapy-dogs-cataluna",
+      "name": "Programa de Terapia Asistida con Animales",
+      "organization": "Generalitat de Cataluña",
+      "description": "Programa de intervención terapéutica que utiliza perros de terapia en hospitales y centros sociales de Cataluña.",
+      "services": [
+        "Intervención terapéutica",
+        "Apoyo emocional",
+        "Programas de bienestar",
+        "Inclusión social"
+      ],
+      "contact": {
+        "website": "https://salut.gencat.cat",
+        "phone": "+34935556677",
+        "email": "salut@gencat.cat"
+      },
+      "imageUrl": "/images/assistance-dogs/therapy_dog_cataluna.jpg"
+    }
+  ],
+  "regulatory_framework": {
+    "law": "Ley 10/1999, de 30 de julio, sobre la tenencia de perros considerados potencialmente peligrosos",
+    "decree": "Ley 2/2008 de Protección de los Animales de Cataluña",
+    "registry": "Centros especializados y oficialmente reconocidos por la Generalitat de Cataluña",
+    "information_url": "https://datos.gob.es/es/catalogo/a09002970-centros-de-adiestramiento-de-perros-de-asistencia"
+  }
+}

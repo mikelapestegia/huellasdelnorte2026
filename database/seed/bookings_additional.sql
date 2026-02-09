@@ -1,0 +1,8 @@
+-- Additional real data for bookings
+
+INSERT INTO bookings (service_id, user_id, dog_id, start_at, end_at, status) VALUES
+((SELECT s.id FROM services s JOIN providers p ON s.provider_id = p.id WHERE p.name = 'Hospital Veterinario Cantabria' AND s.name = 'Consulta de especialista'), (SELECT id FROM users WHERE email = 'maria.gonzalez@example.com'), (SELECT id FROM dogs WHERE name = 'Max'), '2026-02-16 11:00:00', '2026-02-16 11:45:00', 'confirmed'),
+((SELECT s.id FROM services s JOIN providers p ON s.provider_id = p.id WHERE p.name = 'Cecapa – Centro Canino Parayas' AND s.name = 'Alojamiento premium'), (SELECT id FROM users WHERE email = 'carlos.ruiz@example.com'), (SELECT id FROM dogs WHERE name = 'Luna'), '2026-02-28 17:00:00', '2026-03-02 10:00:00', 'confirmed'),
+((SELECT s.id FROM services s JOIN providers p ON s.provider_id = p.id WHERE p.name = 'Tienda Cecapa' AND s.name = 'Alimentos premium'), (SELECT id FROM users WHERE email = 'ana.sanchez@example.com'), (SELECT id FROM dogs WHERE name = 'Rocky'), '2026-02-13 13:00:00', '2026-02-13 13:10:00', 'completed'),
+((SELECT s.id FROM services s JOIN providers p ON s.provider_id = p.id WHERE p.name = 'Peluquería Canina Pupetes' AND s.name = 'Peluquería baño completo'), (SELECT id FROM users WHERE email = 'pablo.diaz@example.com'), (SELECT id FROM dogs WHERE name = 'Bella'), '2026-02-20 10:00:00', '2026-02-20 12:00:00', 'pending'),
+((SELECT s.id FROM services s JOIN providers p ON s.provider_id = p.id WHERE p.name = 'Anny and Dogs' AND s.name = 'Evaluación conductual'), (SELECT id FROM users WHERE email = 'lucia.martinez@example.com'), (SELECT id FROM dogs WHERE name = 'Charlie'), '2026-02-17 15:00:00', '2026-02-17 16:30:00', 'confirmed');

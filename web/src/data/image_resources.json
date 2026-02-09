@@ -1,0 +1,131 @@
+{
+  "image_categories": [
+    {
+      "category": "assistance_dogs",
+      "description": "Imágenes de perros guía y de asistencia",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/service-dog",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "guide_dog_working.jpg",
+              "description": "Perro guía ayudando a una persona con discapacidad visual"
+            },
+            {
+              "filename": "assistance_dog_indoor.jpg",
+              "description": "Perro de asistencia en un entorno interior"
+            }
+          ]
+        },
+        {
+          "source": "Pixabay",
+          "url": "https://pixabay.com/images/search/service%20dog/",
+          "license": "Pixabay License (free for commercial use)",
+          "examples": [
+            {
+              "filename": "therapy_dog_hospital.jpg",
+              "description": "Perro de terapia en un hospital"
+            },
+            {
+              "filename": "guide_dog_street.jpg",
+              "description": "Perro guía cruzando la calle con su dueño"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "cantabrian_breeds",
+      "description": "Razas de perros autóctonas del norte peninsular",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/spanish-water-dog",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "spanish_water_dog_portrait.jpg",
+              "description": "Retrato de un perro de agua español"
+            },
+            {
+              "filename": "cantabrian_water_dog_swimming.jpg",
+              "description": "Perro de agua cántabro nadando"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "outdoor_activities",
+      "description": "Actividades al aire libre con perros en Cantabria",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/hiking-with-dog",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "dog_hiking_mountain.jpg",
+              "description": "Perro haciendo senderismo en la montaña"
+            },
+            {
+              "filename": "dog_beach_cantabria.jpg",
+              "description": "Perro en una playa de Cantabria"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "veterinary_services",
+      "description": "Servicios veterinarios y centros caninos",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/veterinary-clinic",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "veterinary_clinic_exterior.jpg",
+              "description": "Entrada de una clínica veterinaria"
+            },
+            {
+              "filename": "veterinary_checkup.jpg",
+              "description": "Revisión veterinaria de un perro"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "cantabria_landmarks",
+      "description": "Lugares emblemáticos de Cantabria con perros",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/cantabria-spain",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "magdalena_palace_with_dog.jpg",
+              "description": "Palacio de la Magdalena en Santander con un perro"
+            },
+            {
+              "filename": "cabo_mayor_lighthouse_dog.jpg",
+              "description": "Faro de Cabo Mayor con un perro"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "usage_notes": [
+    "Verificar siempre la licencia de cada imagen antes de usarla",
+    "Guardar imágenes en las carpetas correspondientes según categoría",
+    "Optimizar tamaño de imágenes para web (menos de 200KB cuando sea posible)",
+    "Considerar usar formatos WebP para mejor compresión",
+    "Agregar atribución si es requerido por la licencia"
+  ]
+}

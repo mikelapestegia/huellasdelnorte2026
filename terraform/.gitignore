@@ -1,0 +1,132 @@
+# ============================================================================
+# GITIGNORE - Terraform Security
+# Protege archivos con secrets, tokens y configuraciones sensibles
+# ============================================================================
+
+# ------------------------------
+# ARCHIVOS CON SECRETS (CRÍTICO)
+# ------------------------------
+
+# Terraform variables con valores reales
+*.tfvars
+terraform.tfvars
+*.auto.tfvars
+
+# Backend configuration con credentials
+backend.hcl
+*.backend.hcl
+
+# Archivos de estado (contienen datos sensibles)
+terraform.tfstate
+terraform.tfstate.*
+terraform.tfstate.backup
+*.tfstate
+*.tfstate.*
+
+# Override files (pueden contener configuraciones locales)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ------------------------------
+# DIRECTORIOS DE TERRAFORM
+# ------------------------------
+
+# Directorio de plugins y providers
+.terraform/
+.terraform.lock.hcl
+
+# Directorio de planes
+*.tfplan
+plan.out
+
+# ------------------------------
+# ARCHIVOS DE SECRETS EXTERNOS
+# ------------------------------
+
+# SSH keys
+*.pem
+*.key
+id_rsa*
+*.pub
+
+# Wallets y certificados
+wallet.zip
+wallet/
+*.sso
+*.jks
+*.p12
+*.pfx
+
+# OCI API Keys
+oci_api_key*
+
+# Cloudflare credentials
+cloudflared.json
+cloudflare_credentials.json
+
+# ------------------------------
+# LOGS Y ARCHIVOS TEMPORALES
+# ------------------------------
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Terraform logs
+*.log
+.terraform.log
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+*~
+
+# ------------------------------
+# ARCHIVOS DE SISTEMA
+# ------------------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Linux
+.directory
+
+# ------------------------------
+# IDE Y EDITORES
+# ------------------------------
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+*~
+\#*\#
+
+# ------------------------------
+# NOTAS IMPORTANTES
+# ------------------------------
+# 
+# 1. terraform.tfvars.example SÍ está en el repo (solo ejemplos)
+# 2. terraform.tfvars NO debe estar en el repo (valores reales)
+# 3. Usar GitHub Secrets para CI/CD
+# 4. Wallet de base de datos debe descargarse localmente
+# 5. SSH keys deben generarse localmente y NO commitear
+#
+# ============================================================================

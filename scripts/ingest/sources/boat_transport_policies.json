@@ -1,0 +1,515 @@
+[
+  {
+    "name": "Bale\u00e0ria",
+    "scope": "Spain (Mediterranean, Ceuta/Melilla, Baleares)",
+    "status": "allowed",
+    "policy_url": "https://www.balearia.com/es/viajar-con-balearia/viaja-con-mascotas",
+    "source": "official_site",
+    "notes": "Permite mascotas con acomodaciones pet friendly (camarote/butaca/casitas).",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Brittany Ferries",
+    "scope": "Spain-UK/France routes (Bilbao, Santander)",
+    "status": "allowed",
+    "policy_url": "https://brittanyferriesnewsroom.com/a-holiday-they-wont-fur-get/",
+    "source": "official_newsroom",
+    "notes": "Mascotas pueden viajar en camarote pet-friendly, perrera o vehiculo segun el buque.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Naviera Mar de Ons",
+    "scope": "Galicia (R\u00eda de Vigo y l\u00edneas locales)",
+    "status": "conditional",
+    "policy_url": "https://www.mardeons.es/condiciones-de-compra-y-del-servicio-de-transporte-maritimo-de-la-linea-cangas-vigo/",
+    "source": "official_terms",
+    "notes": "Mascotas permitidas con correa/bozal o transport\u00edn; bajo responsabilidad del propietario.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Cruceros R\u00edas Baixas (Isla de Ons)",
+    "scope": "Galicia (Isla de Ons)",
+    "status": "not_allowed",
+    "policy_url": "https://www.crucerosriasbaixas.com/isla-de-ons/preguntas-frecuentes-sobre-la-isla-de-ons",
+    "source": "official_faq",
+    "notes": "No se permite acceder con mascotas en la isla; solo perros gu\u00eda.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Cruceros R\u00edas Baixas (Islas C\u00edes)",
+    "scope": "Galicia (Islas C\u00edes)",
+    "status": "not_allowed",
+    "policy_url": "https://www.crucerosriasbaixas.com/islas-cies/preguntas-frecuentes-sobre-las-islas-cies",
+    "source": "official_faq",
+    "notes": "No se permiten mascotas en las islas; solo perros lazarillo.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Cruceros R\u00edas Baixas (Isla de S\u00e1lvora)",
+    "scope": "Galicia (Isla de S\u00e1lvora)",
+    "status": "not_allowed",
+    "policy_url": "https://www.crucerosriasbaixas.com/nosotros/faqs-cruceros-rias-baixas",
+    "source": "official_faq",
+    "notes": "En las islas del Parque Nacional (C\u00edes, Ons, S\u00e1lvora) no se permiten mascotas salvo perros gu\u00eda.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Naviera de las R\u00edas Gallegas (RG Naviera)",
+    "scope": "Galicia (Vigo-Cangas y l\u00edneas locales)",
+    "status": "conditional",
+    "policy_url": "https://rgnaviera.com/condiciones-cangas-vigo/",
+    "source": "official_terms",
+    "notes": "Permite mascotas con correa/bozal o transport\u00edn; responsable el propietario.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "RG Naviera (San Sim\u00f3n)",
+    "scope": "Galicia (Isla de San Sim\u00f3n)",
+    "status": "not_allowed",
+    "policy_url": "https://rgnaviera.com/normativas-por-destinos/",
+    "source": "official_terms",
+    "notes": "Normativa del destino: no est\u00e1 permitida la entrada de animales de compa\u00f1\u00eda excepto perros gu\u00eda.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Piratas de Nabia (Naviera Nabia)",
+    "scope": "Galicia (R\u00eda de Vigo: Moa\u00f1a-Vigo)",
+    "status": "allowed",
+    "policy_url": "https://www.piratasdenabia.com/viaja-con-perro-naviera-nabia/",
+    "source": "official_site",
+    "notes": "Ruta #PetFriendly anunciada para viajar con perro en l\u00ednea regular.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Barco La Toja (Barco de los mejillones)",
+    "scope": "Galicia (O Grove - Isla de La Toja)",
+    "status": "allowed",
+    "policy_url": "https://www.barcolatoja.com/preguntas-frecuentes/",
+    "source": "official_faq",
+    "notes": "Permite mascota marcando la opci\u00f3n al reservar.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Cruceros do Ulla (Turimares)",
+    "scope": "Galicia (O Grove - R\u00eda de Arousa)",
+    "status": "allowed",
+    "policy_url": "https://www.crucerosdoulla.com/ruta-de-los-mejillones-o-grove/",
+    "source": "official_site",
+    "notes": "Apto para mascotas; avisar en taquilla antes de embarcar.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Cruceros Pelegr\u00edn (Barco de los mejillones)",
+    "scope": "Galicia (O Grove - R\u00eda de Arousa)",
+    "status": "allowed",
+    "policy_url": "https://crucerospelegrin.com/barco-mejillones-o-grove/",
+    "source": "official_site",
+    "notes": "Actividad con mascotas permitidas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Cruceros Pelegr\u00edn (Restaurante marinero)",
+    "scope": "Galicia (O Grove - R\u00eda de Arousa)",
+    "status": "not_allowed",
+    "policy_url": "https://crucerospelegrin.com/restaurante-marinero/",
+    "source": "official_site",
+    "notes": "Mascotas no permitidas en esta actividad.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Cruceros Pelegr\u00edn (Mariscada a bordo)",
+    "scope": "Galicia (O Grove - R\u00eda de Arousa)",
+    "status": "not_allowed",
+    "policy_url": "https://crucerospelegrin.com/mariscada-a-bordo/",
+    "source": "official_site",
+    "notes": "Mascotas no permitidas en esta actividad.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "La Barca del Peregrino (Ruta Traslatio)",
+    "scope": "Galicia (R\u00eda de Arousa - Ruta Traslatio)",
+    "status": "allowed",
+    "policy_url": "https://www.labarcadelperegrino.com/somos-pet-friendly/",
+    "source": "official_site",
+    "notes": "Operador anuncia ruta pet friendly.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Ares desde o Mar (Barco M. Presas)",
+    "scope": "Galicia (R\u00eda de Ares)",
+    "status": "unknown",
+    "policy_url": "https://www.cope.es/emisoras/galicia/a-coruna-provincia/ferrol/noticias/ares-presenta-rutas-turisticas-barco-ria-20250616_3170388.html",
+    "source": "news_municipal",
+    "notes": "Servicio tur\u00edstico local anunciado por Concello de Ares; sin pol\u00edtica de mascotas publicada.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Buend\u00eda Tours (O Grove con comida a bordo)",
+    "scope": "Galicia (O Grove - R\u00eda de Arousa)",
+    "status": "not_allowed",
+    "policy_url": "https://buendiatours.com/es/ogrove/paseo-barco-con-comida",
+    "source": "marketplace",
+    "notes": "Listado indica 'Mascotas no permitidas'; verificar con operador.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Buend\u00eda Tours (Isla de S\u00e1lvora)",
+    "scope": "Galicia (Ribeira - Isla de S\u00e1lvora)",
+    "status": "not_allowed",
+    "policy_url": "https://buendiatours.com/es/ribeira/excursion-barco-isla-salvora",
+    "source": "marketplace",
+    "notes": "Listado indica 'Mascotas no permitidas'; verificar con operador.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Barco Variante Espiritual (Amare Turismo N\u00e1utico)",
+    "scope": "Galicia (R\u00eda de Arousa - Ruta Traslatio)",
+    "status": "allowed",
+    "policy_url": "https://www.barcovarianteespiritual.com/variante-espiritual-con-perro/",
+    "source": "official_site",
+    "notes": "El operador indica que es pet-friendly y admite perros en la Ruta Traslatio.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "San Vicente de la Barquera (Barco en la r\u00eda)",
+    "scope": "Cantabria (R\u00eda de San Vicente de la Barquera)",
+    "status": "unknown",
+    "policy_url": "https://sanvicentedelabarquera.com/turismo/en-barco-por-la-ria/",
+    "source": "official_municipal",
+    "notes": "Informaci\u00f3n tur\u00edstica municipal; sin pol\u00edtica de mascotas publicada.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Ribadesella (Paseos en barco)",
+    "scope": "Asturias (Ribadesella)",
+    "status": "unknown",
+    "policy_url": "https://www.ayto-ribadesella.es/en/ribadesella/turismo/50/paseos-en-barco/",
+    "source": "official_municipal",
+    "notes": "Turismo municipal; sin pol\u00edtica de mascotas publicada.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Lekeitio (Txalupa Lekeitio)",
+    "scope": "Pa\u00eds Vasco (Lekeitio)",
+    "status": "unknown",
+    "policy_url": "https://www.lekeitio.eus/es/turismo/que-hacer/txalupa/",
+    "source": "official_municipal",
+    "notes": "Servicio tur\u00edstico municipal; sin pol\u00edtica de mascotas publicada.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Zumaia (Flysch Boat)",
+    "scope": "Pa\u00eds Vasco (Zumaia)",
+    "status": "unknown",
+    "policy_url": "https://flysch.com/boat/",
+    "source": "official_site",
+    "notes": "Operador tur\u00edstico; no se indica pol\u00edtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "R\u00edas Altas I (Ferrol-Mugardos)",
+    "scope": "Galicia (R\u00eda de Ferrol)",
+    "status": "unknown",
+    "policy_url": "https://mugardos.gal/es/horarios-de-los-cruceros-maritimos-en-el-rias-altas-i/",
+    "source": "official_municipal",
+    "notes": "Servicio mar\u00edtimo local; no se encontr\u00f3 pol\u00edtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Rutas Cedeira (Rutas en barco)",
+    "scope": "Galicia (Cedeira - Cabo Ortegal)",
+    "status": "unknown",
+    "policy_url": "https://www.rutascedeira.com/",
+    "source": "official_site",
+    "notes": "Operador local con rutas en barco y kayak; no se indica pol\u00edtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Terralmar (R\u00eda del Eo / Ribadeo / Viveiro / Navia)",
+    "scope": "Galicia y Asturias (Ribadeo, Viveiro, Navia, Castropol)",
+    "status": "unknown",
+    "policy_url": "https://terralmar.com/terralmar-paseo-en-barco-por-la-ria-del-eo/",
+    "source": "official_site",
+    "notes": "Operador con salidas en varias r\u00edas; no se indica pol\u00edtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Albatros V (Paseos por la r\u00eda)",
+    "scope": "Galicia/Asturias (Ribadeo, Figueras, Castropol)",
+    "status": "unknown",
+    "policy_url": "https://www.albatrosv.es/",
+    "source": "official_site",
+    "notes": "Paseos en barco por la r\u00eda; no se indica pol\u00edtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Playa de las Catedrales en barco (Grupo Albatros & Nuevo Agamar)",
+    "scope": "Galicia (Ribadeo - Playa de las Catedrales)",
+    "status": "unknown",
+    "policy_url": "https://playadelascatedralesenbarco.com/",
+    "source": "official_site",
+    "notes": "Paseo en lancha r\u00e1pida; no se indica pol\u00edtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Naviera Nabia (R\u00eda de Arousa)",
+    "scope": "Galicia (R\u00eda de Arousa: O Grove, Sanxenxo, Cambados)",
+    "status": "unknown",
+    "policy_url": "https://www.piratasdenabia.com/rias-de-galicia/",
+    "source": "official_site",
+    "notes": "Operador ofrece rutas en la R\u00eda de Arousa; no hay pol\u00edtica de mascotas indicada.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Nabia (Mar\u00edn - Isla de Tambo)",
+    "scope": "Galicia (R\u00eda de Pontevedra)",
+    "status": "unknown",
+    "policy_url": "https://www.piratasdenabia.com/isla-de-tambo/",
+    "source": "official_site",
+    "notes": "Ruta a la Isla de Tambo; no se indica pol\u00edtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Nabia (Combarro)",
+    "scope": "Galicia (R\u00eda de Pontevedra: Combarro)",
+    "status": "unknown",
+    "policy_url": "https://www.piratasdenabia.com/combarro/",
+    "source": "official_site",
+    "notes": "Ruta a Combarro; no se indica pol\u00edtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Nabia (Ruta Toxa)",
+    "scope": "Galicia (R\u00eda de Arousa: La Toja)",
+    "status": "unknown",
+    "policy_url": "https://www.piratasdenabia.com/isla-de-la-toja/",
+    "source": "official_site",
+    "notes": "Ruta a la Isla de La Toja; no se indica pol\u00edtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Los Reginas",
+    "scope": "Cantabria (Bah\u00eda de Santander: Santander-Pedre\u00f1a-Somo)",
+    "status": "allowed",
+    "policy_url": "https://www.losreginas.com/las-excursiones-en-barco-con-mascotas-son-posibles/",
+    "source": "official_site",
+    "notes": "Permiten mascotas en todas las rutas con correa y preferible bozal.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Los Reginas (Ruta a Playa de Somo)",
+    "scope": "Cantabria (Bah\u00eda de Santander - Somo)",
+    "status": "allowed",
+    "policy_url": "https://www.losreginas.com/linea-santander-somo/",
+    "source": "official_site",
+    "notes": "Linea regular; aplica pol\u00edtica general de mascotas de Los Reginas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Los Reginas (Ruta a Pedre\u00f1a)",
+    "scope": "Cantabria (Bah\u00eda de Santander - Pedre\u00f1a)",
+    "status": "allowed",
+    "policy_url": "https://www.losreginas.com/linea-santander-pedrena/",
+    "source": "official_site",
+    "notes": "Linea regular; aplica pol\u00edtica general de mascotas de Los Reginas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "FRS Ferry",
+    "scope": "Spain-Morocco (Estrecho)",
+    "status": "allowed",
+    "policy_url": "https://www.frs.es/planifica-tu-viaje/mascotas",
+    "source": "official_site",
+    "notes": "Condiciones generales con requisitos de transport\u00edn/bozal y peso.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Armas Trasmediterr\u00e1nea",
+    "scope": "Spain (Canarias, Albor\u00e1n, Pen\u00ednsula)",
+    "status": "allowed",
+    "policy_url": "https://armastrasmediterranea.com/extras-viaje/servicios-a-bordo/mascotas-camarote",
+    "source": "official_site",
+    "notes": "Camarote para mascotas con condiciones (transport\u00edn/bozal, max 2 mascotas, 30kg).",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Le Nivelle (Bateaux promenade)",
+    "scope": "Iparralde (Saint-Jean-de-Luz)",
+    "status": "allowed",
+    "policy_url": "https://www.saint-jean-de-luz.com/activite/le-nivelle/",
+    "source": "official_site",
+    "notes": "Turismo oficial indica 'Animaux bienvenus'.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Jolaski (Barco Hondarribia-Hendaia)",
+    "scope": "Pa\u00eds Vasco (Hondarribia-Hendaia)",
+    "status": "allowed",
+    "policy_url": "https://www.jolaski.com/barco-hondarribia-hendaia",
+    "source": "official_site",
+    "notes": "El servicio indica que se permiten perros a bordo.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Catamar\u00e1n Ciudad San Sebasti\u00e1n",
+    "scope": "Pa\u00eds Vasco (Donostia/San Sebasti\u00e1n - Bah\u00eda de la Concha)",
+    "status": "unknown",
+    "policy_url": "https://www.ciudadsansebastian.com/",
+    "source": "official_site",
+    "notes": "Web del operador; sin pol\u00edtica de mascotas publicada.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Bilboats (R\u00eda de Bilbao)",
+    "scope": "Pa\u00eds Vasco (Bilbao - R\u00eda de Bilbao)",
+    "status": "unknown",
+    "policy_url": "https://www.bilboats.com/",
+    "source": "official_site",
+    "notes": "Operador de paseos en barco; no se indica pol\u00edtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Paseos en Barco por la R\u00eda de Avil\u00e9s",
+    "scope": "Asturias (R\u00eda de Avil\u00e9s)",
+    "status": "allowed",
+    "policy_url": "https://paseosbarcoaviles.es/booking-form/",
+    "source": "official_site",
+    "notes": "Formulario de reserva indica que se permiten perros con correa.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Actitur Suances (Paseos en barco)",
+    "scope": "Cantabria (Suances - R\u00c3\u00ada de San Mart\u00c3\u00adn / Costa de Suances)",
+    "status": "allowed",
+    "policy_url": "https://actitursuances.es/ruta-de-la-costa-paseo-en-barco-suances/",
+    "source": "official_site",
+    "notes": "El operador indica que las mascotas tambi\u00c3\u00a9n suben a bordo.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Excursiones Mar\u00edtimas (Laredo-Santo\u00f1a)",
+    "scope": "Cantabria (Laredo y Santo\u00f1a)",
+    "status": "unknown",
+    "policy_url": "https://excursionesmaritimas.com/",
+    "source": "official_site",
+    "notes": "Operador de paseos en barco; no se indica pol\u00edtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Faro del Caballo (Santo\u00c3\u00b1a/Laredo)",
+    "scope": "Cantabria (Bah\u00c3\u00ada de Santo\u00c3\u00b1a y Laredo)",
+    "status": "allowed",
+    "policy_url": "https://farodelcaballo.es/reservar-acceso-al-faro-del-caballo/",
+    "source": "official_site",
+    "notes": "La web indica que el barco es pet friendly y permite embarcar con mascota.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Gijonesa de Actividades Subacu\u00c3\u00a1ticas",
+    "scope": "Asturias (Gij\u00c3\u00b3n - Puerto del Musel)",
+    "status": "allowed",
+    "policy_url": "https://www.turismoasturias.es/organiza-tu-viaje/deporte-y-aventura/aventura/gijonesa-de-actividades-subacuaticas",
+    "source": "official_site",
+    "notes": "Turismo Asturias indica actividades con mascotas; perro con correa junto al due\u00c3\u00b1o.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Cudillero Aventura (Paseos en barco)",
+    "scope": "Asturias (Cudillero)",
+    "status": "unknown",
+    "policy_url": "https://cudilleroaventura.es/sobre-nosotros",
+    "source": "official_site",
+    "notes": "Operador local de paseos; no se indica pol\u00c3\u00adtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Nuevo Agamar (R\u00c3\u00ada de Ribadeo)",
+    "scope": "Asturias/Galicia (R\u00c3\u00ada del Eo: Ribadeo, Castropol, Figueras)",
+    "status": "unknown",
+    "policy_url": "https://www.nuevoagamar.es/",
+    "source": "official_site",
+    "notes": "Operador de paseos en la r\u00c3\u00ada; no se indica pol\u00c3\u00adtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Eomar (Playa de las Catedrales)",
+    "scope": "Galicia/Asturias (Ribadeo \u00e2\u0086\u0092 Playa de las Catedrales)",
+    "status": "unknown",
+    "policy_url": "https://terralmar.com/eomar-paseo-en-barco-por-la-playa-de-las-catedrales/",
+    "source": "official_site",
+    "notes": "Ruta en lancha desde Ribadeo; no se indica pol\u00c3\u00adtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Vivemar (R\u00c3\u00ada de Viveiro)",
+    "scope": "Galicia (Viveiro - R\u00c3\u00ada de Viveiro)",
+    "status": "unknown",
+    "policy_url": "https://terralmar.com/vivemar-paseo-en-barco-por-la-ria-de-viveiro/",
+    "source": "official_site",
+    "notes": "Barco tur\u00c3\u00adstico por la r\u00c3\u00ada; no se indica pol\u00c3\u00adtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Areamar (Fuci\u00c3\u00b1o do Porco)",
+    "scope": "Galicia (Viveiro \u00e2\u0086\u0092 Fuci\u00c3\u00b1o do Porco)",
+    "status": "unknown",
+    "policy_url": "https://terralmar.com/areamar-paseo-en-barco-por-el-fucino-do-porco/",
+    "source": "official_site",
+    "notes": "Ruta al Fuci\u00c3\u00b1o do Porco desde Viveiro; no se indica pol\u00c3\u00adtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Areamar (R\u00c3\u00ada de Navia)",
+    "scope": "Asturias (Navia - R\u00c3\u00ada de Navia)",
+    "status": "unknown",
+    "policy_url": "https://terralmar.com/barco-turistico-ria-de-navia-asturias/",
+    "source": "official_site",
+    "notes": "Barco tur\u00c3\u00adstico en la r\u00c3\u00ada; no se indica pol\u00c3\u00adtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Proastur (Paseos en barco)",
+    "scope": "Asturias (costa asturiana - alquiler/paseo)",
+    "status": "unknown",
+    "policy_url": "https://www.proastur.com/actividades/paseos-en-barco/",
+    "source": "official_site",
+    "notes": "Operador de paseos y alquiler de barco; no se indica pol\u00c3\u00adtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Hegaluze (Rutas en barco)",
+    "scope": "Pa\u00c3\u00ads Vasco (Bermeo - Urdaibai/Gaztelugatxe)",
+    "status": "unknown",
+    "policy_url": "https://hegaluze.com/",
+    "source": "official_site",
+    "notes": "Operador local de rutas en barco; no se indica pol\u00c3\u00adtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Buceo Sirenia (Paseos en barco)",
+    "scope": "Cantabria (Santo\u00c3\u00b1a - Monte Buciero/Faro del Caballo)",
+    "status": "unknown",
+    "policy_url": "https://buceosirenia.com/servicios/paseos-en-barco/",
+    "source": "official_site",
+    "notes": "Paseos en barco desde Santo\u00c3\u00b1a; no se indica pol\u00c3\u00adtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Aventura N\u00c3\u00a1utica Gij\u00c3\u00b3n (Paseos en barco)",
+    "scope": "Asturias (Gij\u00c3\u00b3n - Costa/puerto)",
+    "status": "unknown",
+    "policy_url": "https://aventuranauticagijon.com/archivos/portfolio-items/paseos-en-barco",
+    "source": "official_site",
+    "notes": "Charter y paseos en barco; no se indica pol\u00c3\u00adtica de mascotas.",
+    "last_checked": "2026-02-08"
+  },
+  {
+    "name": "Atlantis Aventura (Rutas en barco)",
+    "scope": "Galicia (Fisterra/Finisterre - Costa da Morte)",
+    "status": "unknown",
+    "policy_url": "https://www.atlantisaventura.com/rutas-en-barco-por-finisterre",
+    "source": "official_site",
+    "notes": "Operador local de rutas en barco; no se indica pol\u00c3\u00adtica de mascotas.",
+    "last_checked": "2026-02-08"
+  }
+]

@@ -1,0 +1,125 @@
+{
+  "galician_image_categories": [
+    {
+      "category": "galician_assistance_dogs",
+      "description": "Imágenes de perros guía y de asistencia en Galicia",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/service-dog-spain",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "galician_guide_dog_working.jpg",
+              "description": "Perro guía ayudando a una persona con discapacidad visual en Galicia"
+            },
+            {
+              "filename": "galician_assistance_dog_indoor.jpg",
+              "description": "Perro de asistencia en un entorno interior en Galicia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "galician_breeds",
+      "description": "Razas de perros autóctonas de Galicia",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/spanish-shepherd-dog",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "can_de_palleiro_portrait.jpg",
+              "description": "Retrato de un Can de Palleiro, raza autóctona de Galicia"
+            },
+            {
+              "filename": "perdigueiro_galego_field.jpg",
+              "description": "Perdigueiro Galego en el campo gallego"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "galician_outdoor_activities",
+      "description": "Actividades al aire libre con perros en Galicia",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/hiking-with-dog-galicia",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "dog_hiking_costa_da_morte.jpg",
+              "description": "Perro haciendo senderismo en la Costa da Morte, Galicia"
+            },
+            {
+              "filename": "dog_beach_camino_santiago.jpg",
+              "description": "Perro en una playa del Camino de Santiago en Galicia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "galician_veterinary_services",
+      "description": "Servicios veterinarios y centros caninos en Galicia",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/veterinary-clinic-spain",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "veterinary_clinic_santiago.jpg",
+              "description": "Entrada de una clínica veterinaria en Santiago de Compostela"
+            },
+            {
+              "filename": "veterinary_checkup_galicia.jpg",
+              "description": "Revisión veterinaria de un perro en Galicia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "galician_landmarks",
+      "description": "Lugares emblemáticos de Galicia con perros",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/galicia-spain",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "cathedral_santiago_dog.jpg",
+              "description": "Catedral de Santiago de Compostela con un perro"
+            },
+            {
+              "filename": "camiño_porto_dog.jpg",
+              "description": "Puerto de Vigo con un perro"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "usage_notes": [
+    "Verificar siempre la licencia de cada imagen antes de usarla",
+    "Guardar imágenes en las carpetas correspondientes según categoría",
+    "Optimizar tamaño de imágenes para web (menos de 200KB cuando sea posible)",
+    "Considerar usar formatos WebP para mejor compresión",
+    "Agregar atribución si es requerido por la licencia"
+  ],
+  "galician_specific_info": {
+    "regions": ["A Coruña", "Lugo", "Ourense", "Pontevedra"],
+    "focus_areas": [
+      "Perros de asistencia y guía",
+      "Razas autóctonas (Can de Palleiro, Perdigueiro Galego)",
+      "Actividades en Costa da Morte y Rías",
+      "Servicios veterinarios en ciudades principales"
+    ]
+  }
+}

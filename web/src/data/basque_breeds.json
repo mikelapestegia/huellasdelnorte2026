@@ -1,0 +1,55 @@
+{
+  "basque_breeds": [
+    {
+      "id": "pastor-vasco",
+      "name": "Pastor Vasco (Euskal Artzain Txakurra)",
+      "origin": "País Vasco",
+      "description": "El Pastor Vasco o Euskal Artzain Txakurra es una raza de perro autóctona del País Vasco. Muy conocido en entornos rurales donde se utiliza para realizar tareas como el manejo de animales. Es un perro mediano, pura energía, con gran habilidad para el pastoreo.",
+      "characteristics": [
+        "Perro pastor tradicional",
+        "Excelente habilidad para el pastoreo",
+        "Gran resistencia física",
+        "Inteligencia y facilidad de adiestramiento"
+      ],
+      "imageUrl": "/images/breeds/pastor_vasco.jpg"
+    },
+    {
+      "id": "perro-agua-cantabrico",
+      "name": "Perro de Agua Cantábrico",
+      "origin": "Región Cantábrica (País Vasco)",
+      "description": "El Perro de Agua Cantábrico es una raza autóctona de la región cantábrica, incluyendo el País Vasco. Utilizado históricamente por pescadores para tareas en el agua.",
+      "characteristics": [
+        "Excelente nadador",
+        "Pelaje rizado y resistente al agua",
+        "Muy adaptable al clima marino",
+        "Inteligente y obediente"
+      ],
+      "imageUrl": "/images/breeds/perro_agua_cantabrico.jpg"
+    },
+    {
+      "id": "pachon-navarro",
+      "name": "Pachón Navarro",
+      "origin": "Región Vasca (Navarra)",
+      "description": "El Pachón Navarro es una raza de perro de caza autóctona de la región vasca y navarra. Excelente perro de caza de puntero, con gran habilidad para trabajar en terrenos variados.",
+      "characteristics": [
+        "Perro de caza de puntero",
+        "Gran olfato y habilidad de rastreo",
+        "Muy resistente al trabajo",
+        "Carácter tranquilo y obediente"
+      ],
+      "imageUrl": "/images/breeds/pachon_navarro.jpg"
+    }
+  ],
+  "breed_info_sources": [
+    {
+      "title": "Pastor Vasco - Raza Autóctona del País Vasco",
+      "url": "https://turismovasco.com/pais-vasco/pastor-vasco/",
+      "license": "All rights reserved"
+    },
+    {
+      "title": "Razas de perro del País Vasco",
+      "url": "https://es.wikipedia.org/wiki/Categor%C3%ADa:Razas_de_perro_del_Pa%C3%ADs_Vasco",
+      "license": "CC BY-SA 3.0"
+    }
+  ]
+}

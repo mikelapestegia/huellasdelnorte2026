@@ -1,0 +1,55 @@
+{
+  "aragon_breeds": [
+    {
+      "id": "can-de-chira",
+      "name": "Can de Chira",
+      "origin": "Alto Aragón, Pirineo Aragonés",
+      "description": "El Can de Chira es una raza de perro pastor autóctona del Alto Aragón y en Peligro de Extinción. La traducción de su nombre en aragonés es «perro que gira». Ha representado al perro pastor por antonomasia en el Alto Aragón.",
+      "characteristics": [
+        "Perro pastor tradicional",
+        "En peligro de extinción",
+        "Utilizado para conducir rebaños",
+        "Gran resistencia al clima"
+      ],
+      "imageUrl": "/images/breeds/can_de_chira.jpg"
+    },
+    {
+      "id": "mastin-del-pirineo",
+      "name": "Mastín del Pirineo",
+      "origin": "Región pirenaica (Aragón)",
+      "description": "El Mastín del Pirineo es una raza autóctona aragonesa utilizada históricamente para proteger rebaños en las montañas del norte de España.",
+      "characteristics": [
+        "Gran tamaño y fuerza",
+        "Temperamento tranquilo",
+        "Excelente perro de guarda",
+        "Muy protector con su familia"
+      ],
+      "imageUrl": "/images/breeds/mastin_del_pirineo.jpg"
+    },
+    {
+      "id": "perro-montana-pirineos",
+      "name": "Perro de Montaña de los Pirineos",
+      "origin": "Pirineos (Aragón)",
+      "description": "Raza autóctona del Pirineo aragonés utilizada para el trabajo en montaña y protección de ganado.",
+      "characteristics": [
+        "Excelente adaptación a la montaña",
+        "Gran resistencia física",
+        "Instinto protector desarrollado",
+        "Muy leal a su territorio"
+      ],
+      "imageUrl": "/images/breeds/perro_montana_pirineos.jpg"
+    }
+  ],
+  "breed_info_sources": [
+    {
+      "title": "Razas autóctonas de Aragón",
+      "url": "https://es.wikipedia.org/wiki/Categor%C3%ADa:Razas_de_perro_de_Arag%C3%B3n",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Can de Chira - Raza Autóctona del Pirineo Aragonés",
+      "url": "https://cimanorte.com/razas-de-perro-autoctonas-del-pirineo/",
+      "license": "All rights reserved"
+    }
+  ]
+}

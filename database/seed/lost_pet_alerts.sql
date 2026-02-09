@@ -1,0 +1,7 @@
+-- Seed data for lost_pet_alerts table
+INSERT INTO lost_pet_alerts (dog_id, owner_id, status, last_seen_at, geom, description) VALUES
+((SELECT id FROM dogs WHERE name = 'Bella'), (SELECT id FROM users WHERE email = 'pablo.diaz@example.com'), 'active', '2026-02-05 14:30:00', ST_GeomFromText('POINT(-3.7980 43.4610)', 4326), 'Poodle blanco y marrón, muy asustadizo, responde al nombre Bella'),
+((SELECT id FROM dogs WHERE name = 'Toby'), (SELECT id FROM users WHERE email = 'patricia.alvarez@example.com'), 'found', '2026-01-28 18:15:00', ST_GeomFromText('POINT(-3.6780 40.4310)', 4326), 'Bulldog inglés de color beige, collar rojo con placa'),
+((SELECT id FROM dogs WHERE name = 'Rocky'), (SELECT id FROM users WHERE email = 'ana.sanchez@example.com'), 'active', '2026-02-08 09:20:00', ST_GeomFromText('POINT(-3.8100 43.4650)', 4326), 'Pastor alemán joven, muy juguetón, tiene chip y microchip'),
+((SELECT id FROM dogs WHERE name = 'Zoe'), (SELECT id FROM users WHERE email = 'david.moreno@example.com'), 'active', '2026-02-07 16:45:00', ST_GeomFromText('POINT(-4.3500 43.1000)', 4326), 'Cocker spaniel hembra, pelo largo marrón, muy sociable'),
+((SELECT id FROM dogs WHERE name = 'Charlie'), (SELECT id FROM users WHERE email = 'lucia.martinez@example.com'), 'active', '2026-02-06 11:10:00', ST_GeomFromText('POINT(-3.7950 43.4680)', 4326), 'Border Collie macho, blanco y negro, muy inteligente y obediente');

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="huellas-logo">
+  <!-- Main Pad (The Mountain Base) -->
+  <path d="M25,75 Q50,95 75,75 Q85,65 75,55 Q50,45 25,55 Q15,65 25,75 Z" fill="#3D4A44" />
+  
+  <!-- Toe Pads as Trees -->
+  <!-- Left Toe -->
+  <path d="M20,45 L10,55 L30,55 Z" fill="#4A7A67" />
+  <path d="M20,35 L12,45 L28,45 Z" fill="#4A7A67" />
+  
+  <!-- Center Toe (Middle) -->
+  <path d="M50,40 L35,60 L65,60 Z" fill="#4A7A67" />
+  <path d="M50,25 L38,40 L62,40 Z" fill="#4A7A67" />
+  
+  <!-- Right Toe -->
+  <path d="M80,45 L70,55 L90,55 Z" fill="#4A7A67" />
+  <path d="M80,35 L72,45 L88,45 Z" fill="#4A7A67" />
+  
+  <!-- Accent: A small sun or clay element behind -->
+  <circle cx="50" cy="20" r="5" fill="#C27BA0" opacity="0.8" />
+</svg>

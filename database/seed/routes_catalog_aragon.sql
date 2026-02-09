@@ -1,0 +1,8 @@
+-- Additional real data for routes_catalog in Aragón
+
+INSERT INTO routes_catalog (name, region, route_type, distance_km_min, distance_km_max, highlight, geom, source_url, last_verified_at) VALUES
+('Ruta del Parque Nacional de Ordesa', 'Aragón', 'mountain_hike', 3.0, 6.0, 'Ruta de senderismo con desniveles suaves apta para perros', ST_GeomFromText('LINESTRING(-0.5000 42.6000, -0.4900 42.6100, -0.4800 42.6200)', 4326), 'https://www.parquesnacionales.es/parques/ordesa', '2026-02-09'),
+('Sendero de los Ríos en Jaca', 'Aragón', 'forest_trail', 5.0, 7.0, 'Ruta con sombra ideal para días calurosos con tu perro', ST_GeomFromText('LINESTRING(-0.5800 42.7500, -0.5700 42.7600, -0.5600 42.7700, -0.5500 42.7800)', 4326), 'https://www.jaca.es/senderismo', '2026-02-09'),
+('Ruta por el Cañón del Cinca', 'Aragón', 'nature_reserve', 8.0, 12.0, 'Sendero por paisajes únicos del Pirineo aragonés', ST_GeomFromText('LINESTRING(0.3000 42.0000, 0.3100 42.0100, 0.3200 42.0200, 0.3300 42.0300, 0.3400 42.0400)', 4326), 'https://www.senderos-aragon.org', '2026-02-09'),
+('Vía Verde de Biescas', 'Aragón', 'countryside', 15.0, 20.0, 'Ruta en antiguo trazado ferroviario ideal para perros y familias', ST_GeomFromText('LINESTRING(-0.3000 42.4000, -0.2900 42.4100, -0.2800 42.4200, -0.2700 42.4300, -0.2600 42.4400, -0.2500 42.4500)', 4326), 'https://www.viasverdes.com', '2026-02-09'),
+('Ruta del Monasterio de San Juan de la Peña', 'Aragón', 'cultural_nature', 6.0, 8.0, 'Ruta cultural y natural con historia milenaria', ST_GeomFromText('LINESTRING(-1.1000 42.5000, -1.0900 42.5100, -1.0800 42.5200, -1.0700 42.5300)', 4326), 'https://www.patrimonionatural.org', '2026-02-09');

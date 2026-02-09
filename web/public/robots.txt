@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /login
+Disallow: /registro
+Disallow: /pasaporte
+
+Sitemap: /sitemap.xml

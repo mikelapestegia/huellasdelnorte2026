@@ -1,0 +1,14 @@
+{
+    "common": {
+        "title": "Pegadas do Norte - Comunidade Canina",
+        "description": "A guía definitiva para gozar do norte de España co teu can.",
+        "loading": "Cargando..."
+    },
+    "nav": {
+        "home": "Inicio",
+        "routes": "Rutas",
+        "accomodation": "Aloxamento",
+        "community": "Comunidade",
+        "store": "Tenda"
+    }
+}

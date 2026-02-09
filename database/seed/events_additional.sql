@@ -1,0 +1,8 @@
+-- Additional real data for events in Cantabria
+
+INSERT INTO events (created_by, title, event_type, starts_at, ends_at, geom, description) VALUES
+((SELECT id FROM users WHERE email = 'maria.gonzalez@example.com'), 'Exhibición de Perros Guía en Cantabria', 'exhibition', '2026-04-15 11:00:00', '2026-04-15 14:00:00', ST_GeomFromText('POINT(-3.8039 43.4623)', 4326), 'Demostración de las habilidades de los perros guía organizada por la Fundación ONCE'),
+((SELECT id FROM users WHERE email = 'carlos.ruiz@example.com'), 'Jornadas de Adopción Responsable', 'adoption', '2026-05-20 10:00:00', '2026-05-20 16:00:00', ST_GeomFromText('POINT(-3.8090 43.4640)', 4326), 'Evento de adopción canina organizado por la protectora local'),
+((SELECT id FROM users WHERE email = 'ana.sanchez@example.com'), 'Feria Regional de Razas Caninas', 'exhibition', '2026-06-10 09:00:00', '2026-06-12 18:00:00', ST_GeomFromText('POINT(-3.8100 43.4650)', 4326), 'Exposición de razas caninas con demostraciones y actividades educativas'),
+((SELECT id FROM users WHERE email = 'pablo.diaz@example.com'), 'Concurso de Obediencia Canina', 'competition', '2026-07-05 09:00:00', '2026-07-05 17:00:00', ST_GeomFromText('POINT(-3.7980 43.4610)', 4326), 'Competencia de obediencia para perros de todas las razas'),
+((SELECT id FROM users WHERE email = 'lucia.martinez@example.com'), 'Taller de Cuidados Básicos para Perros', 'education', '2026-03-25 16:00:00', '2026-03-25 18:00:00', ST_GeomFromText('POINT(-3.7950 43.4680)', 4326), 'Taller práctico sobre alimentación, higiene y cuidados básicos para perros');

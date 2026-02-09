@@ -1,0 +1,14 @@
+{
+    "common": {
+        "title": "北方的足迹 - 犬类社区",
+        "description": "带着您的爱犬享受西班牙北部的终极指南。",
+        "loading": "加载中..."
+    },
+    "nav": {
+        "home": "首页",
+        "routes": "路线",
+        "accomodation": "住宿",
+        "community": "社区",
+        "store": "商店"
+    }
+}

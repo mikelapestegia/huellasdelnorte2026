@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Association Chiens Guides Grand Sud Ouest",
+    "latitude": 44.843056,
+    "longitude": -0.644722,
+    "geocode_status": "verified",
+    "geocode_precision": "city",
+    "geocode_source": "manual_city"
+  },
+  {
+    "name": "Asociaci\u00f3n Perros Gu\u00eda Euskadi (APGE)",
+    "latitude": 43.2525,
+    "longitude": -2.9341,
+    "geocode_status": "verified",
+    "geocode_precision": "city",
+    "geocode_source": "manual_city"
+  },
+  {
+    "name": "Fundaci\u00f3n ONCE del Perro Gu\u00eda (FOPG)",
+    "latitude": 40.406,
+    "longitude": -3.8777,
+    "geocode_status": "verified",
+    "geocode_precision": "city",
+    "geocode_source": "manual_city"
+  },
+  {
+    "name": "AEPA Euskadi (Asociaci\u00f3n de Perros de Asistencia)",
+    "latitude": 43.2525,
+    "longitude": -2.9341,
+    "geocode_status": "verified",
+    "geocode_precision": "city",
+    "geocode_source": "manual_city"
+  },
+  {
+    "name": "Biak Bat",
+    "latitude": 42.89999,
+    "longitude": -2.16516,
+    "geocode_status": "verified",
+    "geocode_precision": "city",
+    "geocode_source": "manual_city"
+  },
+  {
+    "name": "Ramalladas (Centro de formaci\u00f3n de perros de asistencia)",
+    "latitude": 42.2304,
+    "longitude": -8.7256,
+    "geocode_status": "verified",
+    "geocode_precision": "city",
+    "geocode_source": "manual_city"
+  },
+  {
+    "name": "Perroterapia",
+    "latitude": 40.500277777778,
+    "longitude": -4.066666666667,
+    "geocode_status": "verified",
+    "geocode_precision": "city",
+    "geocode_source": "manual_city"
+  },
+  {
+    "name": "Candam\u00edn",
+    "latitude": 43.283,
+    "longitude": -8.333,
+    "geocode_status": "verified",
+    "geocode_precision": "city",
+    "geocode_source": "manual_city"
+  },
+  {
+    "name": "APETTECE",
+    "latitude": 43.3075,
+    "longitude": -4.2325,
+    "geocode_status": "verified",
+    "geocode_precision": "city",
+    "geocode_source": "manual_city"
+  },
+  {
+    "name": "Asociaci\u00f3n TEA (Terapias con Labradores)",
+    "latitude": 43.36169160112858,
+    "longitude": -5.849251033984149,
+    "geocode_status": "verified",
+    "geocode_precision": "city",
+    "geocode_source": "manual_city"
+  },
+  {
+    "name": "Entrecanes",
+    "latitude": 43.53168487805373,
+    "longitude": -5.665272993083148,
+    "geocode_status": "verified",
+    "geocode_precision": "city",
+    "geocode_source": "manual_city"
+  },
+  {
+    "name": "Servicio de terapia asistida con perros (CAD Santander y Sierrallana)",
+    "latitude": 43.46,
+    "longitude": -3.8,
+    "geocode_status": "verified",
+    "geocode_precision": "city",
+    "geocode_source": "manual_city"
+  },
+  {
+    "name": "Residencia La Pereda (Programa de terapia asistida con perros)",
+    "latitude": 43.46,
+    "longitude": -3.8,
+    "geocode_status": "verified",
+    "geocode_precision": "city",
+    "geocode_source": "manual_city"
+  }
+]

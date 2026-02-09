@@ -1,0 +1,64 @@
+{
+  "galician_assistance_programs": [
+    {
+      "id": "galician-guide-dogs",
+      "name": "Programa de Perros Guía de Galicia",
+      "organization": "ONCE Galicia",
+      "description": "Programa que proporciona perros guía a personas con discapacidad visual en Galicia. Actualmente hay 34 perros guía en la comunidad, 11 de ellos en A Coruña. La ONCE anualmente entrega unos 140 animales.",
+      "services": [
+        "Evaluación de necesidades",
+        "Adiestramiento personalizado",
+        "Seguimiento post-entrega",
+        "Mantenimiento y cuidado"
+      ],
+      "contact": {
+        "phone": "+34981123456",
+        "email": "galicia@once.es",
+        "address": "Rúa de los Olmos, 6, 15705 Santiago de Compostela"
+      },
+      "imageUrl": "/images/assistance-dogs/guide_dog_galicia.jpg"
+    },
+    {
+      "id": "galician-assistance-dogs",
+      "name": "Programa de Perros de Asistencia de Galicia",
+      "organization": "Xunta de Galicia",
+      "description": "Programa regulado por la normativa gallega que reconoce la labor de los perros de asistencia como apoyo a personas con discapacidad o diversidad funcional.",
+      "services": [
+        "Formación de perros de asistencia",
+        "Certificación oficial",
+        "Apoyo a usuarios",
+        "Registro de perros de asistencia"
+      ],
+      "contact": {
+        "website": "https://www.xunta.gal",
+        "phone": "+34981546000",
+        "email": "informacion@xunta.gal"
+      },
+      "imageUrl": "/images/assistance-dogs/assistance_dog_galicia.jpg"
+    },
+    {
+      "id": "therapy-dogs-galicia",
+      "name": "Programa de Terapia Asistida con Animales",
+      "organization": "SERGAS",
+      "description": "Programa de intervención terapéutica que utiliza perros de terapia en hospitales y centros sociales de Galicia.",
+      "services": [
+        "Intervención terapéutica",
+        "Apoyo emocional",
+        "Programas de bienestar",
+        "Inclusión social"
+      ],
+      "contact": {
+        "website": "https://www.sergas.es",
+        "phone": "+34981566000",
+        "email": "informacion@sergas.es"
+      },
+      "imageUrl": "/images/assistance-dogs/therapy_dog_galicia.jpg"
+    }
+  ],
+  "regulatory_framework": {
+    "law": "Ley 10/2003, de 26 de diciembre, de Accesibilidad y Supresión de Barreras Arquitectónicas, Urbanísticas y de Transporte en Galicia",
+    "decree": "Decreto 90/2002, de 28 de febrero, por el que se regula la tenencia de animales potencialmente peligrosos en la Comunidad Autónoma de Galicia",
+    "registry": "Registro de perros de asistencia de la Xunta de Galicia",
+    "information_url": "https://mediorural.xunta.gal/es/temas/ganaderia/razas-autoctonas/canina"
+  }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1e1b" />
+      <stop offset="100%" stop-color="#242926" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="60" y="60" width="1080" height="510" rx="32" fill="#1f2421" stroke="#3d4a44" stroke-width="2" />
+  <text x="120" y="230" fill="#e2e8f0" font-size="64" font-family="serif">
+    Huellas del Norte
+  </text>
+  <text x="120" y="310" fill="#9aa3a1" font-size="30" font-family="sans-serif">
+    Comunidad canina del norte peninsular
+  </text>
+  <text x="120" y="380" fill="#9aa3a1" font-size="24" font-family="sans-serif">
+    Mapa, rutas, adopcion y servicios pet friendly
+  </text>
+</svg>

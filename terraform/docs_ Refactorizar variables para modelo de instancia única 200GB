@@ -1,0 +1,123 @@
+# Variables de Configuración - Infraestructura OCI + Cloudflare
+# HuellasdelNorte V2 - Febrero 2026
+
+# ===== Variables OCI =====
+
+variable "tenancy_ocid" {
+  description = "OCID de la tenencia de OCI"
+  type        = string
+}
+
+variable "user_ocid" {
+  description = "OCID del usuario de OCI"
+  type        = string
+}
+
+variable "fingerprint" {
+  description = "Fingerprint de la clave API de OCI"
+  type        = string
+}
+
+variable "private_key_path" {
+  description = "Ruta a la clave privada de OCI"
+  type        = string
+}
+
+variable "region" {
+  description = "Región de OCI"
+  type        = string
+  default     = "eu-frankfurt-1"
+}
+
+variable "compartment_ocid" {
+  description = "OCID del compartimento donde se crearán los recursos"
+  type        = string
+}
+
+# ===== Variables de Red Existente =====
+
+variable "vcn_ocid" {
+  description = "OCID de la VCN existente (fuente08022026)"
+  type        = string
+}
+
+variable "subnet_ocid" {
+  description = "OCID de la subnet existente"
+  type        = string
+}
+
+# ===== Variables de Cómputo =====
+
+variable "arm_instance_shape" {
+  description = "Shape de la instancia ARM principal"
+  type        = string
+  default     = "VM.Standard.A1.Flex"
+}
+
+variable "arm_instance_ocpus" {
+  description = "Número de OCPUs para la instancia ARM"
+  type        = number
+  default     = 4
+}
+
+variable "arm_instance_memory_gb" {
+  description = "Memoria en GB para la instancia ARM"
+  type        = number
+  default     = 24
+}
+
+variable "arm_boot_volume_size_gb" {
+  description = "Tamaño del volumen de arranque ARM en GB"
+  type        = number
+  default     = 150
+}
+
+variable "ssh_public_key" {
+  description = "Clave pública SSH para acceso a las instancias"
+  type        = string
+}
+
+# ===== Variables de Base de Datos =====
+
+variable "db_admin_password" {
+  description = "Contraseña del administrador de la base de datos"
+  type        = string
+  sensitive   = true
+}
+
+variable "db_name" {
+  description = "Nombre de la base de datos"
+  type        = string
+  default     = "huellas26ai"
+}
+
+# ===== Variables Cloudflare =====
+
+variable "cloudflare_api_token" {
+  description = "Token de API de Cloudflare"
+  type        = string
+  sensitive   = true
+}
+
+variable "cloudflare_zone_id" {
+  description = "Zone ID del dominio en Cloudflare"
+  type        = string
+}
+
+variable "domain_name" {
+  description = "Nombre de dominio (ej: huellasdelnorte.com)"
+  type        = string
+}
+
+# ===== Variables de Tags =====
+
+variable "project_tags" {
+  description = "Tags comunes para todos los recursos"
+  type        = map(string)
+  default = {
+    "Project"     = "HuellasdelNorte-V2"
+    "Environment" = "Production"
+    "ManagedBy"   = "Terraform"
+    "Version"     = "Feb2026"
+  }
+}

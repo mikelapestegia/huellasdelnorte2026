@@ -1,0 +1,12 @@
+-- Seed data for health_records table
+INSERT INTO health_records (dog_id, record_type, fhir_resource_id, data) VALUES
+((SELECT id FROM dogs WHERE name = 'Max'), 'vaccination', 'vac-001', '{"vaccine": "DHPPi+L", "date": "2025-11-15", "next_due": "2026-11-15", "administered_by": "Dr. María López", "notes": "Vacuna anual actualizada"}'),
+((SELECT id FROM dogs WHERE name = 'Luna'), 'vaccination', 'vac-002', '{"vaccine": "Rabies", "date": "2025-10-20", "next_due": "2026-10-20", "administered_by": "Dr. Juan Martínez", "notes": "Vacuna antirrábica vigente"}'),
+((SELECT id FROM dogs WHERE name = 'Rocky'), 'medical_examination', 'exam-001', '{"date": "2026-01-15", "weight_kg": 32.5, "temperature_celsius": 38.5, "heart_rate_bpm": 85, "notes": "Estado general bueno, peso adecuado"}'),
+((SELECT id FROM dogs WHERE name = 'Bella'), 'surgery', 'sur-001', '{"procedure": "Esterilización", "date": "2025-09-10", "veterinarian": "Dr. Ana Rodríguez", "notes": "Recuperación sin complicaciones"}'),
+((SELECT id FROM dogs WHERE name = 'Charlie'), 'vaccination', 'vac-003', '{"vaccine": "DHPPi+L", "date": "2025-12-05", "next_due": "2026-12-05", "administered_by": "Dr. Carlos Sánchez", "notes": "Vacuna anual actualizada"}'),
+((SELECT id FROM dogs WHERE name = 'Daisy'), 'medical_examination', 'exam-002', '{"date": "2026-01-20", "weight_kg": 12.0, "temperature_celsius": 38.2, "heart_rate_bpm": 95, "notes": "Control anual, leve sobrepeso detectado"}'),
+((SELECT id FROM dogs WHERE name = 'Cooper'), 'vaccination', 'vac-004', '{"vaccine": "Rabies", "date": "2025-11-30", "next_due": "2026-11-30", "administered_by": "Dr. Laura Gómez", "notes": "Vacuna antirrábica vigente"}'),
+((SELECT id FROM dogs WHERE name = 'Zoe'), 'medical_examination', 'exam-003', '{"date": "2026-02-01", "weight_kg": 14.2, "temperature_celsius": 38.4, "heart_rate_bpm": 90, "notes": "Chequeo rutinario, buena condición física"}'),
+((SELECT id FROM dogs WHERE name = 'Toby'), 'vaccination', 'vac-005', '{"vaccine": "DHPPi+L", "date": "2025-10-15", "next_due": "2026-10-15", "administered_by": "Dr. Miguel Torres", "notes": "Vacuna anual actualizada"}'),
+((SELECT id FROM dogs WHERE name = 'Molly'), 'surgery', 'sur-002', '{"procedure": "Extracción de cuerpo extraño", "date": "2025-08-25", "veterinarian": "Dr. Elena Vásquez", "notes": "Intervención exitosa, recuperación completa"}');

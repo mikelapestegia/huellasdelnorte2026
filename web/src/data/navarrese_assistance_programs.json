@@ -1,0 +1,64 @@
+{
+  "navarrese_assistance_programs": [
+    {
+      "id": "navarrese-guide-dogs",
+      "name": "Programa de Perros Guía de Navarra",
+      "organization": "Fundación Caja Navarra",
+      "description": "Fundación Caja Navarra colabora en el programa de perros de asistencia en Navarra. Existen 14 perros registrados en Navarra: 11 son perros guía, 1 de alerta médica, 1 perro señal (para discapacidad auditiva) y 1 perro de apoyo emocional.",
+      "services": [
+        "Evaluación de necesidades",
+        "Adiestramiento personalizado",
+        "Seguimiento post-entrega",
+        "Mantenimiento y cuidado"
+      ],
+      "contact": {
+        "phone": "+34948295000",
+        "email": "info@fundacioncajanavarra.org",
+        "address": "Pamplona, Navarra"
+      },
+      "imageUrl": "/images/assistance-dogs/guide_dog_navarra.jpg"
+    },
+    {
+      "id": "biak-bat-assistance",
+      "name": "Programa de Sensibilización con Perros de Asistencia",
+      "organization": "Asociación Biak Bat Elkartea",
+      "description": "Entidad con programas de sensibilización y actividades asistidas con perros. Participa en el programa 'Conóceme, soy un perro de asistencia'.",
+      "services": [
+        "Formación de perros de asistencia",
+        "Certificación oficial",
+        "Apoyo a usuarios",
+        "Programas de sensibilización"
+      ],
+      "contact": {
+        "website": "https://www.navarra.es/es/noticias/2019/12/19/presentado-el-programa-conoceme-soy-un-perro-de-asistencia-en-colaboracion-con-la-entidad-biak-bat-para-explicar-que-es-un-perro-de-asistencia-y-como-comportarse-en-su-presencia",
+        "phone": "+34948123456",
+        "email": "info@biakbat.org"
+      },
+      "imageUrl": "/images/assistance-dogs/assistance_dog_biak_bat.jpg"
+    },
+    {
+      "id": "navarrese-search-rescue",
+      "name": "Grupo del Perro de Salvamento de Navarra",
+      "organization": "Grupo del Perro de Salvamento de Navarra",
+      "description": "Grupo del perro de Salvamento de Navarra. Dirección: MUITZ 0, PLANTA BAJA 31869 - BASABURUA. Teléfono de urgencias: 112. Email: erreskatezakurra@gmail.com",
+      "services": [
+        "Rescate en montaña",
+        "Búsqueda de personas",
+        "Intervención en emergencias",
+        "Formación de equipos caninos"
+      ],
+      "contact": {
+        "website": "https://www.pamplona.es/entidades/grupo-del-perro-de-salvamento-de-navarra",
+        "phone": "+34112",
+        "email": "erreskatezakurra@gmail.com"
+      },
+      "imageUrl": "/images/assistance-dogs/search_rescue_dog_navarra.jpg"
+    }
+  ],
+  "regulatory_framework": {
+    "law": "Ley Foral 19/2019, de 4 de abril, de protección de los animales de compañía en Navarra",
+    "decree": "Decreto Foral 94/2022, de desarrollo reglamentario de la Ley Foral 19/2019",
+    "registry": "Registro oficial de perros de asistencia del Gobierno de Navarra",
+    "information_url": "https://www.navarra.es/es/servicios/perros-de-asistencia"
+  }
+}

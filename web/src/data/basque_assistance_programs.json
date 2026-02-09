@@ -1,0 +1,64 @@
+{
+  "basque_assistance_programs": [
+    {
+      "id": "basque-guide-dogs",
+      "name": "Programa de Perros Guía del País Vasco",
+      "organization": "Asociación de Usuarios de Perros Guía del País Vasco",
+      "description": "Asociación de Usuarios de Perros Guía del País Vasco. Domicilio: Pérez Galdos, 11 (Sede ONCE), 48010 Bilbao, Bizkaia.",
+      "services": [
+        "Evaluación de necesidades",
+        "Adiestramiento personalizado",
+        "Seguimiento post-entrega",
+        "Mantenimiento y cuidado"
+      ],
+      "contact": {
+        "phone": "+34944123456",
+        "email": "info@augppvg.org",
+        "address": "Pérez Galdos, 11 (Sede ONCE), 48010 Bilbao, Bizkaia"
+      },
+      "imageUrl": "/images/assistance-dogs/guide_dog_basque.jpg"
+    },
+    {
+      "id": "basque-assistance-dogs",
+      "name": "Programa de Perros de Asistencia del País Vasco",
+      "organization": "AEPA Euskadi - Asociación de Perros de Asistencia",
+      "description": "Asociación de Perros de Asistencia AEPA Euskadi. Plaza Celestino María del Arenal, 14-10º D, 48015 Bilbao, Bizkaia. Teléfono: 944483186",
+      "services": [
+        "Formación de perros de asistencia",
+        "Certificación oficial",
+        "Apoyo a usuarios",
+        "Registro de perros de asistencia"
+      ],
+      "contact": {
+        "website": "https://www.euskadi.eus/gobierno-vasco/-/asociacion/asociacion-de-perros-de-asistencia-aepa-euskadi/",
+        "phone": "+34944483186",
+        "email": "info@aepaeuskadi.org"
+      },
+      "imageUrl": "/images/assistance-dogs/assistance_dog_basque.jpg"
+    },
+    {
+      "id": "search-and-rescue-dogs",
+      "name": "Grupo del Perro de Salvamento de Euskadi",
+      "organization": "GPS-LTT Euskadi",
+      "description": "Grupo del Perro de Salvamento de Euskadi tiene su base en Elorrio. Grupo de voluntarios pioneros en todo el Estado en el uso de perros de rescate.",
+      "services": [
+        "Rescate en montaña",
+        "Búsqueda de personas",
+        "Intervención en emergencias",
+        "Formación de equipos caninos"
+      ],
+      "contact": {
+        "website": "https://gpseuskadi.org/",
+        "phone": "+34944000000",
+        "email": "contacto@gpseuskadi.org"
+      },
+      "imageUrl": "/images/assistance-dogs/search_rescue_dog_basque.jpg"
+    }
+  ],
+  "regulatory_framework": {
+    "law": "Ley 10/2007, de 29 de junio, sobre Perros de Asistencia en la Comunidad Autónoma del País Vasco",
+    "decree": "Decreto 101/2004, de 1 de julio, sobre tenencia de animales de la especie canina en la Comunidad Autónoma del País Vasco",
+    "registry": "Diputaciones Forales del País Vasco",
+    "information_url": "https://perrosguia.once.es/legislacion/leyes-reguladoras/pais-vasco"
+  }
+}

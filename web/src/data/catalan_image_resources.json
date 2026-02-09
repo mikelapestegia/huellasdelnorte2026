@@ -1,0 +1,125 @@
+{
+  "catalan_image_categories": [
+    {
+      "category": "catalan_assistance_dogs",
+      "description": "Imágenes de perros guía y de asistencia en Cataluña",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/service-dog-spain",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "catalan_guide_dog_working.jpg",
+              "description": "Perro guía ayudando a una persona con discapacidad visual en Cataluña"
+            },
+            {
+              "filename": "catalan_assistance_dog_indoor.jpg",
+              "description": "Perro de asistencia en un entorno interior en Cataluña"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "catalan_breeds",
+      "description": "Razas de perros autóctonas de Cataluña",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/spanish-shepherd-dog",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "pastor_catalan_portrait.jpg",
+              "description": "Retrato de un Pastor Catalán (Gos d'Atura Català)"
+            },
+            {
+              "filename": "mastin_pirineo_cataluna.jpg",
+              "description": "Mastín del Pirineo en el entorno natural de Cataluña"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "catalan_outdoor_activities",
+      "description": "Actividades al aire libre con perros en Cataluña",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/hiking-with-dog-barcelona",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "dog_hiking_parque_guell.jpg",
+              "description": "Perro haciendo senderismo en el Parque Güell, Barcelona"
+            },
+            {
+              "filename": "dog_serra_collserola.jpg",
+              "description": "Perro en la Serra de Collserola, Barcelona"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "catalan_veterinary_services",
+      "description": "Servicios veterinarios y centros caninos en Cataluña",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/veterinary-clinic-spain",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "veterinary_clinic_barcelona.jpg",
+              "description": "Entrada de una clínica veterinaria en Barcelona"
+            },
+            {
+              "filename": "veterinary_checkup_cataluna.jpg",
+              "description": "Revisión veterinaria de un perro en Cataluña"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "catalan_landmarks",
+      "description": "Lugares emblemáticos de Cataluña con perros",
+      "potential_sources": [
+        {
+          "source": "Unsplash",
+          "url": "https://unsplash.com/s/photos/catalonia-spain",
+          "license": "Creative Commons Zero (CC0)",
+          "examples": [
+            {
+              "filename": "sagrada_familia_dog.jpg",
+              "description": "Basílica de la Sagrada Familia con un perro"
+            },
+            {
+              "filename": "barcelona_beach_dog.jpg",
+              "description": "Playa de Barcelona con un perro"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "usage_notes": [
+    "Verificar siempre la licencia de cada imagen antes de usarla",
+    "Guardar imágenes en las carpetas correspondientes según categoría",
+    "Optimizar tamaño de imágenes para web (menos de 200KB cuando sea posible)",
+    "Considerar usar formatos WebP para mejor compresión",
+    "Agregar atribución si es requerido por la licencia"
+  ],
+  "catalan_specific_info": {
+    "regions": ["Barcelona", "Girona", "Lleida", "Tarragona"],
+    "focus_areas": [
+      "Perros de asistencia y guía",
+      "Razas autóctonas (Pastor Catalán, Mastín del Pirineo)",
+      "Actividades en Parque Güell y Serra de Collserola",
+      "Servicios veterinarios en ciudades principales"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+-- Additional real data for ordinances in País Vasco
+
+INSERT INTO ordinances (region, municipality, summary, source_url, last_verified_at, geom) VALUES
+('País Vasco', 'Bilbao', 'Ordenanza reguladora de la tenencia y protección de animales de compañía', 'https://www.bilbao.eus/documents/24909/26000/ordenanza_tenencia_animales.pdf', '2026-02-09', ST_GeomFromText('POINT(-2.9250 43.2667)', 4326)),
+('País Vasco', 'San Sebastián', 'Normativa sobre tenencia responsable de animales de compañía', 'https://www.sansebastian.eus/settlements/sansebastian/es/contenidos/settlement_information/municipal_normative/es_ordinances/2020/ordenanza_tenencia_animales_comp.html', '2026-02-09', ST_GeomFromText('POINT(-1.9750 43.3167)', 4326)),
+('País Vasco', 'Vitoria-Gasteiz', 'Ordenanza reguladora de la protección y tenencia de animales', 'https://www.vitoria-gasteiz.org/cms/web/es/ordenanzas-municipales', '2026-02-09', ST_GeomFromText('POINT(-2.6726 42.8496)', 4326)),
+('País Vasco', 'Barakaldo', 'Normativa sobre obligatoriedad de microchip y cartilla sanitaria para animales de compañía', 'https://www.barakaldo.eus/es/ordenanzas-municipales', '2026-02-09', ST_GeomFromText('POINT(-2.9500 43.2833)', 4326)),
+('País Vasco', 'Basauri', 'Decreto 101/2004 sobre tenencia de animales de la especie canina en la Comunidad Autónoma del País Vasco', 'https://www.basauri.eus/sites/basauri/files/2023-04/ordenanza_tenencia_y_proteccion_de_animales.pdf', '2026-02-09', ST_GeomFromText('POINT(-2.8667 43.2500)', 4326));

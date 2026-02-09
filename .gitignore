@@ -1,0 +1,41 @@
+# Compiled Form Modules
+*.fmx
+
+# Compiled Menu Modules
+*.mmx
+
+# Compiled Pre-Linked Libraries
+*.plx
+
+# ==============================
+# Seguridad / secretos (monorepo)
+# ==============================
+
+# Entornos / secretos
+.env
+.env.*
+!.env.example
+
+# Terraform state / vars sensibles (defensa adicional al .gitignore local)
+*.tfvars
+*.auto.tfvars
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Claves / certificados / wallets
+*.pem
+*.key
+*.p12
+*.pfx
+wallet.zip
+wallet/
+
+# Dependencias / builds comunes
+node_modules/
+.next/
+dist/
+build/
+
+# Logs
+*.log

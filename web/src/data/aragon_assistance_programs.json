@@ -1,0 +1,64 @@
+{
+  "aragon_assistance_programs": [
+    {
+      "id": "aragon-guide-dogs",
+      "name": "Programa de Perros Guía de Aragón",
+      "organization": "ONCE Aragón",
+      "description": "Programa que proporciona perros guía a personas con discapacidad visual en Aragón. Actualmente hay 24 perros guía en la comunidad, 21 de ellos en Zaragoza.",
+      "services": [
+        "Evaluación de necesidades",
+        "Adiestramiento personalizado",
+        "Seguimiento post-entrega",
+        "Mantenimiento y cuidado"
+      ],
+      "contact": {
+        "phone": "+34976282477",
+        "email": "aragon@once.es",
+        "address": "Pº. Echegaray y Caballero nº 76, 50003 Zaragoza"
+      },
+      "imageUrl": "/images/assistance-dogs/guide_dog_aragon.jpg"
+    },
+    {
+      "id": "aragon-assistance-dogs",
+      "name": "Programa de Perros de Asistencia de Aragón",
+      "organization": "Gobierno de Aragón",
+      "description": "Programa regulado por la Ley 14/2023, de 30 de marzo, de perros de asistencia en Aragón, que reconoce la labor de estos animales como apoyo a personas con discapacidad o diversidad funcional.",
+      "services": [
+        "Formación de perros de asistencia",
+        "Certificación oficial",
+        "Apoyo a usuarios",
+        "Registro de perros de asistencia"
+      ],
+      "contact": {
+        "website": "https://www.aragon.es",
+        "phone": "+34976714000",
+        "email": "informacion@aragon.es"
+      },
+      "imageUrl": "/images/assistance-dogs/assistance_dog_aragon.jpg"
+    },
+    {
+      "id": "therapy-dogs-aragon",
+      "name": "Programa de Terapia Asistida con Animales",
+      "organization": "Fundación Secretariado Gitano",
+      "description": "Programa de intervención social que utiliza perros de terapia para apoyar a la comunidad gitana en Aragón.",
+      "services": [
+        "Intervención terapéutica",
+        "Apoyo emocional",
+        "Programas educativos",
+        "Inclusión social"
+      ],
+      "contact": {
+        "website": "https://www.secretariadogitano.org",
+        "phone": "+34976230041",
+        "email": "aragon@secretariadogitano.org"
+      },
+      "imageUrl": "/images/assistance-dogs/therapy_dog_aragon.jpg"
+    }
+  ],
+  "regulatory_framework": {
+    "law": "Ley 14/2023, de 30 de marzo, de perros de asistencia en Aragón",
+    "decree": "Decreto 125/2025, de 29 de octubre, del Gobierno de Aragón",
+    "registry": "Registro de perros de asistencia y de unidades de vinculación de Aragón",
+    "information_url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1271734500303"
+  }
+}

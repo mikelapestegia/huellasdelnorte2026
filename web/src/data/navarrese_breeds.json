@@ -1,0 +1,55 @@
+{
+  "navarrese_breeds": [
+    {
+      "id": "pachon-navarro",
+      "name": "Pachón Navarro",
+      "origin": "Navarra",
+      "description": "El Pachón Navarro es una raza de perro de caza autóctona de Navarra. Es un perro de muestra de pelo y pluma, con gran habilidad para el rastreo y marcado de piezas de caza. Es un perro tranquilo, obediente y con gran resistencia física.",
+      "characteristics": [
+        "Perro de caza de muestra",
+        "Gran habilidad para el rastreo",
+        "Pelo y pluma característicos",
+        "Temperamento tranquilo y obediente"
+      ],
+      "imageUrl": "/images/breeds/pachon_navarro.jpg"
+    },
+    {
+      "id": "pastor-vasco",
+      "name": "Pastor Vasco",
+      "origin": "Región Vasca (Navarra)",
+      "description": "El Pastor Vasco es una raza autóctona de la región vasca, incluyendo Navarra. Utilizado tradicionalmente para el pastoreo de ganado, es un perro inteligente, ágil y con gran instinto protector.",
+      "characteristics": [
+        "Perro de trabajo y pastoreo",
+        "Gran inteligencia y facilidad de adiestramiento",
+        "Muy ágil y resistente",
+        "Instinto protector desarrollado"
+      ],
+      "imageUrl": "/images/breeds/pastor_vasco_navarra.jpg"
+    },
+    {
+      "id": "mastin-pirineo",
+      "name": "Mastín del Pirineo",
+      "origin": "Región Pirenaica (Navarra)",
+      "description": "El Mastín del Pirineo es una raza autóctona de la región pirenaica, incluyendo Navarra. Utilizado históricamente para proteger rebaños, es un perro de gran tamaño con temperamento tranquilo y gran lealtad.",
+      "characteristics": [
+        "Gran tamaño y fuerza",
+        "Temperamento tranquilo",
+        "Excelente perro de guarda",
+        "Muy protector con su territorio"
+      ],
+      "imageUrl": "/images/breeds/mastin_pirineo_navarra.jpg"
+    }
+  ],
+  "breed_info_sources": [
+    {
+      "title": "Razas de perros autóctonas de Navarra",
+      "url": "https://es.wikipedia.org/wiki/Categor%C3%ADa:Razas_aut%C3%B3ctonas_de_Navarra",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "title": "Pachón Navarro - Raza de Caza Española",
+      "url": "https://www.elmueble.com/mascotas/razas-perros-espanoles_52434",
+      "license": "All rights reserved"
+    }
+  ]
+}

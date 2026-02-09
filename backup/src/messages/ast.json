@@ -1,0 +1,14 @@
+{
+    "common": {
+        "title": "Bicades del Norte - Comunidá Canina",
+        "description": "La guía definitiva pa disfrutar del norte d'España col to perru.",
+        "loading": "Cargando..."
+    },
+    "nav": {
+        "home": "Entamu",
+        "routes": "Rutes",
+        "accomodation": "Allugamientu",
+        "community": "Comunidá",
+        "store": "Tienda"
+    }
+}

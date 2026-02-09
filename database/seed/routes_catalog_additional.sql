@@ -1,0 +1,8 @@
+-- Additional real data for routes_catalog in Cantabria
+
+INSERT INTO routes_catalog (name, region, route_type, distance_km_min, distance_km_max, highlight, geom, source_url, last_verified_at) VALUES
+('Ruta Senda Costera de Cubas', 'Cantabria', 'coastal', 6.0, 7.0, 'Ruta costera por acantilados y paisajes marítimos', ST_GeomFromText('LINESTRING(-3.4500 43.4000, -3.4400 43.4100, -3.4300 43.4200, -3.4200 43.4300)', 4326), 'https://www.turismodecantabria.com', '2026-02-09'),
+('Ruta del Hayedo de Santiuste', 'Cantabria', 'forest_trail', 4.0, 5.0, 'Sendero por uno de los hayedos más bellos de Cantabria', ST_GeomFromText('LINESTRING(-4.4000 43.1000, -4.3900 43.1100, -4.3800 43.1200)', 4326), 'https://www.turismodecantabria.com', '2026-02-09'),
+('Ruta de las Pinturas Rupestres', 'Cantabria', 'cultural_nature', 3.0, 4.0, 'Ruta cultural combinada con senderismo natural', ST_GeomFromText('LINESTRING(-4.1000 43.2000, -4.0900 43.2100, -4.0800 43.2200)', 4326), 'https://www.turismodecantabria.com', '2026-02-09'),
+('Ruta del Parque Natural de las Dunas de Liencres', 'Cantabria', 'nature_reserve', 5.0, 6.0, 'Ruta por el único humedal costero de Cantabria', ST_GeomFromText('LINESTRING(-3.5500 43.4200, -3.5400 43.4300, -3.5300 43.4400, -3.5200 43.4500)', 4326), 'https://www.turismodecantabria.com', '2026-02-09'),
+('Ruta del Cañón del Río Escalante', 'Cantabria', 'nature_reserve', 8.0, 10.0, 'Sendero por uno de los cañones más profundos del norte de España', ST_GeomFromText('LINESTRING(-4.3000 43.2500, -4.2900 43.2600, -4.2800 43.2700, -4.2700 43.2800, -4.2600 43.2900)', 4326), 'https://www.turismodecantabria.com', '2026-02-09');

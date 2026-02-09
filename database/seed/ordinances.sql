@@ -1,0 +1,12 @@
+-- Seed data for ordinances table
+INSERT INTO ordinances (region, municipality, summary, source_url, last_verified_at, geom) VALUES
+('Cantabria', 'Santander', 'Ordenanza sobre tenencia de perros y otros animales domésticos. Obligatorio uso de bozal en perros potencialmente peligrosos', 'https://santander.es/sites/default/files/7911117.PDF', '2026-02-09', ST_GeomFromText('POINT(-3.8039 43.4623)', 4326)),
+('Cantabria', 'Cartes', 'Reglamento Municipal sobre la Tenencia de Animales de Compañía', 'https://cartes.es/wp-content/uploads/2013/05/ANIMALES_DE_COMPANIA.pdf', '2026-02-09', ST_GeomFromText('POINT(-4.0900 43.3500)', 4326)),
+('Cantabria', 'San Vicente de la Barquera', 'Ordenanza reguladora de la tenencia de perros y animales potencialmente peligrosos', 'https://transparencia.aytosanvicentedelabarquera.es/wp-content/uploads/2018/07/ordenanza_gestion4.pdf', '2026-02-09', ST_GeomFromText('POINT(-4.4500 43.4000)', 4326)),
+('Cantabria', 'Torrelavega', 'Obligatorio uso de bozal en perros potencialmente peligrosos en espacios públicos', 'https://www.torrelavega.es/ordenanzas/bozal-obligatorio', '2026-01-20', ST_GeomFromText('POINT(-4.0500 43.3600)', 4326)),
+('Cantabria', 'Camargo', 'Límite de 2 perros por vivienda en núcleos urbanos', 'https://www.camargo.es/ordenanzas/limite-perros', '2026-01-25', ST_GeomFromText('POINT(-4.0000 43.4000)', 4326)),
+('Cantabria', 'Piélagos', 'Prohibido perros sueltos en parques infantiles', 'https://www.pielagos.es/ordenanzas/perros-parques', '2026-01-30', ST_GeomFromText('POINT(-3.9000 43.4500)', 4326)),
+('Cantabria', 'Ribamontán al Mar', 'Obligatoriedad de recoger excrementos caninos en vía pública', 'https://www.ribamontan.es/ordenanzas/recogida-excrementos', '2026-02-01', ST_GeomFromText('POINT(-3.8500 43.4800)', 4326)),
+('Cantabria', 'Los Corrales de Buelna', 'Requisitos especiales para tenencia de perros en cascos históricos', 'https://www.corralesdebuela.es/ordenanzas/casco-historico', '2026-02-02', ST_GeomFromText('POINT(-4.1000 43.2000)', 4326)),
+('Cantabria', 'Medio Cudeyo', 'Horarios restringidos para paseo de perros en áreas residenciales', 'https://www.medio-cudeyo.es/ordenanzas/horarios-paseo', '2026-02-03', ST_GeomFromText('POINT(-4.0500 43.2500)', 4326)),
+('Cantabria', 'Castro-Urdiales', 'Normativa específica para perros en transporte público', 'https://www.castro-urdiales.es/ordenanzas/transporte-publico', '2026-02-04', ST_GeomFromText('POINT(-3.2000 43.3800)', 4326));

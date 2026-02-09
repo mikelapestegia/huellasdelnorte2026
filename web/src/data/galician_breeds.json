@@ -1,0 +1,68 @@
+{
+  "galician_breeds": [
+    {
+      "id": "can-de-palleiro",
+      "name": "Can de Palleiro",
+      "origin": "Galicia",
+      "description": "El Can de Palleiro es una raza autóctona gallega utilizada principalmente como perro guardián de fincas rurales y de pastoreo de rebaños. Es un perro sobrio y equilibrado, con aspecto semejante al lobo, constitución robusta y tamaño medio.",
+      "characteristics": [
+        "Perro guardián y pastor",
+        "Constitución robusta",
+        "Aspecto semejante al lobo",
+        "Gran polivalencia"
+      ],
+      "imageUrl": "/images/breeds/can_de_palleiro.jpg"
+    },
+    {
+      "id": "perdigueiro-galego",
+      "name": "Perdigueiro Galego",
+      "origin": "Galicia",
+      "description": "El Perdigueiro Galego es una raza autóctona gallega utilizada principalmente como perro de caza, especialmente para cazar conejos. Es un perro ágil y resistente adaptado al terreno gallego.",
+      "characteristics": [
+        "Perro de caza",
+        "Muy ágil y resistente",
+        "Adaptado al terreno gallego",
+        "Excelente olfato"
+      ],
+      "imageUrl": "/images/breeds/perdigueiro_galego.jpg"
+    },
+    {
+      "id": "podengo-galego",
+      "name": "Podengo Galego",
+      "origin": "Galicia",
+      "description": "El Podengo Galego es una raza autóctona gallega utilizada como perro de caza y compañía. Es un perro versátil, con gran resistencia y habilidad para cazar en terrenos difíciles.",
+      "characteristics": [
+        "Perro de caza y compañía",
+        "Versatilidad",
+        "Gran resistencia",
+        "Habilidad en terrenos difíciles"
+      ],
+      "imageUrl": "/images/breeds/podengo_galego.jpg"
+    },
+    {
+      "id": "guicho-quisquelo",
+      "name": "Guicho ou Quisquelo",
+      "origin": "Galicia",
+      "description": "El Guicho ou Quisquelo es una raza autóctona gallega de pequeño tamaño, utilizado tradicionalmente como perro de compañía y cazador de roedores. Es un perro muy ágil y vivaz.",
+      "characteristics": [
+        "Pequeño tamaño",
+        "Perro de compañía",
+        "Cazador de roedores",
+        "Muy ágil y vivaz"
+      ],
+      "imageUrl": "/images/breeds/guicho_quisquelo.jpg"
+    }
+  ],
+  "breed_info_sources": [
+    {
+      "title": "Razas autóctonas de Galicia",
+      "url": "https://mediorural.xunta.gal/es/temas/ganaderia/razas-autoctonas/canina",
+      "license": "All rights reserved"
+    },
+    {
+      "title": "Can de Palleiro - Raza Autóctona Gallega",
+      "url": "https://www.clubcandepalleiro.com/es/la-raza/",
+      "license": "All rights reserved"
+    }
+  ]
+}

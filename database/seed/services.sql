@@ -1,0 +1,22 @@
+-- Seed data for services table
+INSERT INTO services (provider_id, name, category, duration_min, price_base, subscription_allowed) VALUES
+((SELECT id FROM providers WHERE name = 'Clínica Veterinaria San Carlos'), 'Consulta veterinaria general', 'veterinary', 30, 45.00, true),
+((SELECT id FROM providers WHERE name = 'Clínica Veterinaria San Carlos'), 'Vacunación anual', 'veterinary', 20, 35.00, false),
+((SELECT id FROM providers WHERE name = 'Clínica Veterinaria San Carlos'), 'Desparasitación', 'veterinary', 15, 25.00, false),
+((SELECT id FROM providers WHERE name = 'Guardería Canina El Refugio'), 'Alojamiento diario', 'boarding', 1440, 28.00, true),
+((SELECT id FROM providers WHERE name = 'Guardería Canina El Refugio'), 'Guardería nocturna', 'boarding', 480, 18.00, false),
+((SELECT id FROM providers WHERE name = 'Tienda Mascotas Happy Pets'), 'Compra de alimento premium', 'retail', 10, 15.00, false),
+((SELECT id FROM providers WHERE name = 'Tienda Mascotas Happy Pets'), 'Accesorios para perros', 'retail', 5, 12.00, false),
+((SELECT id FROM providers WHERE name = 'Pelucas y Paseos'), 'Peluquería canina completa', 'grooming', 90, 32.00, true),
+((SELECT id FROM providers WHERE name = 'Pelucas y Paseos'), 'Paseo individual 1 hora', 'walking', 60, 15.00, true),
+((SELECT id FROM providers WHERE name = 'Entrenador Canino Profesional'), 'Sesión de entrenamiento básico', 'training', 60, 40.00, true),
+((SELECT id FROM providers WHERE name = 'Entrenador Canino Profesional'), 'Clase grupal de obediencia', 'training', 90, 25.00, true),
+((SELECT id FROM providers WHERE name = 'Telemedicina VetOnline'), 'Consulta online urgente', 'telemedicine', 30, 30.00, false),
+((SELECT id FROM providers WHERE name = 'Telemedicina VetOnline'), 'Seguimiento mensual', 'telemedicine', 20, 20.00, true),
+((SELECT id FROM providers WHERE name = 'Transporte PetFriendly'), 'Transporte local (hasta 50km)', 'transport', 60, 35.00, false),
+((SELECT id FROM providers WHERE name = 'Transporte PetFriendly'), 'Transporte interurbano', 'transport', 120, 65.00, false),
+((SELECT id FROM providers WHERE name = 'Rutas Caninas Aventura'), 'Ruta senderismo familiar', 'outdoor', 180, 22.00, false),
+((SELECT id FROM providers WHERE name = 'Rutas Caninas Aventura'), 'Excursión playa con perros', 'outdoor', 240, 28.00, false),
+((SELECT id FROM providers WHERE name = 'Seguros Mascota Segura'), 'Póliza básica', 'insurance', 10, 25.00, true),
+((SELECT id FROM providers WHERE name = 'Seguros Mascota Segura'), 'Póliza completa', 'insurance', 15, 45.00, true),
+((SELECT id FROM providers WHERE name = 'Centro de Terapia Asistida con Animales'), 'Sesión de terapia asistida', 'therapy', 60, 50.00, true);

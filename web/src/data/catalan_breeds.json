@@ -1,0 +1,55 @@
+{
+  "catalan_breeds": [
+    {
+      "id": "pastor-catalan",
+      "name": "Pastor Catalán (Gos d'Atura Català)",
+      "origin": "Cataluña, Pirineos",
+      "description": "El Pastor Catalán o Gos d'Atura Català es una raza autóctona de Cataluña, de la zona de los Pirineos, en el noreste de España. Se cree que tiene sus raíces en los antiguos perros pastores que llegaron con los pueblos indoeuropeos.",
+      "characteristics": [
+        "Perro pastor tradicional",
+        "Excelente habilidad para conducir rebaños",
+        "Gran resistencia al clima",
+        "Inteligencia y facilidad de adiestramiento"
+      ],
+      "imageUrl": "/images/breeds/pastor_catalan.jpg"
+    },
+    {
+      "id": "mastin-del-pirineo",
+      "name": "Mastín del Pirineo",
+      "origin": "Región pirenaica (Cataluña)",
+      "description": "El Mastín del Pirineo es una raza autóctona utilizada históricamente para proteger rebaños en las montañas del norte de España, incluyendo Cataluña.",
+      "characteristics": [
+        "Gran tamaño y fuerza",
+        "Temperamento tranquilo",
+        "Excelente perro de guarda",
+        "Muy protector con su familia"
+      ],
+      "imageUrl": "/images/breeds/mastin_del_pirineo_cat.jpg"
+    },
+    {
+      "id": "montana-del-pirineo",
+      "name": "Perro de la Montana del Pirineo",
+      "origin": "Pirineos (Cataluña)",
+      "description": "Raza autóctona del Pirineo catalán utilizada para el trabajo en montaña y protección de ganado.",
+      "characteristics": [
+        "Excelente adaptación a la montaña",
+        "Gran resistencia física",
+        "Instinto protector desarrollado",
+        "Muy leal a su territorio"
+      ],
+      "imageUrl": "/images/breeds/montana_pirineo.jpg"
+    }
+  ],
+  "breed_info_sources": [
+    {
+      "title": "Pastor Catalán - Raza Autóctona de Cataluña",
+      "url": "https://www.consumer.es/mascotas/gos-datura-catala-pastor-catalan.html",
+      "license": "All rights reserved"
+    },
+    {
+      "title": "Razas de perro autóctonas del Pirineo",
+      "url": "https://cimanorte.com/razas-de-perro-autoctonas-del-pirineo/",
+      "license": "All rights reserved"
+    }
+  ]
+}
