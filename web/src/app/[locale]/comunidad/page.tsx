@@ -220,8 +220,8 @@ export default function ComunidadPage() {
                                                 onClick={() => setSelectedRegion(region)}
                                                 aria-pressed={selectedRegion === region}
                                                 className={`px-3 py-1.5 rounded-lg text-sm transition-colors ${selectedRegion === region
-                                                        ? "bg-emerald-500 text-white"
-                                                        : "bg-white/5 text-muted-foreground hover:bg-white/10"
+                                                    ? "bg-emerald-500 text-white"
+                                                    : "bg-white/5 text-muted-foreground hover:bg-white/10"
                                                     }`}
                                             >
                                                 {region}
@@ -239,8 +239,8 @@ export default function ComunidadPage() {
                                             onClick={() => setSelectedType("todas")}
                                             aria-pressed={selectedType === "todas"}
                                             className={`px-3 py-1.5 rounded-lg text-sm transition-colors ${selectedType === "todas"
-                                                    ? "bg-emerald-500 text-white"
-                                                    : "bg-white/5 text-muted-foreground hover:bg-white/10"
+                                                ? "bg-emerald-500 text-white"
+                                                : "bg-white/5 text-muted-foreground hover:bg-white/10"
                                                 }`}
                                         >
                                             Todas
@@ -252,8 +252,8 @@ export default function ComunidadPage() {
                                                 onClick={() => setSelectedType(type as OrganizationType)}
                                                 aria-pressed={selectedType === type}
                                                 className={`px-3 py-1.5 rounded-lg text-sm transition-colors ${selectedType === type
-                                                        ? "bg-emerald-500 text-white"
-                                                        : "bg-white/5 text-muted-foreground hover:bg-white/10"
+                                                    ? "bg-emerald-500 text-white"
+                                                    : "bg-white/5 text-muted-foreground hover:bg-white/10"
                                                     }`}
                                             >
                                                 {label}
@@ -272,8 +272,8 @@ export default function ComunidadPage() {
                             onClick={() => setActiveTab("organizaciones")}
                             aria-pressed={activeTab === "organizaciones"}
                             className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${activeTab === "organizaciones"
-                                    ? "bg-emerald-500 text-white"
-                                    : "bg-white/5 text-muted-foreground hover:bg-white/10"
+                                ? "bg-emerald-500 text-white"
+                                : "bg-white/5 text-muted-foreground hover:bg-white/10"
                                 }`}
                         >
                             <Users className="w-4 h-4" />
@@ -284,8 +284,8 @@ export default function ComunidadPage() {
                             onClick={() => setActiveTab("eventos")}
                             aria-pressed={activeTab === "eventos"}
                             className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${activeTab === "eventos"
-                                    ? "bg-purple-500 text-white"
-                                    : "bg-white/5 text-muted-foreground hover:bg-white/10"
+                                ? "bg-purple-500 text-white"
+                                : "bg-white/5 text-muted-foreground hover:bg-white/10"
                                 }`}
                         >
                             <Calendar className="w-4 h-4" />
@@ -389,9 +389,7 @@ function OrganizationCard({ org }: { org: CanineOrganization }) {
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
                         <MapPin className="w-4 h-4 text-muted-foreground" />
                         <span>{org.city ? `${org.city}, ` : ""}{org.region}</span>
-                        <span className="text-xs px-1.5 py-0.5 rounded bg-card/70 text-muted-foreground">
-                            {org.country === "ES" ? "🇪🇸" : "🇫🇷"}
-                        </span>
+
                     </div>
                 )}
 
@@ -609,9 +607,7 @@ function EventCard({ event }: { event: CanineEvent }) {
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
                         <MapPin className="w-4 h-4 text-muted-foreground" />
                         <span>{event.city ? `${event.city}, ` : ""}{event.region}</span>
-                        <span className="text-xs px-1.5 py-0.5 rounded bg-card/70 text-muted-foreground">
-                            {event.country === "ES" ? "🇪🇸" : "🇫🇷"}
-                        </span>
+
                     </div>
                 )}
 

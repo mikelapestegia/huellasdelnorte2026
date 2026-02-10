@@ -5,5 +5,8 @@ Disallow: /_next/
 Disallow: /login
 Disallow: /registro
 Disallow: /pasaporte
+Disallow: /*?*q=
+Disallow: /*?*query=
+Disallow: /*?*search=
 
 Sitemap: /sitemap.xml

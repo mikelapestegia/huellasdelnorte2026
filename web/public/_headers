@@ -5,7 +5,7 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=(self)
   X-XSS-Protection: 1; mode=block
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'self' https://api.huellasdelnorte.com https://api.openweathermap.org https://tiles.stadiamaps.com; frame-src 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'self' https://api.huellasdelnorte.com https://api.openweathermap.org https://tiles.stadiamaps.com; media-src 'self' https://archive.org https://*.archive.org data: blob:; frame-src 'self' https://open.spotify.com https://archive.org https://*.archive.org https://www.youtube.com https://www.google.com
 
 /api/*
   Access-Control-Allow-Origin: https://huellasdelnorte.com

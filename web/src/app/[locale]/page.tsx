@@ -11,6 +11,7 @@ import { ArrowRight, Calendar, MapPin, Users, Store, PawPrint, ShieldCheck, Radi
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
 import { Link } from "@/navigation";
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -287,9 +288,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative h-[560px] w-full rounded-2xl overflow-hidden shadow-2xl animate-fade-in-up md:order-1 order-2">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1507146426996-ef05306b995a?q=80&w=2670&auto=format&fit=crop")' }}
+            <Image
+              src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?q=80&w=2670&auto=format&fit=crop"
+              alt="Huellas del Norte Negocios"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
 

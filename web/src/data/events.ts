@@ -22,7 +22,7 @@ export const events: DogEvent[] = [
         region: "Navarra",
         type: "Pastor",
         description: "La fiesta del pastor por excelencia. Campeonato de Perros de Pastor, concurso de quesos y esquileo. Una tradición imprescindible.",
-        imageUrl: "https://turismo.navarra.com/wp-content/uploads/2019/07/artzai-eguna-uharte-arakil.jpg"
+        imageUrl: "https://images.unsplash.com/photo-1484406566174-9da000c64a78?q=80&w=2670&auto=format&fit=crop"
     },
     {
         id: "evt-onati",
@@ -33,7 +33,7 @@ export const events: DogEvent[] = [
         region: "Euskadi",
         type: "Pastor",
         description: "Uno de los concursos más técnicos y prestigiosos. Los perros (Border Collie y Euskal Artzain Txakurra) muestran su destreza guiando ovejas.",
-        imageUrl: "https://www.gipuzkoaturismoa.eus/images/s03/00021/ee001/concurso-perro-pastor-onati.jpg"
+        imageUrl: "https://images.unsplash.com/photo-1596796245084-245bd8f0298e?q=80&w=2671&auto=format&fit=crop"
     },
     {
         id: "evt-legazpi",
@@ -44,7 +44,7 @@ export const events: DogEvent[] = [
         region: "Euskadi",
         type: "Pastor",
         description: "El 'Gipuzkoako Artzain Txakur Txapelketa' reúne a los mejores pastores de la provincia en un entorno natural espectacular.",
-        imageUrl: "https://www.diariovasco.com/noticias/201609/04/media/cortadas/artzai-k3WC-U202466542718H0G-575x323@Diario%20Vasco.jpg"
+        imageUrl: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=2673&auto=format&fit=crop"
     },
 
     // --- MUSHING / NIEVE ---
@@ -57,7 +57,7 @@ export const events: DogEvent[] = [
         region: "Cataluña",
         type: "Mushing",
         description: "Espectacular competición de trineos nórdicos en el corazón de los Pirineos. Reúne a los mejores mushers nacionales.",
-        imageUrl: "https://lugaresdenieve.com/sites/default/files/noticias/mushing-baqueira-beret-rfedi-spainsnow.jpg"
+        imageUrl: "https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?q=80&w=2671&auto=format&fit=crop"
     },
     {
         id: "evt-andorra",
@@ -68,7 +68,7 @@ export const events: DogEvent[] = [
         region: "Andorra",
         type: "Mushing",
         description: "Referente internacional cercano para ver carreras de trineos de alto nivel en un entorno alpino único.",
-        imageUrl: "https://www.grandvalira.com/sites/default/files/styles/activity_galeria/public/media/image/mushing-grandvalira-andorra-1.jpg"
+        imageUrl: "https://images.unsplash.com/photo-1517173873401-443b749069d3?q=80&w=2670&auto=format&fit=crop"
     },
 
     // --- CANICROSS / TIERRA ---
@@ -81,7 +81,7 @@ export const events: DogEvent[] = [
         region: "Navarra",
         type: "Canicross",
         description: "Prueba puntuable clásica en la ribera navarra. Circuito rápido y muy buen ambiente mushing.",
-        imageUrl: "https://rfedi.es/sitenews/img/Noticias/2021/11/20211129_RFEDI_SPAINSNEW_Mushing_Bunuel_1.jpg"
+        imageUrl: "https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=2670&auto=format&fit=crop"
     },
     {
         id: "evt-gurrea",
@@ -92,7 +92,7 @@ export const events: DogEvent[] = [
         region: "La Rioja",
         type: "Canicross",
         description: "Carrera clásica y emotiva muy cerca de Navarra. Excelente organización y circuitos divertidos para iniciarse o competir.",
-        imageUrl: "https://www.rioja2.com/images/noticias/30013/grande/canicross-calahorra.jpg"
+        imageUrl: "https://images.unsplash.com/photo-1453303350171-86aefaaf6a72?q=80&w=2671&auto=format&fit=crop"
     },
     {
         id: "evt-gos-artic",
@@ -103,7 +103,7 @@ export const events: DogEvent[] = [
         region: "Cataluña",
         type: "Mushing",
         description: "Liga muy activa con múltiples carreras tanto en nieve como en tierra. Ideal para seguir el circuito pirenaico.",
-        imageUrl: "https://clubgosartic.cat/wp-content/uploads/2016/10/banner-home-gos-artic.jpg"
+        imageUrl: "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?q=80&w=2670&auto=format&fit=crop"
     },
 
     // --- NUEVOS AÑADIDOS ---
@@ -116,7 +116,7 @@ export const events: DogEvent[] = [
         region: "Norte",
         type: "Agility",
         description: "La competición regular de agility más importante de la zona norte. Clubes de Euskadi, Cantabria y alrededores compiten cada mes.",
-        imageUrl: "https://images.unsplash.com/photo-1616679911721-eff6eec18fcd?q=80&w=2600&auto=format&fit=crop"
+        imageUrl: "https://images.unsplash.com/photo-1629957655360-5a96db5d1c23?q=80&w=2670&auto=format&fit=crop"
     },
     {
         id: "evt-burgos",
@@ -127,7 +127,7 @@ export const events: DogEvent[] = [
         region: "Castilla y León",
         type: "Canicross",
         description: "Una de las pruebas con más solera y participación del circuito norte. Circuitos técnicos en bosques cercanos a la ciudad.",
-        imageUrl: "https://burgosconecta.es/wp-content/uploads/2018/01/canicross-burgos.jpg"
+        imageUrl: "https://images.unsplash.com/photo-1505678261036-a3fcc5e884ee?q=80&w=2670&auto=format&fit=crop"
     },
     {
         id: "evt-biatlon",
@@ -137,7 +137,7 @@ export const events: DogEvent[] = [
         location: "Varias localidades (ej. Galdakao)",
         region: "Euskadi",
         type: "Agility",
-        description: "Eventos lúdico-deportivos donde binomios (humano-perro) superan obstáculos divertidos. 100% ambiente festivo y solidaireo.",
+        description: "Eventos lúdico-deportivos donde binomios (humano-perro) superan obstáculos divertidos. 100% ambiente festivo y solidario.",
         imageUrl: "https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=2670&auto=format&fit=crop"
     },
 
@@ -162,7 +162,7 @@ export const events: DogEvent[] = [
         region: "Euskadi",
         type: "Social",
         description: "Ruta sencilla de 5km apta para todos los niveles y cachorros. Objetivo: socialización y buen rollo. Grupo 'Senderismo Canino Bizkaia'.",
-        imageUrl: "https://images.unsplash.com/photo-1549221568-7c85244bd5f6?q=80&w=2670&auto=format&fit=crop"
+        imageUrl: "https://images.unsplash.com/photo-1552053831-71594a27632d?q=80&w=2662&auto=format&fit=crop"
     },
     {
         id: "evt-social-solidario",

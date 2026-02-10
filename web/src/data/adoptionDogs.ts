@@ -58,7 +58,7 @@ export interface AdoptionDog {
     // Status
     isUrgent: boolean;
     isFeatured: boolean;
-    adoptionFee?: number;
+
 }
 
 // Datos de ejemplo de perros en adopción
@@ -90,12 +90,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterCity: "Donostia-San Sebastián",
         shelterRegion: "Euskadi",
         shelterWebsite: "https://protectoradegipuzkoa.com",
-        photos: ["/images/dogs/thor-1.jpg", "/images/dogs/thor-2.jpg"],
+        photos: ["https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?auto=format&fit=crop&q=80&w=800", "https://images.unsplash.com/photo-1561037404-61cd46aa615b?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-06-15",
         publishedDate: "2025-06-20",
         isUrgent: false,
         isFeatured: true,
-        adoptionFee: 150,
+
         coordinates: [-1.9812, 43.3183],
     },
     {
@@ -124,12 +124,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterCity: "Donostia-San Sebastián",
         shelterRegion: "Euskadi",
         shelterWebsite: "https://protectoradegipuzkoa.com",
-        photos: ["/images/dogs/luna-1.jpg"],
+        photos: ["https://images.unsplash.com/photo-1629740049539-75896a2d7f87?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-09-01",
         publishedDate: "2025-09-10",
         isUrgent: false,
         isFeatured: false,
-        adoptionFee: 120,
+
         coordinates: [-1.9850, 43.3200],
     },
     {
@@ -157,12 +157,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "Galgos del Norte - Bilbao",
         shelterCity: "Bilbao",
         shelterRegion: "Euskadi",
-        photos: ["/images/dogs/max-1.jpg"],
+        photos: ["https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-11-01",
         publishedDate: "2025-11-05",
         isUrgent: false,
         isFeatured: true,
-        adoptionFee: 180,
+
         coordinates: [-2.9350, 43.2630],
     },
     // EUSKADI - Bizkaia
@@ -191,12 +191,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "SPAB Bilbao",
         shelterCity: "Bilbao",
         shelterRegion: "Euskadi",
-        photos: ["/images/dogs/kira-1.jpg", "/images/dogs/kira-2.jpg"],
+        photos: ["https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?auto=format&fit=crop&q=80&w=800", "https://images.unsplash.com/photo-1568393691622-c7ba131d63b4?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-12-01",
         publishedDate: "2025-12-10",
         isUrgent: false,
         isFeatured: true,
-        adoptionFee: 150,
+
         coordinates: [-2.9300, 43.2650],
     },
     {
@@ -224,12 +224,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "SPAB Bilbao",
         shelterCity: "Bilbao",
         shelterRegion: "Euskadi",
-        photos: ["/images/dogs/rocky-1.jpg"],
+        photos: ["https://images.unsplash.com/photo-1558235252-87c699920155?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-08-20",
         publishedDate: "2025-08-25",
         isUrgent: true,
         isFeatured: false,
-        adoptionFee: 100,
+
         coordinates: [-2.9400, 43.2700],
     },
     // NAVARRA
@@ -257,12 +257,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "Protectora Huellas de Navarra",
         shelterCity: "Pamplona",
         shelterRegion: "Navarra",
-        photos: ["/images/dogs/nala-1.jpg", "/images/dogs/nala-2.jpg"],
+        photos: ["https://images.unsplash.com/photo-1591769225440-811ad7d6eab2?auto=format&fit=crop&q=80&w=800", "https://images.unsplash.com/photo-1605897472359-8d6d60527c22?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-10-15",
         publishedDate: "2025-10-20",
         isUrgent: false,
         isFeatured: true,
-        adoptionFee: 150,
+
         coordinates: [-1.6458, 42.8125],
     },
     {
@@ -290,12 +290,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "Protectora Huellas de Navarra",
         shelterCity: "Pamplona",
         shelterRegion: "Navarra",
-        photos: ["/images/dogs/coco-1.jpg"],
+        photos: ["https://images.unsplash.com/photo-1596791005230-07bf82384a56?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-07-01",
         publishedDate: "2025-07-10",
         isUrgent: true,
         isFeatured: false,
-        adoptionFee: 50,
+
         coordinates: [-1.6500, 42.8200],
     },
     // CANTABRIA
@@ -323,12 +323,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "Protectora de Animales de Cantabria",
         shelterCity: "Santander",
         shelterRegion: "Cantabria",
-        photos: ["/images/dogs/bruno-1.jpg"],
+        photos: ["https://images.unsplash.com/photo-1543071220-6ee5bf71a54e?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-09-15",
         publishedDate: "2025-09-20",
         isUrgent: false,
         isFeatured: true,
-        adoptionFee: 140,
+
         coordinates: [-3.8050, 43.4623],
     },
     {
@@ -355,12 +355,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "Protectora de Animales de Cantabria",
         shelterCity: "Santander",
         shelterRegion: "Cantabria",
-        photos: ["/images/dogs/canela-1.jpg"],
+        photos: ["https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-11-10",
         publishedDate: "2025-11-15",
         isUrgent: false,
         isFeatured: false,
-        adoptionFee: 120,
+
         coordinates: [-3.8100, 43.4700],
     },
     // ASTURIAS
@@ -388,12 +388,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "Albergue de Animales de Gijón",
         shelterCity: "Gijón",
         shelterRegion: "Asturias",
-        photos: ["/images/dogs/astur-1.jpg", "/images/dogs/astur-2.jpg"],
+        photos: ["https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&q=80&w=800", "https://images.unsplash.com/photo-1477936821694-ec4233a9a1a0?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-12-01",
         publishedDate: "2025-12-05",
         isUrgent: false,
         isFeatured: true,
-        adoptionFee: 130,
+
         coordinates: [-5.6615, 43.5357],
     },
     {
@@ -420,12 +420,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "Protectora de Animales de Oviedo",
         shelterCity: "Oviedo",
         shelterRegion: "Asturias",
-        photos: ["/images/dogs/pelusa-1.jpg"],
+        photos: ["https://images.unsplash.com/photo-1591946614720-90a587da4a36?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-10-01",
         publishedDate: "2025-10-10",
         isUrgent: false,
         isFeatured: false,
-        adoptionFee: 100,
+
         coordinates: [-5.8494, 43.3619],
     },
     {
@@ -452,12 +452,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "Protectora de Animales de Oviedo",
         shelterCity: "Oviedo",
         shelterRegion: "Asturias",
-        photos: ["/images/dogs/chispa-1.jpg"],
+        photos: ["https://images.unsplash.com/photo-1615591932467-9372bd164f02?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-11-20",
         publishedDate: "2025-11-25",
         isUrgent: false,
         isFeatured: true,
-        adoptionFee: 150,
+
         coordinates: [-5.8500, 43.3700],
     },
     // GALICIA
@@ -485,12 +485,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "Protectora de Animales de A Coruña",
         shelterCity: "A Coruña",
         shelterRegion: "Galicia",
-        photos: ["/images/dogs/xan-1.jpg"],
+        photos: ["https://images.unsplash.com/photo-1505628346881-b72b27e84530?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-08-01",
         publishedDate: "2025-08-10",
         isUrgent: false,
         isFeatured: true,
-        adoptionFee: 120,
+
         coordinates: [-8.4115, 43.3623],
     },
     {
@@ -519,12 +519,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "Scooby Galicia",
         shelterCity: "Vigo",
         shelterRegion: "Galicia",
-        photos: ["/images/dogs/lua-1.jpg", "/images/dogs/lua-2.jpg"],
+        photos: ["https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=800", "https://images.unsplash.com/photo-1554564858-6a1005a8f4c3?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-09-01",
         publishedDate: "2025-09-15",
         isUrgent: true,
         isFeatured: false,
-        adoptionFee: 100,
+
         coordinates: [-8.7207, 42.2406],
     },
     {
@@ -552,12 +552,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "Scooby Galicia",
         shelterCity: "Vigo",
         shelterRegion: "Galicia",
-        photos: ["/images/dogs/pirata-1.jpg"],
+        photos: ["https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-12-10",
         publishedDate: "2025-12-15",
         isUrgent: false,
         isFeatured: true,
-        adoptionFee: 180,
+
         coordinates: [-8.7000, 42.2300],
     },
     // IPARRALDE
@@ -585,12 +585,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "Refuge Txakurrak",
         shelterCity: "Bayonne",
         shelterRegion: "Iparralde",
-        photos: ["/images/dogs/basque-1.jpg"],
+        photos: ["https://images.unsplash.com/photo-1588269845464-8993564348ab?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-10-01",
         publishedDate: "2025-10-10",
         isUrgent: false,
         isFeatured: true,
-        adoptionFee: 200,
+
         coordinates: [-1.4748, 43.4929],
     },
     {
@@ -617,12 +617,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "ADAP",
         shelterCity: "Bayonne",
         shelterRegion: "Iparralde",
-        photos: ["/images/dogs/mila-1.jpg"],
+        photos: ["https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-11-15",
         publishedDate: "2025-11-20",
         isUrgent: false,
         isFeatured: false,
-        adoptionFee: 180,
+
         coordinates: [-1.4800, 43.4900],
     },
     {
@@ -649,12 +649,12 @@ export const adoptionDogs: AdoptionDog[] = [
         shelterName: "ADAP",
         shelterCity: "Bayonne",
         shelterRegion: "Iparralde",
-        photos: ["/images/dogs/txiki-1.jpg"],
+        photos: ["https://images.unsplash.com/photo-1605639156481-248775d0794b?auto=format&fit=crop&q=80&w=800"],
         arrivalDate: "2025-07-01",
         publishedDate: "2025-07-15",
         isUrgent: true,
         isFeatured: false,
-        adoptionFee: 80,
+
         coordinates: [-1.4700, 43.4850],
     },
 ];

@@ -65,8 +65,34 @@ export default function CreatorsPage() {
         );
     };
 
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": creators.map((creator, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "item": {
+                "@type": "Person",
+                "name": creator.name,
+                "image": creator.avatar,
+                "description": creator.description,
+                "url": creator.link,
+                "knowsAbout": creator.category,
+                "interactionStatistic": {
+                    "@type": "InteractionCounter",
+                    "interactionType": "https://schema.org/FollowAction",
+                    "userInteractionCount": parseInt(creator.subscribers.replace(/[^0-9]/g, '')) * (creator.subscribers.includes('M') ? 1000000 : 1000) // Estimación simple
+                }
+            }
+        }))
+    };
+
     return (
         <main className="min-h-screen bg-background text-foreground">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             {/* Hero */}
             <div className="relative pt-32 pb-12 px-4 text-center overflow-hidden">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-indigo-500/10 rounded-full blur-3xl -z-10" />

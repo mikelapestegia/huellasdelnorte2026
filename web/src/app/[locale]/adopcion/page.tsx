@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
     Heart,
     Search,
@@ -111,7 +112,17 @@ function DogCard({ dog }: { dog: AdoptionDog }) {
         <div className="group relative bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden hover:border-emerald-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10 flex flex-col h-full">
             {/* Image */}
             <Link href={`/adopcion/${dog.id}`} className="relative h-56 overflow-hidden block cursor-pointer">
-                <DogPlaceholder name={dog.name} gender={dog.gender} />
+                {dog.photos && dog.photos.length > 0 ? (
+                    <Image
+                        src={dog.photos[0]}
+                        alt={dog.name}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                ) : (
+                    <DogPlaceholder name={dog.name} gender={dog.gender} />
+                )}
 
                 {/* Badges */}
                 <div className="absolute top-3 left-3 flex flex-wrap gap-2">
@@ -155,9 +166,7 @@ function DogCard({ dog }: { dog: AdoptionDog }) {
                             {dog.name}
                         </h3>
                     </Link>
-                    {dog.adoptionFee && (
-                        <span className="text-emerald-400 font-semibold">{dog.adoptionFee}€</span>
-                    )}
+
                 </div>
 
                 <p className="text-sm text-muted-foreground mb-3">
@@ -468,7 +477,7 @@ export default function AdopcionPage() {
             {/* Search and Filters */}
             <section className="sticky top-16 z-30 bg-card/95 backdrop-blur-md border-b border-white/10">
                 <div className="max-w-7xl mx-auto px-4 py-4">
-                <div className="flex flex-col lg:flex-row gap-4">
+                    <div className="flex flex-col lg:flex-row gap-4">
                         {/* Search */}
                         <div className="relative flex-1">
                             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />

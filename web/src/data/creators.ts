@@ -19,7 +19,7 @@ export const creators: Creator[] = [
         subscribers: "100k+",
         description: "El primer perro turista que da la vuelta a la península. Imprescindible para descubrir destinos pet-friendly en el Norte.",
         link: "https://pipperontour.com",
-        avatar: "https://yt3.googleusercontent.com/ytc/AIdro_n4Kj7t0XU8qWz1f5yZ2g6f5X1b8j9h8g7f6e5d=s176-c-k-c0x00ffffff-no-rj",
+        avatar: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=200&auto=format&fit=crop",
         featured: true
     },
     {
@@ -30,7 +30,7 @@ export const creators: Creator[] = [
         subscribers: "2.5M",
         description: "El canal de referencia en español sobre comportamiento, salud y curiosidades del mundo animal.",
         link: "https://www.youtube.com/@ExpertoAnimal",
-        avatar: "https://yt3.googleusercontent.com/ytc/AIdro_n0k5q6l9m8o7p4r3s2t1u0v9w8x7y6z5a4b3c=s176-c-k-c0x00ffffff-no-rj",
+        avatar: "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?q=80&w=200&auto=format&fit=crop",
         featured: true
     },
     {
@@ -41,7 +41,7 @@ export const creators: Creator[] = [
         subscribers: "500k",
         description: "Consejos prácticos de adiestramiento en positivo para el día a día.",
         link: "https://www.youtube.com/@EnricEnPositivo",
-        avatar: "https://yt3.googleusercontent.com/ytc/AIdro_k9l8m7n6o5p4q3r2s1t0u9v8w7x6y5z4a3b2c=s176-c-k-c0x00ffffff-no-rj"
+        avatar: "https://images.unsplash.com/photo-1529429617124-95b109e86bb8?q=80&w=200&auto=format&fit=crop"
     },
     {
         id: "c4",

@@ -227,12 +227,7 @@ export default function DogDetailPage({ params }: { params: Promise<{ id: string
                                         {genderConfig[dog.gender].icon}
                                     </span>
                                 </h1>
-                                {dog.adoptionFee && (
-                                    <div className="px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-xl">
-                                        <span className="text-sm text-emerald-300 block">Cuota adopción</span>
-                                        <span className="text-xl font-bold text-emerald-400">{dog.adoptionFee}€</span>
-                                    </div>
-                                )}
+
                             </div>
                             <p className="text-xl text-muted-foreground">
                                 {dog.breed} {dog.mixedBreed && <span className="text-muted-foreground text-lg">(Mestizo)</span>}

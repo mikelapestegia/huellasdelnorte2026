@@ -107,7 +107,12 @@ export default function AudioPage() {
                                         ></iframe>
                                     </div>
                                 ) : (
-                                    <audio controls className="w-full h-10 rounded-lg opacity-90 hover:opacity-100 transition-opacity">
+                                    <audio
+                                        controls
+                                        preload="metadata"
+                                        crossOrigin="anonymous"
+                                        className="w-full h-12 rounded-lg bg-neutral-900/50 hover:bg-neutral-900/70 transition-colors border border-white/10"
+                                    >
                                         <source src={item.audioUrl} type="audio/mpeg" />
                                         Tu navegador no soporta el elemento de audio.
                                     </audio>

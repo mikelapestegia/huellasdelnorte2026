@@ -11,8 +11,42 @@ export default function MarketplacePage() {
 
     const filteredProducts = products.filter(p => activeTab === 'all' || p.category === activeTab);
 
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": products.map((product, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "item": {
+                "@type": "Product",
+                "name": product.name,
+                "image": product.image,
+                "description": product.description,
+                "brand": {
+                    "@type": "Brand",
+                    "name": product.brand
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "EUR",
+                    "price": product.price,
+                    "availability": "https://schema.org/InStock"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": product.rating,
+                    "reviewCount": product.reviews
+                }
+            }
+        }))
+    };
+
     return (
         <main className="min-h-screen bg-background text-foreground selection:bg-emerald-500/30">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             {/* Hero Section */}
             <div className="relative pt-32 pb-20 px-4 bg-gradient-to-br from-card via-emerald-950/20 to-background border-b border-white/5 overflow-hidden">
                 <div className="max-w-7xl mx-auto text-center relative z-10">

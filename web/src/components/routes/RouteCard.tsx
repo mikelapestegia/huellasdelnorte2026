@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { MapPin, Droplets, TreeDeciduous, Mountain, Waves, Leaf, Zap } from "lucide-react";
 import { RouteCatalogItem } from "@/data/routesCatalog";
@@ -39,15 +40,26 @@ export default function RouteCard({ route, onClick }: RouteCardProps) {
             onClick={onClick}
             className="group block w-full text-left rounded-3xl border border-border bg-card shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
         >
-            {/* Image placeholder with gradient */}
-            <div className="relative h-48 bg-gradient-to-br from-primary/10 to-accent/10 overflow-hidden">
-                {/* Decorative background pattern or image */}
-                <div className="absolute inset-0 bg-secondary/20 mix-blend-overlay" />
-
-                {/* Fallback Icon */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-[0.07] group-hover:scale-110 transition-transform duration-700">
-                    <Mountain className="h-32 w-32 text-primary" />
-                </div>
+            <div className="relative h-48 bg-gray-200 overflow-hidden">
+                {route.imageUrl ? (
+                    <div className="relative h-full w-full group-hover:scale-105 transition-transform duration-700">
+                        <Image
+                            src={route.imageUrl}
+                            alt={route.name}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-40" />
+                    </div>
+                ) : (
+                    <div className="h-full w-full bg-gradient-to-br from-primary/10 to-accent/10 relative">
+                        <div className="absolute inset-0 bg-secondary/20 mix-blend-overlay" />
+                        <div className="absolute inset-0 flex items-center justify-center opacity-[0.07] group-hover:scale-110 transition-transform duration-700">
+                            <Mountain className="h-32 w-32 text-primary" />
+                        </div>
+                    </div>
+                )}
 
                 {/* Region badge */}
                 <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-background/95 backdrop-blur-md text-xs font-bold text-foreground border border-border/50 shadow-sm z-20">
@@ -115,6 +127,6 @@ export default function RouteCard({ route, onClick }: RouteCardProps) {
                     </div>
                 </div>
             </div>
-        </Link>
+        </Link >
     );
 }

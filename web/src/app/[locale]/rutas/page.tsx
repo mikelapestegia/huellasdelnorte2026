@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { useTranslations } from "next-intl";
 import { Search, MapIcon, List, Mountain } from "lucide-react";
 import { routesCatalog, RouteCatalogItem, Region, RouteType, Difficulty, Environment } from "@/data/routesCatalog";
+import { dogBeaches } from "@/data/dogBeaches";
 import RouteFilters, { RouteFiltersState } from "@/components/routes/RouteFilters";
 import RouteCard from "@/components/routes/RouteCard";
 import RouteMap from "@/components/routes/RouteMap";
@@ -21,6 +22,27 @@ export default function RutasPage() {
         bathingOnly: false,
         distanceRange: [0, 100],
     });
+
+    const filteredBeaches = useMemo(() => {
+        return dogBeaches.filter(beach => {
+            // Search query
+            if (searchQuery) {
+                const query = searchQuery.toLowerCase();
+                const matchesSearch =
+                    beach.name.toLowerCase().includes(query) ||
+                    beach.location.toLowerCase().includes(query) ||
+                    beach.region.toLowerCase().includes(query);
+                if (!matchesSearch) return false;
+            }
+
+            // Region filter
+            if (filters.regions.length > 0 && !filters.regions.includes(beach.region as unknown as Region)) {
+                return false;
+            }
+
+            return true;
+        });
+    }, [searchQuery, filters.regions]);
 
     const filteredRoutes = useMemo(() => {
         return routesCatalog.filter(route => {
@@ -214,6 +236,7 @@ export default function RutasPage() {
                                 {/* Nota: RouteMap también necesitaría i18n, pero es mapbox o similar */}
                                 <RouteMap
                                     routes={filteredRoutes}
+                                    beaches={filteredBeaches}
                                     selectedRouteId={selectedRouteId}
                                     onRouteSelect={handleRouteSelect}
                                 />
