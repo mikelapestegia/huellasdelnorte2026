@@ -2,7 +2,8 @@
     "common": {
         "title": "Huellas del Norte - Comunidad Canina",
         "description": "La guía definitiva para disfrutar del norte de España con tu perro.",
-        "loading": "Cargando..."
+        "loading": "Cargando...",
+        "more_info": "Más información"
     },
     "nav": {
         "home": "Inicio",
@@ -37,7 +38,10 @@
         "title2": "para vivir con tu perro",
         "description": "Huellas del Norte reúne servicios, negocios y ocio pet friendly en un solo lugar: desde veterinarios 24h hasta rutas con agua.",
         "cta_routes": "Explorar Rutas",
-        "cta_passport": "Pasaporte Digital"
+        "cta_passport": "Pasaporte Digital",
+        "stat_points": "Puntos en mapa",
+        "stat_routes": "Rutas verificadas",
+        "stat_adoptions": "Adopciones"
     },
     "home": {
         "highlights_badge": "Lo Que Vas A Encontrar",

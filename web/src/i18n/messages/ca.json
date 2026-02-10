@@ -2,7 +2,8 @@
     "common": {
         "title": "Petjades del Nord - Comunitat Canina",
         "description": "La guia definitiva per gaudir del nord d'Espanya amb el teu gos.",
-        "loading": "Carregant..."
+        "loading": "Carregant...",
+        "more_info": "Més informació"
     },
     "nav": {
         "home": "Inici",
@@ -37,7 +38,10 @@
         "title2": "per viure amb el teu gos",
         "description": "Huellas del Norte reuneix serveis, negocis i lleure pet friendly en un sol lloc: des de veterinaris 24h fins a rutes amb aigua.",
         "cta_routes": "Explorar Rutes",
-        "cta_passport": "Passaport Digital"
+        "cta_passport": "Passaport Digital",
+        "stat_points": "Punts al mapa",
+        "stat_routes": "Rutes verificades",
+        "stat_adoptions": "Adopcions"
     },
     "home": {
         "highlights_badge": "El Que Trobaràs",

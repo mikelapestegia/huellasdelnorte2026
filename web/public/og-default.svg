@@ -1,19 +1,60 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1a1e1b" />
-      <stop offset="100%" stop-color="#242926" />
+    <linearGradient id="bg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#1a2118" />
+      <stop offset="50%" stop-color="#1a1e1b" />
+      <stop offset="100%" stop-color="#1f2720" />
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4A7A67" />
+      <stop offset="50%" stop-color="#C27BA0" />
+      <stop offset="100%" stop-color="#4A7A67" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0f4f0" />
+      <stop offset="100%" stop-color="#c8d0cc" />
     </linearGradient>
   </defs>
+
+  <!-- Background -->
   <rect width="1200" height="630" fill="url(#bg)" />
-  <rect x="60" y="60" width="1080" height="510" rx="32" fill="#1f2421" stroke="#3d4a44" stroke-width="2" />
-  <text x="120" y="230" fill="#e2e8f0" font-size="64" font-family="serif">
+
+  <!-- Decorative mountain silhouette -->
+  <path d="M0,630 L0,480 Q150,380 300,420 Q450,350 600,400 Q750,320 900,380 Q1050,340 1200,370 L1200,630 Z" fill="#1f2921" opacity="0.5" />
+  <path d="M0,630 L0,520 Q200,460 400,490 Q600,440 800,470 Q1000,430 1200,450 L1200,630 Z" fill="#242c26" opacity="0.4" />
+
+  <!-- Accent line -->
+  <rect x="100" y="260" width="200" height="4" rx="2" fill="url(#accent-line)" />
+
+  <!-- Brand name -->
+  <text x="100" y="240" fill="url(#textGrad)" font-size="72" font-weight="700" font-family="Georgia, 'Times New Roman', serif" letter-spacing="-1">
     Huellas del Norte
   </text>
-  <text x="120" y="310" fill="#9aa3a1" font-size="30" font-family="sans-serif">
+
+  <!-- Tagline -->
+  <text x="100" y="320" fill="#9aa3a1" font-size="28" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-weight="400">
     Comunidad canina del norte peninsular
   </text>
-  <text x="120" y="380" fill="#9aa3a1" font-size="24" font-family="sans-serif">
-    Mapa, rutas, adopcion y servicios pet friendly
+
+  <!-- Description -->
+  <text x="100" y="370" fill="#6b7572" font-size="22" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+    Mapa · Rutas · Adopción · Servicios pet friendly
   </text>
+
+  <!-- Logo paw element -->
+  <g transform="translate(980, 140) scale(2.5)" opacity="0.15">
+    <path d="M25,72 Q35,82 50,85 Q65,82 75,72 Q82,65 78,56 Q70,48 50,44 Q30,48 22,56 Q18,65 25,72 Z" fill="#4A7A67" />
+    <path d="M22,40 L15,50 L29,50 Z" fill="#4A7A67" />
+    <path d="M50,24 L39,40 L61,40 Z" fill="#4A7A67" />
+    <path d="M78,40 L71,50 L85,50 Z" fill="#4A7A67" />
+    <circle cx="50" cy="18" r="7" fill="#C27BA0" opacity="0.5" />
+  </g>
+
+  <!-- URL -->
+  <text x="100" y="560" fill="#4A7A67" font-size="20" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-weight="600">
+    huellasdelnorte.com
+  </text>
+
+  <!-- Border frame -->
+  <rect x="40" y="40" width="1120" height="550" rx="24" fill="none" stroke="#3d4a44" stroke-width="1.5" opacity="0.4" />
 </svg>

@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 
 interface ServiceCardProps {
@@ -9,6 +12,8 @@ interface ServiceCardProps {
 }
 
 export default function ServiceCard({ title, description, image, link = "#", delay = 0 }: ServiceCardProps) {
+    const t = useTranslations("common");
+
     return (
         <div
             className="group relative h-[400px] w-full overflow-hidden rounded-2xl cursor-pointer animate-fade-in-up"
@@ -32,7 +37,7 @@ export default function ServiceCard({ title, description, image, link = "#", del
                     </p>
 
                     <div className="inline-flex items-center text-sm font-semibold text-accent uppercase tracking-wider opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-                        Más Información <ArrowRight className="ml-2 h-4 w-4" />
+                        {t("more_info")} <ArrowRight className="ml-2 h-4 w-4" />
                     </div>
                 </div>
 

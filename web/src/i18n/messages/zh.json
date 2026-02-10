@@ -2,7 +2,8 @@
     "common": {
         "title": "北方的足迹 - 犬类社区",
         "description": "带着您的爱犬享受西班牙北部的终极指南。",
-        "loading": "加载中..."
+        "loading": "加载中...",
+        "more_info": "更多信息"
     },
     "nav": {
         "home": "首页",
@@ -37,7 +38,10 @@
         "title2": "与爱犬共同生活",
         "description": "Huellas del Norte 将宠物友好的服务、商户和休闲汇聚一处：从24小时兽医到水上小径。",
         "cta_routes": "探索路线",
-        "cta_passport": "数字护照"
+        "cta_passport": "数字护照",
+        "stat_points": "地图标记",
+        "stat_routes": "验证路线",
+        "stat_adoptions": "领养"
     },
     "home": {
         "highlights_badge": "您将发现",

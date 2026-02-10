@@ -2,7 +2,8 @@
     "common": {
         "title": "Traces du Nord - Communauté Canine",
         "description": "Le guide ultime pour profiter du nord de l'Espagne avec votre chien.",
-        "loading": "Chargement..."
+        "loading": "Chargement...",
+        "more_info": "Plus d'infos"
     },
     "nav": {
         "home": "Accueil",
@@ -37,7 +38,10 @@
         "title2": "pour vivre avec votre chien",
         "description": "Huellas del Norte rassemble services, commerces et loisirs adaptés aux chiens en un seul endroit : des vétérinaires 24h aux sentiers aquatiques.",
         "cta_routes": "Explorer les itinéraires",
-        "cta_passport": "Passeport numérique"
+        "cta_passport": "Passeport numérique",
+        "stat_points": "Points sur la carte",
+        "stat_routes": "Sentiers vérifiés",
+        "stat_adoptions": "Adoptions"
     },
     "home": {
         "highlights_badge": "Ce Que Vous Trouverez",

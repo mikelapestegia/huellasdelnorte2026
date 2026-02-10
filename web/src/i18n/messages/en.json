@@ -2,7 +2,8 @@
     "common": {
         "title": "Footprints of the North - Canine Community",
         "description": "The ultimate guide to enjoying Northern Spain with your dog.",
-        "loading": "Loading..."
+        "loading": "Loading...",
+        "more_info": "More Info"
     },
     "nav": {
         "home": "Home",
@@ -37,7 +38,10 @@
         "title2": "to live with your dog",
         "description": "Huellas del Norte brings together dog-friendly services, businesses and leisure in one place: from 24h veterinarians to water trails.",
         "cta_routes": "Explore Routes",
-        "cta_passport": "Digital Passport"
+        "cta_passport": "Digital Passport",
+        "stat_points": "Map points",
+        "stat_routes": "Verified trails",
+        "stat_adoptions": "Adoptions"
     },
     "home": {
         "highlights_badge": "What You'll Find",

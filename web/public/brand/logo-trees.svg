@@ -1,20 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="huellas-logo">
-  <!-- Main Pad (The Mountain Base) -->
-  <path d="M25,75 Q50,95 75,75 Q85,65 75,55 Q50,45 25,55 Q15,65 25,75 Z" fill="#3D4A44" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="padGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3D5A4C" />
+      <stop offset="100%" stop-color="#2D3D35" />
+    </linearGradient>
+    <linearGradient id="treeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A9A7A" />
+      <stop offset="100%" stop-color="#3D7A5A" />
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D4A0C0" />
+      <stop offset="100%" stop-color="#B06898" />
+    </linearGradient>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Main Pad (Mountain Base) with shadow -->
+  <path d="M25,72 Q35,82 50,85 Q65,82 75,72 Q82,65 78,56 Q70,48 50,44 Q30,48 22,56 Q18,65 25,72 Z" 
+        fill="url(#padGrad)" filter="url(#softShadow)" />
   
-  <!-- Toe Pads as Trees -->
-  <!-- Left Toe -->
-  <path d="M20,45 L10,55 L30,55 Z" fill="#4A7A67" />
-  <path d="M20,35 L12,45 L28,45 Z" fill="#4A7A67" />
+  <!-- Subtle texture line on pad -->
+  <path d="M35,60 Q50,55 65,60" fill="none" stroke="#4A7A67" stroke-width="0.8" opacity="0.4" />
+
+  <!-- Left Tree cluster -->
+  <path d="M22,50 L13,58 L31,58 Z" fill="url(#treeGrad)" />
+  <path d="M22,40 L15,50 L29,50 Z" fill="url(#treeGrad)" />
+  <path d="M22,32 L17,40 L27,40 Z" fill="#5A9A7A" opacity="0.8" />
+  <rect x="20.5" y="58" width="3" height="4" rx="1" fill="#3D5A4C" opacity="0.6" />
+
+  <!-- Center Tree (largest) -->
+  <path d="M50,38 L36,58 L64,58 Z" fill="url(#treeGrad)" />
+  <path d="M50,24 L39,40 L61,40 Z" fill="url(#treeGrad)" />
+  <path d="M50,14 L42,26 L58,26 Z" fill="#5A9A7A" opacity="0.8" />
+  <rect x="48.5" y="58" width="3" height="4" rx="1" fill="#3D5A4C" opacity="0.6" />
+
+  <!-- Right Tree cluster -->
+  <path d="M78,50 L69,58 L87,58 Z" fill="url(#treeGrad)" />
+  <path d="M78,40 L71,50 L85,50 Z" fill="url(#treeGrad)" />
+  <path d="M78,32 L73,40 L83,40 Z" fill="#5A9A7A" opacity="0.8" />
+  <rect x="76.5" y="58" width="3" height="4" rx="1" fill="#3D5A4C" opacity="0.6" />
+
+  <!-- Accent: Rising sun/moon behind trees -->
+  <circle cx="50" cy="18" r="7" fill="url(#sunGrad)" opacity="0.7" />
+  <circle cx="50" cy="18" r="4" fill="#D4A0C0" opacity="0.3" />
   
-  <!-- Center Toe (Middle) -->
-  <path d="M50,40 L35,60 L65,60 Z" fill="#4A7A67" />
-  <path d="M50,25 L38,40 L62,40 Z" fill="#4A7A67" />
-  
-  <!-- Right Toe -->
-  <path d="M80,45 L70,55 L90,55 Z" fill="#4A7A67" />
-  <path d="M80,35 L72,45 L88,45 Z" fill="#4A7A67" />
-  
-  <!-- Accent: A small sun or clay element behind -->
-  <circle cx="50" cy="20" r="5" fill="#C27BA0" opacity="0.8" />
+  <!-- Tiny paw trail dots at bottom -->
+  <circle cx="38" cy="90" r="2" fill="#4A7A67" opacity="0.35" />
+  <circle cx="50" cy="92" r="2" fill="#4A7A67" opacity="0.25" />
+  <circle cx="62" cy="90" r="2" fill="#4A7A67" opacity="0.35" />
 </svg>

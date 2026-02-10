@@ -2,7 +2,8 @@
     "common": {
         "title": "Iparraldeko Oinatzak - Txakur Komunitatea",
         "description": "Espainia iparraldean txakurrarekin gozatzeko behin betiko gida.",
-        "loading": "Kargatzen..."
+        "loading": "Kargatzen...",
+        "more_info": "Informazio gehiago"
     },
     "nav": {
         "home": "Hasiera",
@@ -37,7 +38,10 @@
         "title2": "txakurrarekin bizitzeko",
         "description": "Huellas del Norte-k txakurrentzako zerbitzuak, negozioak eta aisia toki bakarrean biltzen ditu: 24h albaitarietatik ur-ibilbidetaraino.",
         "cta_routes": "Ibilbideak arakatu",
-        "cta_passport": "Pasaporte digitala"
+        "cta_passport": "Pasaporte digitala",
+        "stat_points": "Mapako puntuak",
+        "stat_routes": "Ibilbide egiaztatuak",
+        "stat_adoptions": "Adopzioak"
     },
     "home": {
         "highlights_badge": "Zer Aurkituko Duzun",

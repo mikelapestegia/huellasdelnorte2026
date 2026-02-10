@@ -2,7 +2,8 @@
     "common": {
         "title": "Pegadas do Norte - Comunidade Canina",
         "description": "A guía definitiva para gozar do norte de España co teu can.",
-        "loading": "Cargando..."
+        "loading": "Cargando...",
+        "more_info": "Máis información"
     },
     "nav": {
         "home": "Inicio",
@@ -37,7 +38,10 @@
         "title2": "para vivir co teu can",
         "description": "Huellas del Norte reúne servizos, negocios e lecer pet friendly nun só lugar: desde veterinarios 24h ata rutas con auga.",
         "cta_routes": "Explorar Rutas",
-        "cta_passport": "Pasaporte Dixital"
+        "cta_passport": "Pasaporte Dixital",
+        "stat_points": "Puntos no mapa",
+        "stat_routes": "Rutas verificadas",
+        "stat_adoptions": "Adopcións"
     },
     "home": {
         "highlights_badge": "O Que Vas Atopar",
