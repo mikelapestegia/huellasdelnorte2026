@@ -210,5 +210,49 @@
             "transparency": "Transparency",
             "faq": "FAQ"
         }
+    },
+    "routes": {
+        "title": "Atlantic Arc Routes",
+        "description": "More than 50 pet-friendly routes from Iparralde to Galicia. Filter by region, difficulty, environment and discover trails with water, shade and bathing for your dog.",
+        "search_placeholder": "Search by name, region or characteristics...",
+        "view_list": "List",
+        "view_map": "Map",
+        "no_results": "No routes found with the selected filters.",
+        "clear_filters": "Clear filters",
+        "filters": {
+            "title": "Filters",
+            "clear": "Clear",
+            "results_one": "1 route found",
+            "results_other": "{count} routes found",
+            "bathing_only": "💧 Bathing only",
+            "region": "Region",
+            "type": "Route type",
+            "difficulty": "Difficulty",
+            "environment": "Environment",
+            "distance": "Distance"
+        },
+        "difficulty": {
+            "easy": "Easy",
+            "moderate": "Moderate",
+            "hard": "Hard"
+        },
+        "environment": {
+            "río": "River",
+            "sombra": "Shade",
+            "costa": "Coast",
+            "montaña": "Mountain",
+            "bosque": "Forest",
+            "cascada": "Waterfall",
+            "valle": "Valley"
+        },
+        "route_type": {
+            "Andando": "Walking",
+            "Bici": "Cycling",
+            "Mixto": "Mixed"
+        },
+        "card": {
+            "distance": "km",
+            "bathing": "Bathing"
+        }
     }
 }

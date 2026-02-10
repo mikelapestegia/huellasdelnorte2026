@@ -177,5 +177,37 @@
             "transparency": "Transparence",
             "contact": "Contact"
         }
+    },
+    "routes": {
+        "title": "Itinéraires de l'Arc Atlantique",
+        "description": "Plus de 50 itinéraires pet-friendly d'Iparralde à la Galice.",
+        "search_placeholder": "Rechercher par nom, région...",
+        "view_list": "Liste",
+        "view_map": "Carte",
+        "no_results": "Aucun itinéraire trouvé.",
+        "clear_filters": "Effacer les filtres",
+        "difficulty": {
+            "easy": "Facile",
+            "moderate": "Modéré",
+            "hard": "Difficile"
+        },
+        "environment": {
+            "río": "Rivière",
+            "sombra": "Ombre",
+            "costa": "Côte",
+            "montaña": "Montagne",
+            "bosque": "Forêt",
+            "cascada": "Cascade",
+            "valle": "Vallée"
+        },
+        "route_type": {
+            "Andando": "Marche",
+            "Bici": "Vélo",
+            "Mixto": "Mixte"
+        },
+        "card": {
+            "distance": "km",
+            "bathing": "Baignade"
+        }
     }
 }

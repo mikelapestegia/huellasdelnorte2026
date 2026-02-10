@@ -210,5 +210,49 @@
             "transparency": "Transparencia",
             "faq": "FAQ"
         }
+    },
+    "routes": {
+        "title": "Rutas del Arco Atlántico",
+        "description": "Más de 50 rutas pet-friendly desde Iparralde hasta Galicia. Filtra por región, dificultad, entorno y descubre senderos con agua, sombra y baño para tu perro.",
+        "search_placeholder": "Buscar por nombre, región o características...",
+        "view_list": "Lista",
+        "view_map": "Mapa",
+        "no_results": "No se encontraron rutas con los filtros seleccionados.",
+        "clear_filters": "Limpiar filtros",
+        "filters": {
+            "title": "Filtros",
+            "clear": "Limpiar",
+            "results_one": "1 ruta encontrada",
+            "results_other": "{count} rutas encontradas",
+            "bathing_only": "💧 Solo con baño",
+            "region": "Región",
+            "type": "Tipo de ruta",
+            "difficulty": "Dificultad",
+            "environment": "Entorno",
+            "distance": "Distancia"
+        },
+        "difficulty": {
+            "easy": "Fácil",
+            "moderate": "Moderada",
+            "hard": "Difícil"
+        },
+        "environment": {
+            "río": "Río",
+            "sombra": "Sombra",
+            "costa": "Costa",
+            "montaña": "Montaña",
+            "bosque": "Bosque",
+            "cascada": "Cascada",
+            "valle": "Valle"
+        },
+        "route_type": {
+            "Andando": "Andando",
+            "Bici": "Bici",
+            "Mixto": "Mixto"
+        },
+        "card": {
+            "distance": "km",
+            "bathing": "Baño"
+        }
     }
 }
