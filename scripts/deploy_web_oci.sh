@@ -1,6 +1,6 @@
 #!/bin/bash
 # Deployment script for Huellas del Norte V2 web app on OCI
-# Deploys Next.js application to ik3s-worker instance
+# Deploys Next.js with nginx reverse proxy
 
 set -e
 
@@ -9,36 +9,63 @@ echo "Huellas del Norte V2 - Web Deployment"
 echo "====================================="
 
 # Configuration
-NODE_ENV="production"
-APP_DIR="/opt/huellas-web"
+REPO_DIR="/home/opc/huellasdelnorte2026"
+WEB_DIR="$REPO_DIR/web"
 PORT=3000
-API_PORT=3001
 
-# Colors for output
+# Colors
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 RED='\033[0;31m'
-NC='\033[0m' # No Color
+NC='\033[0m'
 
-echo -e "${YELLOW}[1/5]${NC} Stopping existing application..."
-sudo systemctl stop huellas-web || true
+echo -e "${YELLOW}[1/6]${NC} Updating repository..."
+cd "$REPO_DIR"
+git pull origin main
 
-echo -e "${YELLOW}[2/5]${NC} Creating application directory..."
-sudo mkdir -p "$APP_DIR"
-sudo chown -R $USER:$USER "$APP_DIR"
+echo -e "${YELLOW}[2/6]${NC} Installing dependencies..."
+cd "$WEB_DIR"
+npm install
 
-echo -e "${YELLOW}[3/5]${NC} Installing dependencies..."
-cd "$APP_DIR"
-npm install --production
+echo -e "${YELLOW}[3/6]${NC} Building Next.js application..."
+NODE_ENV=production npm run build
 
-echo -e "${YELLOW}[4/5]${NC} Building Next.js application..."
-RUNTIME_ENV=production npm run build
+echo -e "${YELLOW}[4/6]${NC} Configuring nginx reverse proxy..."
 
-echo -e "${YELLOW}[5/5]${NC} Starting application with PM2..."
-pm2 start "npm run start" --name "huellas-web" --env production
+# Create nginx config
+sudo tee /etc/nginx/conf.d/huellas.conf > /dev/null <<'EOF'
+server {
+    listen 80;
+    listen [::]:80;
+    server_name _;
+    
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+EOF
+
+echo -e "${YELLOW}[5/6]${NC} Starting Next.js with PM2..."
+cd "$WEB_DIR"
+pm2 delete huellas-web 2>/dev/null || true
+NODE_ENV=production pm2 start npm --name "huellas-web" -- start
 pm2 save
-pm2 startup
+
+echo -e "${YELLOW}[6/6]${NC} Restarting nginx..."
+sudo nginx -t
+sudo systemctl restart nginx
 
 echo -e "${GREEN}✓ Deployment completed successfully!${NC}"
-echo "Application is running on port $PORT"
-echo "Configure Cloudflare Tunnel to point to localhost:$PORT"
+echo "Application running at: http://143.47.39.237"
+echo "Domain: http://huellasdelnorte.com"
+echo ""
+echo "To view logs: pm2 logs huellas-web"
+echo "To restart: pm2 restart huellas-web"
