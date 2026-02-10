@@ -148,5 +148,34 @@
             "privacy": "Confidentialité",
             "terms": "Conditions"
         }
+    },
+    "about_us": {
+        "label": "Qui sommes-nous",
+        "title": "Une communauté qui facilite la vie canine",
+        "description": "Huellas del Norte rassemble des informations utiles, des ressources locales et un réseau actif pour ceux qui vivent avec des chiens dans le nord de l'Espagne.",
+        "mission_title": "Notre Mission",
+        "mission_desc": "Faciliter les décisions quotidiennes avec des données fiables, une communauté active et des outils conçus pour la vie de tous les jours.",
+        "vision_title": "Notre Vision",
+        "vision_desc": "Un territoire plus accueillant pour les chiens, où l'information est claire et accessible.",
+        "values": {
+            "wellbeing_title": "Bien-être réel",
+            "wellbeing_desc": "Nous priorisons la sécurité, la santé et les expériences positives pour les chiens et les familles.",
+            "community_title": "Communauté active",
+            "community_desc": "Nous croyons en la collaboration entre les personnes, les associations et les professionnels.",
+            "territory_title": "Territoire vivant",
+            "territory_desc": "Nous prenons soin du nord de la péninsule et de son écosystème avec des informations utiles et actualisées.",
+            "culture_title": "Culture canine",
+            "culture_desc": "Nous promouvons les loisirs responsables, l'adoption informée et les ressources de qualité."
+        },
+        "links": {
+            "title": "Liens Utiles",
+            "desc": "En savoir plus sur notre communauté et nos services.",
+            "how_it_works": "Comment ça marche",
+            "community": "Communauté",
+            "verification": "Vérification",
+            "collaborators": "Collaborateurs",
+            "transparency": "Transparence",
+            "contact": "Contact"
+        }
     }
 }

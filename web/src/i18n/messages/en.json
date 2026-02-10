@@ -148,5 +148,67 @@
             "privacy": "Privacy",
             "terms": "Terms"
         }
+    },
+    "about_us": {
+        "label": "About Us",
+        "title": "A community that makes dog life easier",
+        "description": "Huellas del Norte brings together useful information, local resources, and an active network for those living with dogs in Northern Spain.",
+        "mission_title": "Our Mission",
+        "mission_desc": "Facilitate daily decisions with reliable data, an active community, and tools designed for everyday life.",
+        "vision_title": "Our Vision",
+        "vision_desc": "A more dog-friendly territory, where information is clear and accessible.",
+        "values": {
+            "wellbeing_title": "Real Wellbeing",
+            "wellbeing_desc": "We prioritize safety, health, and positive experiences for dogs and families.",
+            "community_title": "Active Community",
+            "community_desc": "We believe in collaboration between people, associations, and professionals.",
+            "territory_title": "Living Territory",
+            "territory_desc": "We care for the Northern Peninsula and its ecosystem with useful and updated information.",
+            "culture_title": "Dog Culture",
+            "culture_desc": "We promote responsible leisure, informed adoption, and quality resources."
+        },
+        "links": {
+            "title": "Useful Links",
+            "desc": "Learn more about our community and services.",
+            "how_it_works": "How it works",
+            "community": "Community",
+            "verification": "Verification",
+            "collaborators": "Collaborators",
+            "transparency": "Transparency",
+            "contact": "Contact"
+        }
+    },
+    "contact": {
+        "label": "Contact",
+        "title": "We are here to help you",
+        "description": "If you find an error, want to collaborate or need support, write to us.",
+        "form": {
+            "title": "Form",
+            "name_label": "Name",
+            "name_placeholder": "Your name",
+            "email_label": "Email",
+            "email_placeholder": "your@email.com",
+            "message_label": "Message",
+            "message_placeholder": "Tell us how we can help",
+            "submit": "Send message"
+        },
+        "support": {
+            "general_title": "General Support",
+            "general_desc": "We resolve questions about accounts, content and platform operation.",
+            "collab_title": "Collaborations",
+            "collab_desc": "If you are a professional or entity and want to appear on the map, tell us your case.",
+            "verification_title": "Verification",
+            "verification_desc": "Send us proofs or links if you detect incomplete or incorrect data."
+        },
+        "links": {
+            "title": "Useful Links",
+            "desc": "Resources to correct data, collaborate or know the platform.",
+            "verification": "Verification",
+            "how_it_works": "How it works",
+            "professionals": "Professionals",
+            "collaborators": "Collaborators",
+            "transparency": "Transparency",
+            "faq": "FAQ"
+        }
     }
 }

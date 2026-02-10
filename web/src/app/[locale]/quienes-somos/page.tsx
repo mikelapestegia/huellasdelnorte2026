@@ -1,49 +1,56 @@
 import Link from "next/link";
 import Section from "@/components/Section";
 import { HeartHandshake, PawPrint, Globe2, Users } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
-const values = [
-    {
-        title: "Bienestar real",
-        description:
-            "Priorizamos seguridad, salud y experiencias positivas para perros y familias.",
-        icon: HeartHandshake,
-    },
-    {
-        title: "Comunidad activa",
-        description:
-            "Creemos en la colaboración entre personas, asociaciones y profesionales.",
-        icon: Users,
-    },
-    {
-        title: "Territorio vivo",
-        description:
-            "Cuidamos el norte peninsular y su ecosistema con información útil y actualizada.",
-        icon: Globe2,
-    },
-    {
-        title: "Cultura perruna",
-        description:
-            "Promovemos ocio responsable, adopción informada y recursos de calidad.",
-        icon: PawPrint,
-    },
-];
+export default async function QuienesSomosPage() {
+    const t = await getTranslations("about_us");
 
-export default function QuienesSomosPage() {
+    const values = [
+        {
+            title: t("values.wellbeing_title"),
+            description: t("values.wellbeing_desc"),
+            icon: HeartHandshake,
+        },
+        {
+            title: t("values.community_title"),
+            description: t("values.community_desc"),
+            icon: Users,
+        },
+        {
+            title: t("values.territory_title"),
+            description: t("values.territory_desc"),
+            icon: Globe2,
+        },
+        {
+            title: t("values.culture_title"),
+            description: t("values.culture_desc"),
+            icon: PawPrint,
+        },
+    ];
+
+    const usefulLinks = [
+        { href: "/como-funciona", label: t("links.how_it_works") },
+        { href: "/comunidad", label: t("links.community") },
+        { href: "/verificacion", label: t("links.verification") },
+        { href: "/colaboradores", label: t("links.collaborators") },
+        { href: "/transparencia", label: t("links.transparency") },
+        { href: "/contacto", label: t("links.contact") },
+    ];
+
     return (
         <main className="min-h-screen bg-background">
             <section className="relative overflow-hidden border-b border-border">
                 <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-background" />
                 <div className="relative max-w-6xl mx-auto px-6 py-20">
                     <p className="text-sm uppercase tracking-widest text-accent font-semibold mb-4">
-                        Quienes somos
+                        {t("label")}
                     </p>
                     <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground">
-                        Una comunidad que hace la vida canina más fácil
+                        {t("title")}
                     </h1>
                     <p className="mt-4 text-lg text-foreground/70 max-w-2xl">
-                        Huellas del Norte reúne información útil, recursos locales y una red activa para
-                        quienes viven con perros en el norte peninsular.
+                        {t("description")}
                     </p>
                 </div>
             </section>
@@ -51,16 +58,15 @@ export default function QuienesSomosPage() {
             <Section className="bg-background">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div className="rounded-2xl border border-border bg-card/80 p-6 shadow-lg">
-                        <h2 className="text-2xl font-serif font-bold text-foreground mb-3">Nuestra misión</h2>
+                        <h2 className="text-2xl font-serif font-bold text-foreground mb-3">{t("mission_title")}</h2>
                         <p className="text-foreground/70">
-                            Facilitar decisiones cotidianas con datos fiables, comunidad activa y herramientas
-                            pensadas para el día a día.
+                            {t("mission_desc")}
                         </p>
                     </div>
                     <div className="rounded-2xl border border-border bg-card/80 p-6 shadow-lg">
-                        <h2 className="text-2xl font-serif font-bold text-foreground mb-3">Nuestra visión</h2>
+                        <h2 className="text-2xl font-serif font-bold text-foreground mb-3">{t("vision_title")}</h2>
                         <p className="text-foreground/70">
-                            Un territorio más amable con los perros, donde la información sea clara y accesible.
+                            {t("vision_desc")}
                         </p>
                     </div>
                 </div>
@@ -90,19 +96,12 @@ export default function QuienesSomosPage() {
 
             <Section className="bg-background">
                 <div className="rounded-3xl border border-border bg-card/80 p-8 md:p-10 shadow-lg">
-                    <h2 className="text-2xl font-serif font-bold text-foreground">Enlaces útiles</h2>
+                    <h2 className="text-2xl font-serif font-bold text-foreground">{t("links.title")}</h2>
                     <p className="mt-2 text-sm text-foreground/70">
-                        Conoce más sobre nuestra comunidad y servicios.
+                        {t("links.desc")}
                     </p>
                     <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                        {[
-                            { href: "/como-funciona", label: "Cómo funciona" },
-                            { href: "/comunidad", label: "Comunidad" },
-                            { href: "/verificacion", label: "Verificación" },
-                            { href: "/colaboradores", label: "Colaboradores" },
-                            { href: "/transparencia", label: "Transparencia" },
-                            { href: "/contacto", label: "Contacto" },
-                        ].map((link) => (
+                        {usefulLinks.map((link) => (
                             <Link
                                 key={link.href}
                                 href={link.href}

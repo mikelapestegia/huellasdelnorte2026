@@ -148,5 +148,67 @@
             "privacy": "Privacidad",
             "terms": "Términos"
         }
+    },
+    "about_us": {
+        "label": "Quiénes somos",
+        "title": "Una comunidad que hace la vida canina más fácil",
+        "description": "Huellas del Norte reúne información útil, recursos locales y una red activa para quienes viven con perros en el norte peninsular.",
+        "mission_title": "Nuestra misión",
+        "mission_desc": "Facilitar decisiones cotidianas con datos fiables, comunidad activa y herramientas pensadas para el día a día.",
+        "vision_title": "Nuestra visión",
+        "vision_desc": "Un territorio más amable con los perros, donde la información sea clara y accesible.",
+        "values": {
+            "wellbeing_title": "Bienestar real",
+            "wellbeing_desc": "Priorizamos seguridad, salud y experiencias positivas para perros y familias.",
+            "community_title": "Comunidad activa",
+            "community_desc": "Creemos en la colaboración entre personas, asociaciones y profesionales.",
+            "territory_title": "Territorio vivo",
+            "territory_desc": "Cuidamos el norte peninsular y su ecosistema con información útil y actualizada.",
+            "culture_title": "Cultura perruna",
+            "culture_desc": "Promovemos ocio responsable, adopción informada y recursos de calidad."
+        },
+        "links": {
+            "title": "Enlaces útiles",
+            "desc": "Conoce más sobre nuestra comunidad y servicios.",
+            "how_it_works": "Cómo funciona",
+            "community": "Comunidad",
+            "verification": "Verificación",
+            "collaborators": "Colaboradores",
+            "transparency": "Transparencia",
+            "contact": "Contacto"
+        }
+    },
+    "contact": {
+        "label": "Contacto",
+        "title": "Estamos para ayudarte",
+        "description": "Si detectas un error, quieres colaborar o necesitas soporte, escríbenos.",
+        "form": {
+            "title": "Formulario",
+            "name_label": "Nombre",
+            "name_placeholder": "Tu nombre",
+            "email_label": "Email",
+            "email_placeholder": "tu@email.com",
+            "message_label": "Mensaje",
+            "message_placeholder": "Cuéntanos en qué podemos ayudar",
+            "submit": "Enviar mensaje"
+        },
+        "support": {
+            "general_title": "Soporte general",
+            "general_desc": "Resolvemos dudas sobre cuentas, contenido y funcionamiento de la plataforma.",
+            "collab_title": "Colaboraciones",
+            "collab_desc": "Si eres profesional o entidad y quieres aparecer en el mapa, cuéntanos tu caso.",
+            "verification_title": "Verificación",
+            "verification_desc": "Envíanos pruebas o enlaces si detectas datos incompletos o incorrectos."
+        },
+        "links": {
+            "title": "Enlaces útiles",
+            "desc": "Recursos para corregir datos, colaborar o conocer la plataforma.",
+            "verification": "Verificación",
+            "how_it_works": "Cómo funciona",
+            "professionals": "Profesionales",
+            "collaborators": "Colaboradores",
+            "transparency": "Transparencia",
+            "faq": "FAQ"
+        }
     }
 }
