@@ -254,5 +254,45 @@
             "distance": "km",
             "bathing": "Baño"
         }
+    },
+    "route_detail": {
+        "back_to_routes": "Volver a rutas",
+        "distance": "Distancia",
+        "duration": "Duración",
+        "elevation": "Desnivel",
+        "type": "Tipo",
+        "tabs": {
+            "info": "Información",
+            "elevation": "Perfil",
+            "weather": "Clima"
+        },
+        "environment_title": "Entorno",
+        "bathing": {
+            "allowed_title": "Baño permitido 💧",
+            "allowed_desc": "Esta ruta tiene zonas donde tu perro puede bañarse.",
+            "forbidden_title": "Sin zonas de baño",
+            "forbidden_desc": "Lleva agua suficiente para tu perro."
+        },
+        "tips_title": "Consejos para ir con tu perro",
+        "tips": {
+            "bags": "Lleva bolsas para recoger los excrementos",
+            "water": "Agua fresca y cuenco portátil son esenciales",
+            "heat": "Evita las horas de más calor en verano",
+            "leash": "Mantén a tu perro con correa en zonas señalizadas"
+        },
+        "download": {
+            "title": "Descargar ruta",
+            "button": "Descargar GPX",
+            "desc": "Compatible con Garmin, Suunto, Komoot y otras apps"
+        },
+        "navigate": {
+            "title": "Cómo llegar",
+            "button": "Abrir en Google Maps"
+        },
+        "related_routes": "Rutas cercanas",
+        "not_found": {
+            "title": "Ruta no encontrada",
+            "button": "Volver al buscador"
+        }
     }
 }

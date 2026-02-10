@@ -209,5 +209,45 @@
             "distance": "km",
             "bathing": "Baignade"
         }
+    },
+    "route_detail": {
+        "back_to_routes": "Retour aux itinéraires",
+        "distance": "Distance",
+        "duration": "Durée",
+        "elevation": "Dénivelé",
+        "type": "Type",
+        "tabs": {
+            "info": "Information",
+            "elevation": "Profil",
+            "weather": "Météo"
+        },
+        "environment_title": "Environnement",
+        "bathing": {
+            "allowed_title": "Baignade autorisée 💧",
+            "allowed_desc": "Cet itinéraire a des zones où votre chien peut se baigner.",
+            "forbidden_title": "Pas de baignade",
+            "forbidden_desc": "Apportez suffisamment d'eau pour votre chien."
+        },
+        "tips_title": "Conseils pour votre chien",
+        "tips": {
+            "bags": "Apportez des sacs pour les déjections",
+            "water": "De l'eau fraîche et une gamelle portable sont essentiels",
+            "heat": "Évitez les heures les plus chaudes en été",
+            "leash": "Gardez votre chien en laisse dans les zones signalées"
+        },
+        "download": {
+            "title": "Télécharger itinéraire",
+            "button": "Télécharger GPX",
+            "desc": "Compatible avec Garmin, Suunto, Komoot et autres"
+        },
+        "navigate": {
+            "title": "Comment s'y rendre",
+            "button": "Ouvrir dans Google Maps"
+        },
+        "related_routes": "Itinéraires proches",
+        "not_found": {
+            "title": "Itinéraire non trouvé",
+            "button": "Retour à la recherche"
+        }
     }
 }

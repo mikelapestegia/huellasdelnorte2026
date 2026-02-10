@@ -4,7 +4,7 @@ import { useEffect, useRef, useMemo } from "react";
 import maplibregl, { GeoJSONSource, MapLayerMouseEvent } from "maplibre-gl";
 import type { Point } from "geojson";
 import { RouteCatalogItem } from "@/data/routesCatalog";
-
+import { useTranslations } from "next-intl";
 
 interface RouteMapProps {
     routes: RouteCatalogItem[];
@@ -19,9 +19,9 @@ const difficultyColors = {
 };
 
 export default function RouteMap({ routes, selectedRouteId, onRouteSelect }: RouteMapProps) {
+    const t = useTranslations("routes");
     const mapContainerRef = useRef<HTMLDivElement | null>(null);
     const mapRef = useRef<maplibregl.Map | null>(null);
-    const markersRef = useRef<maplibregl.Marker[]>([]);
 
     const geojsonData = useMemo(() => ({
         type: "FeatureCollection" as const,
@@ -32,7 +32,7 @@ export default function RouteMap({ routes, selectedRouteId, onRouteSelect }: Rou
                 name: route.name,
                 region: route.region,
                 difficulty: route.difficulty,
-                distance: route.distanceKmMin,
+                distance: route.distanceKmMax ? `${route.distanceKmMin}-${route.distanceKmMax}` : route.distanceKmMin,
                 routeType: route.routeType,
                 bathing: route.bathingAllowed,
             },
@@ -175,16 +175,21 @@ export default function RouteMap({ routes, selectedRouteId, onRouteSelect }: Rou
                     const coords = (feature.geometry as Point).coordinates as [number, number];
                     const props = feature.properties;
 
+                    // Translate difficulty
+                    const diffLabel = t(`difficulty.${props.difficulty}`);
+                    const bathingLabel = t('card.bathing');
+                    const distanceLabel = t('card.distance');
+
                     new maplibregl.Popup({ closeButton: true, maxWidth: "280px" })
                         .setLngLat(coords)
                         .setHTML(`
-              <div class="p-2">
-                <h3 class="font-bold text-sm mb-1">${props.name}</h3>
-                <p class="text-xs text-gray-600 mb-2">${props.region}</p>
-                <div class="flex gap-2 text-xs">
-                  <span class="px-1.5 py-0.5 rounded bg-gray-100">${props.distance} km</span>
-                  <span class="px-1.5 py-0.5 rounded" style="background: ${difficultyColors[props.difficulty as keyof typeof difficultyColors]}20; color: ${difficultyColors[props.difficulty as keyof typeof difficultyColors]}">${props.difficulty}</span>
-                  ${props.bathing ? '<span class="px-1.5 py-0.5 rounded bg-blue-100 text-blue-700">💧 Baño</span>' : ''}
+              <div class="p-2 font-sans">
+                <h3 class="font-bold text-sm mb-1 text-slate-800">${props.name}</h3>
+                <p class="text-xs text-slate-600 mb-2">${props.region}</p>
+                <div class="flex gap-2 text-xs flex-wrap">
+                  <span class="px-1.5 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">${props.distance} ${distanceLabel}</span>
+                  <span class="px-1.5 py-0.5 rounded font-medium" style="background: ${difficultyColors[props.difficulty as keyof typeof difficultyColors]}20; color: ${difficultyColors[props.difficulty as keyof typeof difficultyColors]}; border: 1px solid ${difficultyColors[props.difficulty as keyof typeof difficultyColors]}40;">${diffLabel}</span>
+                  ${props.bathing ? `<span class="px-1.5 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-200">💧 ${bathingLabel}</span>` : ''}
                 </div>
               </div>
             `)
@@ -213,7 +218,7 @@ export default function RouteMap({ routes, selectedRouteId, onRouteSelect }: Rou
             map.remove();
             mapRef.current = null;
         };
-    }, [geojsonData, routes, onRouteSelect]);
+    }, [geojsonData, routes, onRouteSelect, t]); // Added t dependency
 
     // Update source data when routes change
     useEffect(() => {
@@ -241,24 +246,24 @@ export default function RouteMap({ routes, selectedRouteId, onRouteSelect }: Rou
     }, [selectedRouteId, routes]);
 
     return (
-        <div className="relative h-full w-full rounded-2xl overflow-hidden border border-border shadow-lg">
+        <div className="relative h-full w-full rounded-3xl overflow-hidden border border-border shadow-md">
             <div ref={mapContainerRef} className="h-full w-full" />
 
             {/* Legend */}
-            <div className="absolute bottom-4 left-4 bg-card/95 backdrop-blur-sm rounded-xl p-3 shadow-lg">
-                <p className="text-xs font-semibold text-foreground mb-2">Dificultad</p>
+            <div className="absolute bottom-4 left-4 bg-background/90 backdrop-blur-md rounded-xl p-3 shadow-lg border border-border/50">
+                <p className="text-xs font-bold text-foreground mb-2 uppercase tracking-wider opacity-70">{t('filters.difficulty')}</p>
                 <div className="space-y-1.5">
-                    <div className="flex items-center gap-2 text-xs">
-                        <span className="h-3 w-3 rounded-full" style={{ backgroundColor: difficultyColors.easy }} />
-                        Fácil
+                    <div className="flex items-center gap-2 text-xs font-medium">
+                        <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: difficultyColors.easy }} />
+                        {t('difficulty.easy')}
                     </div>
-                    <div className="flex items-center gap-2 text-xs">
-                        <span className="h-3 w-3 rounded-full" style={{ backgroundColor: difficultyColors.moderate }} />
-                        Moderada
+                    <div className="flex items-center gap-2 text-xs font-medium">
+                        <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: difficultyColors.moderate }} />
+                        {t('difficulty.moderate')}
                     </div>
-                    <div className="flex items-center gap-2 text-xs">
-                        <span className="h-3 w-3 rounded-full" style={{ backgroundColor: difficultyColors.hard }} />
-                        Difícil
+                    <div className="flex items-center gap-2 text-xs font-medium">
+                        <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: difficultyColors.hard }} />
+                        {t('difficulty.hard')}
                     </div>
                 </div>
             </div>
