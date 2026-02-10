@@ -148,5 +148,67 @@
             "privacy": "Privacitat",
             "terms": "Condicions"
         }
+    },
+    "about_us": {
+        "label": "Qui som",
+        "title": "Una comunitat que fa la vida canina més fàcil",
+        "description": "Huellas del Norte reuneix informació útil, recursos locals i una xarxa activa per als qui viuen amb gossos al nord peninsular.",
+        "mission_title": "La nostra missió",
+        "mission_desc": "Facilitar decisions quotidianes amb dades fiables, comunitat activa i eines pensades per al dia a dia.",
+        "vision_title": "La nostra visió",
+        "vision_desc": "Un territori més amable amb els gossos, on la informació sigui clara i accessible.",
+        "values": {
+            "wellbeing_title": "Benestar real",
+            "wellbeing_desc": "Prioritzem seguretat, salut i experiències positives per a gossos i famílies.",
+            "community_title": "Comunitat activa",
+            "community_desc": "Creiem en la col·laboració entre persones, associacions i professionals.",
+            "territory_title": "Territori viu",
+            "territory_desc": "Cuidem el nord peninsular i el seu ecosistema amb informació útil i actualitzada.",
+            "culture_title": "Cultura canina",
+            "culture_desc": "Promovem oci responsable, adopció informada i recursos de qualitat."
+        },
+        "links": {
+            "title": "Enllaços útils",
+            "desc": "Coneix més sobre la nostra comunitat i serveis.",
+            "how_it_works": "Com funciona",
+            "community": "Comunitat",
+            "verification": "Verificació",
+            "collaborators": "Col·laboradors",
+            "transparency": "Transparència",
+            "contact": "Contacte"
+        }
+    },
+    "contact": {
+        "label": "Contacte",
+        "title": "Estem per ajudar-te",
+        "description": "Si detectes un error, vols col·laborar o necessites suport, escriu-nos.",
+        "form": {
+            "title": "Formulari",
+            "name_label": "Nom",
+            "name_placeholder": "El teu nom",
+            "email_label": "Email",
+            "email_placeholder": "teu@email.com",
+            "message_label": "Missatge",
+            "message_placeholder": "Explica'ns en què podem ajudar",
+            "submit": "Enviar missatge"
+        },
+        "support": {
+            "general_title": "Suport general",
+            "general_desc": "Resolem dubtes sobre comptes, contingut i funcionament de la plataforma.",
+            "collab_title": "Col·laboracions",
+            "collab_desc": "Si ets professional o entitat i vols aparèixer al mapa, explica'ns el teu cas.",
+            "verification_title": "Verificació",
+            "verification_desc": "Envia'ns proves o enllaços si detectes dades incompletes o incorrectes."
+        },
+        "links": {
+            "title": "Enllaços útils",
+            "desc": "Recursos per corregir dades, col·laborar o conèixer la plataforma.",
+            "verification": "Verificació",
+            "how_it_works": "Com funciona",
+            "professionals": "Professionals",
+            "collaborators": "Col·laboradors",
+            "transparency": "Transparència",
+            "faq": "FAQ"
+        }
     }
 }

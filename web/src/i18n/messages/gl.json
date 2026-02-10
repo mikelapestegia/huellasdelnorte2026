@@ -148,5 +148,67 @@
             "privacy": "Privacidade",
             "terms": "Termos"
         }
+    },
+    "about_us": {
+        "label": "Quen somos",
+        "title": "Unha comunidade que fai a vida canina máis doada",
+        "description": "Huellas del Norte reúne información útil, recursos locais e unha rede activa para quen vive con cans no norte peninsular.",
+        "mission_title": "A nosa misión",
+        "mission_desc": "Facilitar as decisións cotiás con datos fiables, comunidade activa e ferramentas pensadas para o día a día.",
+        "vision_title": "A nosa visión",
+        "vision_desc": "Un territorio máis amable cos cans, onde a información sexa clara e accesible.",
+        "values": {
+            "wellbeing_title": "Benestar real",
+            "wellbeing_desc": "Priorizamos seguridade, saúde e experiencias positivas para cans e familias.",
+            "community_title": "Comunidade activa",
+            "community_desc": "Cremos na colaboración entre persoas, asociacións e profesionais.",
+            "territory_title": "Territorio vivo",
+            "territory_desc": "Coidamos o norte peninsular e o seu ecosistema con información útil e actualizada.",
+            "culture_title": "Cultura canina",
+            "culture_desc": "Promovemos lecer responsable, adopción informada e recursos de calidade."
+        },
+        "links": {
+            "title": "Ligazóns útiles",
+            "desc": "Coñece máis sobre a nosa comunidade e servizos.",
+            "how_it_works": "Como funciona",
+            "community": "Comunidade",
+            "verification": "Verificación",
+            "collaborators": "Colaboradores",
+            "transparency": "Transparencia",
+            "contact": "Contacto"
+        }
+    },
+    "contact": {
+        "label": "Contacto",
+        "title": "Estamos para axudarche",
+        "description": "Se detectas un erro, queres colaborar ou necesitas soporte, escríbenos.",
+        "form": {
+            "title": "Formulario",
+            "name_label": "Nome",
+            "name_placeholder": "O teu nome",
+            "email_label": "Email",
+            "email_placeholder": "teu@email.com",
+            "message_label": "Mensaxe",
+            "message_placeholder": "Cóntanos en que podemos axudar",
+            "submit": "Enviar mensaxe"
+        },
+        "support": {
+            "general_title": "Soporte xeral",
+            "general_desc": "Resolvemos dúbidas sobre contas, contido e funcionamento da plataforma.",
+            "collab_title": "Colaboracións",
+            "collab_desc": "Se es profesional ou entidade e queres aparecer no mapa, cóntanos o teu caso.",
+            "verification_title": "Verificación",
+            "verification_desc": "Envíanos probas ou ligazóns se detectas datos incompletos ou incorrectos."
+        },
+        "links": {
+            "title": "Ligazóns útiles",
+            "desc": "Recursos para corrixir datos, colaborar ou coñecer a plataforma.",
+            "verification": "Verificación",
+            "how_it_works": "Como funciona",
+            "professionals": "Profesionais",
+            "collaborators": "Colaboradores",
+            "transparency": "Transparencia",
+            "faq": "FAQ"
+        }
     }
 }

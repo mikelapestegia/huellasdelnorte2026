@@ -148,5 +148,67 @@
             "privacy": "隐私",
             "terms": "条款"
         }
+    },
+    "about_us": {
+        "label": "关于我们",
+        "title": "一个让养狗生活更轻松的社区",
+        "description": "Huellas del Norte 为西班牙北部的养狗人士汇集了有用信息、本地资源和活跃网络。",
+        "mission_title": "我们的使命",
+        "mission_desc": "通过可靠的数据、活跃的社区和专为日常生活设计的工具，促进日常决策。",
+        "vision_title": "我们的愿景",
+        "vision_desc": "一个对狗狗更友好的地区，信息清晰且易于获取。",
+        "values": {
+            "wellbeing_title": "真正的福祉",
+            "wellbeing_desc": "我们优先考虑狗狗和家庭的安全、健康和积极体验。",
+            "community_title": "活跃社区",
+            "community_desc": "我们相信人、协会和专业人士之间的合作。",
+            "territory_title": "充满活力的地区",
+            "territory_desc": "我们用有用和更新的信息关爱北部半岛及其生态系统。",
+            "culture_title": "养狗文化",
+            "culture_desc": "我们提倡负责任的休闲、明智的领养和优质资源。"
+        },
+        "links": {
+            "title": "有用链接",
+            "desc": "了解更多关于我们的社区和服务。",
+            "how_it_works": "如何运作",
+            "community": "社区",
+            "verification": "验证",
+            "collaborators": "合作者",
+            "transparency": "透明度",
+            "contact": "联系方式"
+        }
+    },
+    "contact": {
+        "label": "联系方式",
+        "title": "我们为您提供帮助",
+        "description": "如果您发现错误、想要合作或需要支持，请写信给我们。",
+        "form": {
+            "title": "表格",
+            "name_label": "姓名",
+            "name_placeholder": "您的姓名",
+            "email_label": "电子邮件",
+            "email_placeholder": "your@email.com",
+            "message_label": "留言",
+            "message_placeholder": "告诉我们如何为您提供帮助",
+            "submit": "发送留言"
+        },
+        "support": {
+            "general_title": "一般支持",
+            "general_desc": "我们解决有关账户、内容和平台运作的问题。",
+            "collab_title": "合作",
+            "collab_desc": "如果您是专业人士或实体并希望出现在地图上，请告诉我们您的情况。",
+            "verification_title": "验证",
+            "verification_desc": "如果您发现数据不完整或不正确，请向我们发送证明或链接。"
+        },
+        "links": {
+            "title": "有用链接",
+            "desc": "更正数据、合作或了解平台的资源。",
+            "verification": "验证",
+            "how_it_works": "如何运作",
+            "professionals": "专业人士",
+            "collaborators": "合作者",
+            "transparency": "透明度",
+            "faq": "常见问题"
+        }
     }
 }

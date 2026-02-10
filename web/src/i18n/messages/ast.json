@@ -148,5 +148,67 @@
             "privacy": "Privacidá",
             "terms": "Términos"
         }
+    },
+    "about_us": {
+        "label": "Quién somos",
+        "title": "Una comunidá que fai la vida canina más fácil",
+        "description": "Huellas del Norte axunta información útil, recursos locales y una rede activa pa quien vive con perros nel norte peninsular.",
+        "mission_title": "La nuesa misión",
+        "mission_desc": "Facilitar decisiones cotidianes con datos fiables, comunidá activa y ferramientes pensaes pal día a día.",
+        "vision_title": "La nuesa visión",
+        "vision_desc": "Un territoriu más amable colos perros, onde la información seya clara y accesible.",
+        "values": {
+            "wellbeing_title": "Bienestar real",
+            "wellbeing_desc": "Priorizamos seguridá, salú y esperiencies positives pa perros y families.",
+            "community_title": "Comunidá activa",
+            "community_desc": "Creyemos na collaboración ente persones, asociaciones y profesionales.",
+            "territory_title": "Territoriu vivu",
+            "territory_desc": "Cuidamos el norte peninsular y el so ecosistema con información útil y actualizada.",
+            "culture_title": "Cultura perruna",
+            "culture_desc": "Promovemos ociu responsable, adopción informada y recursos de calidá."
+        },
+        "links": {
+            "title": "Enllaces útiles",
+            "desc": "Conoz más sobre la nuesa comunidá y servicios.",
+            "how_it_works": "Cómo funciona",
+            "community": "Comunidá",
+            "verification": "Verificación",
+            "collaborators": "Collaboradores",
+            "transparency": "Tresparencia",
+            "contact": "Contactu"
+        }
+    },
+    "contact": {
+        "label": "Contactu",
+        "title": "Tamos p'ayudate",
+        "description": "Si detectes un error, quies collaborar o precises sofitu, escribimos.",
+        "form": {
+            "title": "Formulariu",
+            "name_label": "Nome",
+            "name_placeholder": "El to nome",
+            "email_label": "Email",
+            "email_placeholder": "to@email.com",
+            "message_label": "Mensaxe",
+            "message_placeholder": "Cúntanos en qué podemos ayudar",
+            "submit": "Unviar mensaxe"
+        },
+        "support": {
+            "general_title": "Sofitu xeneral",
+            "general_desc": "Resolvemos duldes sobre cuentes, conteníu y funcionamientu de la plataforma.",
+            "collab_title": "Collaboraciones",
+            "collab_desc": "Si yes profesional o entidá y quies apaecer nel mapa, cúntanos el to casu.",
+            "verification_title": "Verificación",
+            "verification_desc": "Únviamos pruebes o enllaces si detectes datos incompletos o incorrectos."
+        },
+        "links": {
+            "title": "Enllaces útiles",
+            "desc": "Recursos pa correxir datos, collaborar o conocer la plataforma.",
+            "verification": "Verificación",
+            "how_it_works": "Cómo funciona",
+            "professionals": "Profesionales",
+            "collaborators": "Collaboradores",
+            "transparency": "Tresparencia",
+            "faq": "FAQ"
+        }
     }
 }

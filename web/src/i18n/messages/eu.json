@@ -148,5 +148,67 @@
             "privacy": "Pribatutasuna",
             "terms": "Baldintzak"
         }
+    },
+    "about_us": {
+        "label": "Nor gara",
+        "title": "Txakurren bizitza errazten duen komunitatea",
+        "description": "Huellas del Nortek informazio erabilgarria, tokiko baliabideak eta sare aktiboa biltzen ditu Ipar Penintsulan txakurrarekin bizi direnentzat.",
+        "mission_title": "Gure misioa",
+        "mission_desc": "Eguneroko erabakiak erraztea datu fidagarriekin, komunitate aktiboarekin eta egunerokorako pentsatutako tresnekin.",
+        "vision_title": "Gure ikuspegia",
+        "vision_desc": "Txakurrekin atseginagoa den lurralde bat, non informazioa argia eta eskuragarria den.",
+        "values": {
+            "wellbeing_title": "Benetako ongizatea",
+            "wellbeing_desc": "Txakur eta familientzako segurtasuna, osasuna eta esperientzia positiboak lehenesten ditugu.",
+            "community_title": "Komunitate aktiboa",
+            "community_desc": "Pertsonen, elkarteen eta profesionalen arteko lankidetzan sinesten dugu.",
+            "territory_title": "Lurralde bizia",
+            "territory_desc": "Ipar Penintsula eta bere ekosistema zaintzen ditugu informazio erabilgarri eta eguneratuarekin.",
+            "culture_title": "Txakur kultura",
+            "culture_desc": "Aisia arduratsua, adopzio informatua eta kalitatezko baliabideak sustatzen ditugu."
+        },
+        "links": {
+            "title": "Esteka erabilgarriak",
+            "desc": "Ezagutu gehiago gure komunitateari eta zerbitzuei buruz.",
+            "how_it_works": "Nola funtzionatzen du",
+            "community": "Komunitatea",
+            "verification": "Egiaztapena",
+            "collaborators": "Laguntzaileak",
+            "transparency": "Gardentasuna",
+            "contact": "Kontaktua"
+        }
+    },
+    "contact": {
+        "label": "Kontaktua",
+        "title": "Laguntzeko gaude",
+        "description": "Akatsen bat atzematen baduzu, lagundu nahi baduzu edo laguntza behar baduzu, idatzi iezaguzu.",
+        "form": {
+            "title": "Formularioa",
+            "name_label": "Izena",
+            "name_placeholder": "Zure izena",
+            "email_label": "Emaila",
+            "email_placeholder": "zure@emaila.com",
+            "message_label": "Mezua",
+            "message_placeholder": "Esaguzu zertan lagun dezakegun",
+            "submit": "Bidali mezua"
+        },
+        "support": {
+            "general_title": "Laguntza orokorra",
+            "general_desc": "Kontuei, edukiari eta plataformaren funtzionamenduari buruzko zalantzak argitzen ditugu.",
+            "collab_title": "Kolaborazioak",
+            "collab_desc": "Profesionala edo erakundea bazara eta mapan agertu nahi baduzu, konta iezaguzu zure kasua.",
+            "verification_title": "Egiaztapena",
+            "verification_desc": "Bidali frogak edo estekak datu osatugabeak edo okerrak atzematen badituzu."
+        },
+        "links": {
+            "title": "Esteka erabilgarriak",
+            "desc": "Datuak zuzentzeko, laguntzeko edo plataforma ezagutzeko baliabideak.",
+            "verification": "Egiaztapena",
+            "how_it_works": "Nola funtzionatzen du",
+            "professionals": "Profesionalak",
+            "collaborators": "Laguntzaileak",
+            "transparency": "Gardentasuna",
+            "faq": "FAQ"
+        }
     }
 }
