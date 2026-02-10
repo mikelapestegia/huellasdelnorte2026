@@ -294,5 +294,43 @@
             "title": "Ruta no encontrada",
             "button": "Volver al buscador"
         }
+    },
+    "weather": {
+        "loading": "Cargando datos meteorológicos...",
+        "error": "No se pudo cargar el tiempo",
+        "data_unavailable": "Datos no disponibles",
+        "current_title": "Ahora en {location}",
+        "feels_like": "Sensación",
+        "humidity": "Humedad",
+        "wind": "Viento",
+        "forecast_title": "Próximos días",
+        "best_times_title": "Mejores horas para pasear",
+        "best_times": {
+            "morning": "Mañana temprano (7:00-10:00)",
+            "evening": "Tarde-noche (18:00-21:00)",
+            "avoid_midday": "Evitar horas centrales (12:00-17:00)"
+        },
+        "conditions": {
+            "excellent": "Condiciones ideales",
+            "good": "Buenas condiciones",
+            "caution": "Precaución recomendada",
+            "avoid": "Condiciones extremas"
+        },
+        "tips": {
+            "heat_warning": "Temperatura muy alta, riesgo de golpe de calor",
+            "cold_warning": "Temperatura muy baja, riesgo de hipotermia",
+            "storm_warning": "Peligro de tormentas eléctricas",
+            "avoid_midday": "Evita las horas centrales del día",
+            "extra_water": "Lleva agua extra para tu perro",
+            "paw_protection": "Protege las almohadillas de tu perro del frío",
+            "raincoat": "Lleva un chubasquero para ti y tu perro",
+            "snow_caution": "Cuidado con el hielo y la nieve acumulada",
+            "ideal_temp": "Temperatura perfecta para pasear",
+            "comfortable": "Tu perro estará cómodo durante toda la ruta",
+            "shade": "Busca zonas de sombra durante el paseo",
+            "coat": "Considera un abrigo si tu perro es de pelo corto",
+            "water": "Lleva agua suficiente para ambos"
+        },
+        "attribution": "Datos proporcionados por OpenWeatherMap."
     }
 }

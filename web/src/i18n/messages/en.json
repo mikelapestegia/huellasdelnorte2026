@@ -294,5 +294,43 @@
             "title": "Route not found",
             "button": "Back to search"
         }
+    },
+    "weather": {
+        "loading": "Loading weather data...",
+        "error": "Could not load weather",
+        "data_unavailable": "Data unavailable",
+        "current_title": "Now in {location}",
+        "feels_like": "Feels like",
+        "humidity": "Humidity",
+        "wind": "Wind",
+        "forecast_title": "Forecast",
+        "best_times_title": "Best times to walk",
+        "best_times": {
+            "morning": "Early morning (7:00-10:00)",
+            "evening": "Late afternoon (18:00-21:00)",
+            "avoid_midday": "Avoid midday hours (12:00-17:00)"
+        },
+        "conditions": {
+            "excellent": "Ideal conditions",
+            "good": "Good conditions",
+            "caution": "Caution advised",
+            "avoid": "Extreme conditions"
+        },
+        "tips": {
+            "heat_warning": "High temperature, risk of heat stroke",
+            "cold_warning": "Low temperature, risk of hypothermia",
+            "storm_warning": "Risk of thunderstorms",
+            "avoid_midday": "Avoid exposed areas",
+            "extra_water": "Bring extra water for your dog",
+            "paw_protection": "Protect dog paws from cold",
+            "raincoat": "Bring a raincoat",
+            "snow_caution": "Beware of ice and snow",
+            "ideal_temp": "Perfect temperature for walking",
+            "comfortable": "Your dog will be comfortable",
+            "shade": "Seek shade during the walk",
+            "coat": "Consider a coat for short-haired dogs",
+            "water": "Bring enough water"
+        },
+        "attribution": "Data provided by OpenWeatherMap."
     }
 }

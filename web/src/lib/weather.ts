@@ -51,10 +51,11 @@ export const weatherIconToEmoji: Record<string, string> = {
 };
 
 // Dog walking conditions assessment
+// Returns translation KEYS, not final text
 export function getDogWalkingConditions(weather: WeatherData): {
     rating: "excellent" | "good" | "caution" | "avoid";
-    message: string;
-    tips: string[];
+    message: string; // Translation key
+    tips: string[]; // Translation keys
 } {
     const temp = weather.temperature;
     const main = weather.main.toLowerCase();
@@ -63,11 +64,11 @@ export function getDogWalkingConditions(weather: WeatherData): {
     if (temp > 35 || temp < -5 || main.includes("thunderstorm")) {
         return {
             rating: "avoid",
-            message: "Condiciones extremas",
+            message: "conditions.avoid",
             tips: [
-                temp > 35 ? "Temperatura muy alta, riesgo de golpe de calor" : "",
-                temp < -5 ? "Temperatura muy baja, riesgo de hipotermia" : "",
-                main.includes("thunderstorm") ? "Peligro de tormentas eléctricas" : "",
+                temp > 35 ? "tips.heat_warning" : "",
+                temp < -5 ? "tips.cold_warning" : "",
+                main.includes("thunderstorm") ? "tips.storm_warning" : "",
             ].filter(Boolean),
         };
     }
@@ -76,13 +77,13 @@ export function getDogWalkingConditions(weather: WeatherData): {
     if (temp > 28 || temp < 0 || main.includes("rain") || main.includes("snow")) {
         return {
             rating: "caution",
-            message: "Precaución recomendada",
+            message: "conditions.caution",
             tips: [
-                temp > 28 ? "Evita las horas centrales del día" : "",
-                temp > 28 ? "Lleva agua extra para tu perro" : "",
-                temp < 0 ? "Protege las almohadillas de tu perro del frío" : "",
-                main.includes("rain") ? "Lleva un chubasquero para ti y tu perro" : "",
-                main.includes("snow") ? "Cuidado con el hielo y la nieve acumulada" : "",
+                temp > 28 ? "tips.avoid_midday" : "",
+                temp > 28 ? "tips.extra_water" : "",
+                temp < 0 ? "tips.paw_protection" : "",
+                main.includes("rain") ? "tips.raincoat" : "",
+                main.includes("snow") ? "tips.snow_caution" : "",
             ].filter(Boolean),
         };
     }
@@ -91,10 +92,10 @@ export function getDogWalkingConditions(weather: WeatherData): {
     if (temp >= 10 && temp <= 22) {
         return {
             rating: "excellent",
-            message: "Condiciones ideales",
+            message: "conditions.excellent",
             tips: [
-                "Temperatura perfecta para pasear",
-                "Tu perro estará cómodo durante toda la ruta",
+                "tips.ideal_temp",
+                "tips.comfortable",
             ],
         };
     }
@@ -102,11 +103,11 @@ export function getDogWalkingConditions(weather: WeatherData): {
     // Default good
     return {
         rating: "good",
-        message: "Buenas condiciones",
+        message: "conditions.good",
         tips: [
-            temp > 22 ? "Busca zonas de sombra durante el paseo" : "",
-            temp < 10 ? "Considera un abrigo si tu perro es de pelo corto" : "",
-            "Lleva agua suficiente para ambos",
+            temp > 22 ? "tips.shade" : "",
+            temp < 10 ? "tips.coat" : "",
+            "tips.water",
         ].filter(Boolean),
     };
 }
@@ -115,40 +116,41 @@ export function getDogWalkingConditions(weather: WeatherData): {
 export async function fetchWeather(
     lat: number,
     lon: number,
-    apiKey?: string
+    apiKey?: string,
+    locale: string = "es"
 ): Promise<WeatherForecast | null> {
     // If no API key, return mock data
     if (!apiKey) {
-        return getMockWeatherData();
+        return getMockWeatherData(locale);
     }
 
     try {
         // Current weather
         const currentResponse = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=es&appid=${apiKey}`
+            `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=${locale}&appid=${apiKey}`
         );
 
         if (!currentResponse.ok) {
             console.error("Weather API error:", currentResponse.status);
-            return getMockWeatherData();
+            return getMockWeatherData(locale);
         }
 
         const currentData = await currentResponse.json();
 
         // 5-day forecast
         const forecastResponse = await fetch(
-            `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&lang=es&appid=${apiKey}`
+            `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&lang=${locale}&appid=${apiKey}`
         );
 
         if (!forecastResponse.ok) {
             console.error("Forecast API error:", forecastResponse.status);
-            return getMockWeatherData();
+            return getMockWeatherData(locale);
         }
 
         const forecastData = await forecastResponse.json();
 
         // Process forecast data - get one entry per day
-        const dailyForecasts = processForecastData(forecastData.list);
+        const dailyForecasts = processForecastData(forecastData.list, locale);
 
         return {
             current: {
@@ -165,12 +167,12 @@ export async function fetchWeather(
         };
     } catch (error) {
         console.error("Error fetching weather:", error);
-        return getMockWeatherData();
+        return getMockWeatherData(locale);
     }
 }
 
 // Process forecast data to get daily summaries
-function processForecastData(list: any[]): ForecastDay[] {
+function processForecastData(list: any[], locale: string): ForecastDay[] {
     const dailyMap = new Map<string, any[]>();
 
     list.forEach((item) => {
@@ -182,19 +184,30 @@ function processForecastData(list: any[]): ForecastDay[] {
     });
 
     const days: ForecastDay[] = [];
-    const dayNames = ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"];
+
+    // Use Intl for day names relative to locale
+    const dateFormatter = new Intl.DateTimeFormat(locale, { weekday: 'short' });
 
     dailyMap.forEach((items, dateStr) => {
         if (days.length >= 5) return; // Limit to 5 days
 
         const date = new Date(dateStr);
+        let dayName = "";
+        try {
+            dayName = dateFormatter.format(date);
+            // Capitalize first letter
+            dayName = dayName.charAt(0).toUpperCase() + dayName.slice(1);
+        } catch (e) {
+            dayName = date.toLocaleDateString();
+        }
+
         const temps = items.map((i) => i.main.temp);
         const midday = items.find((i) => i.dt_txt.includes("12:00")) || items[0];
         const precipProbs = items.map((i) => i.pop || 0);
 
         days.push({
             date: dateStr,
-            dayName: dayNames[date.getDay()],
+            dayName: dayName,
             tempMax: Math.round(Math.max(...temps)),
             tempMin: Math.round(Math.min(...temps)),
             description: midday.weather[0].description,
@@ -208,9 +221,9 @@ function processForecastData(list: any[]): ForecastDay[] {
 }
 
 // Mock weather data for development/demo
-function getMockWeatherData(): WeatherForecast {
+function getMockWeatherData(locale: string): WeatherForecast {
     const today = new Date();
-    const dayNames = ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"];
+    const dateFormatter = new Intl.DateTimeFormat(locale, { weekday: 'short' });
 
     return {
         current: {
@@ -218,28 +231,38 @@ function getMockWeatherData(): WeatherForecast {
             feelsLike: 17,
             humidity: 65,
             windSpeed: 12,
-            description: "parcialmente nublado",
+            description: locale === "es" ? "parcialmente nublado" : "partly cloudy",
             icon: "02d",
             main: "Clouds",
         },
         forecast: Array.from({ length: 5 }, (_, i) => {
             const date = new Date(today);
             date.setDate(date.getDate() + i + 1);
+
+            let dayName = "";
+            try {
+                dayName = dateFormatter.format(date);
+                dayName = dayName.charAt(0).toUpperCase() + dayName.slice(1);
+            } catch (e) {
+                dayName = "Day " + (i + 1);
+            }
+
             const icons = ["01d", "02d", "03d", "10d", "02d"];
-            const mains = ["Clear", "Clouds", "Clouds", "Rain", "Clouds"];
-            const descriptions = ["despejado", "algo de nubes", "nublado", "lluvia ligera", "parcialmente nublado"];
+            const descriptionsEs = ["despejado", "algo de nubes", "nublado", "lluvia ligera", "parcialmente nublado"];
+            const descriptionsEn = ["clear", "few clouds", "cloudy", "light rain", "partly cloudy"];
+            const descriptions = locale === "es" ? descriptionsEs : descriptionsEn;
 
             return {
                 date: date.toISOString().split("T")[0],
-                dayName: dayNames[date.getDay()],
+                dayName: dayName,
                 tempMax: 18 + Math.floor(Math.random() * 5),
                 tempMin: 10 + Math.floor(Math.random() * 5),
-                description: descriptions[i],
+                description: descriptions[i] || "cloudy",
                 icon: icons[i],
-                main: mains[i],
+                main: "Clouds",
                 precipitationProb: i === 3 ? 60 : Math.floor(Math.random() * 30),
             };
         }),
-        location: "Zona de la ruta",
+        location: "Route Zone", // Generic name
     };
 }

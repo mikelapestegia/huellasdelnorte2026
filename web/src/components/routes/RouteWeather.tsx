@@ -5,6 +5,7 @@ import {
     ThermometerSun, Wind, Droplets, CloudRain,
     AlertTriangle, CheckCircle2, Dog, Loader2
 } from "lucide-react";
+import { useTranslations, useLocale } from "next-intl";
 import {
     WeatherForecast,
     fetchWeather,
@@ -32,6 +33,8 @@ const ratingIcons = {
 };
 
 export default function RouteWeather({ coordinates, routeName }: RouteWeatherProps) {
+    const t = useTranslations("weather");
+    const locale = useLocale();
     const [weather, setWeather] = useState<WeatherForecast | null>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -43,17 +46,16 @@ export default function RouteWeather({ coordinates, routeName }: RouteWeatherPro
 
             try {
                 // Note: In production, API key should come from environment variable
-                // For now, we use mock data (passing no API key)
                 const apiKey = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
-                const data = await fetchWeather(coordinates[1], coordinates[0], apiKey);
+                const data = await fetchWeather(coordinates[1], coordinates[0], apiKey, locale);
 
                 if (data) {
                     setWeather(data);
                 } else {
-                    setError("No se pudo cargar el tiempo");
+                    setError(t("error"));
                 }
             } catch (err) {
-                setError("Error al cargar datos meteorológicos");
+                setError(t("error"));
                 console.error(err);
             } finally {
                 setLoading(false);
@@ -61,13 +63,13 @@ export default function RouteWeather({ coordinates, routeName }: RouteWeatherPro
         }
 
         loadWeather();
-    }, [coordinates]);
+    }, [coordinates, locale, t]);
 
     if (loading) {
         return (
             <div className="flex items-center justify-center py-12">
                 <Loader2 className="h-8 w-8 animate-spin text-primary" />
-                <span className="ml-3 text-foreground/60">Cargando datos meteorológicos...</span>
+                <span className="ml-3 text-foreground/60">{t("loading")}</span>
             </div>
         );
     }
@@ -76,7 +78,7 @@ export default function RouteWeather({ coordinates, routeName }: RouteWeatherPro
         return (
             <div className="text-center py-8">
                 <CloudRain className="h-12 w-12 text-foreground/30 mx-auto mb-3" />
-                <p className="text-foreground/60">{error || "Datos no disponibles"}</p>
+                <p className="text-foreground/60">{error || t("data_unavailable")}</p>
             </div>
         );
     }
@@ -91,7 +93,7 @@ export default function RouteWeather({ coordinates, routeName }: RouteWeatherPro
                 <div className="rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 p-5">
                     <div className="flex items-start justify-between">
                         <div>
-                            <p className="text-sm text-foreground/60 mb-1">Ahora en {weather.location}</p>
+                            <p className="text-sm text-foreground/60 mb-1">{t("current_title", { location: weather.location })}</p>
                             <div className="flex items-baseline gap-2">
                                 <span className="text-5xl font-bold text-foreground">
                                     {weather.current.temperature}°
@@ -113,7 +115,7 @@ export default function RouteWeather({ coordinates, routeName }: RouteWeatherPro
                     <div className="flex items-center justify-between">
                         <span className="flex items-center gap-2 text-foreground/70">
                             <ThermometerSun className="h-4 w-4" />
-                            Sensación
+                            {t("feels_like")}
                         </span>
                         <span className="font-semibold text-foreground">
                             {weather.current.feelsLike}°C
@@ -122,7 +124,7 @@ export default function RouteWeather({ coordinates, routeName }: RouteWeatherPro
                     <div className="flex items-center justify-between">
                         <span className="flex items-center gap-2 text-foreground/70">
                             <Droplets className="h-4 w-4" />
-                            Humedad
+                            {t("humidity")}
                         </span>
                         <span className="font-semibold text-foreground">
                             {weather.current.humidity}%
@@ -131,7 +133,7 @@ export default function RouteWeather({ coordinates, routeName }: RouteWeatherPro
                     <div className="flex items-center justify-between">
                         <span className="flex items-center gap-2 text-foreground/70">
                             <Wind className="h-4 w-4" />
-                            Viento
+                            {t("wind")}
                         </span>
                         <span className="font-semibold text-foreground">
                             {weather.current.windSpeed} km/h
@@ -149,14 +151,14 @@ export default function RouteWeather({ coordinates, routeName }: RouteWeatherPro
                     <div className="flex-1">
                         <div className="flex items-center gap-2 mb-2">
                             <Dog className="h-5 w-5" />
-                            <span className="font-semibold">{conditions.message}</span>
+                            <span className="font-semibold">{t(conditions.message)}</span>
                         </div>
                         {conditions.tips.length > 0 && (
                             <ul className="space-y-1">
-                                {conditions.tips.map((tip, i) => (
+                                {conditions.tips.map((tipKey, i) => (
                                     <li key={i} className="text-sm flex items-start gap-2">
                                         <span>•</span>
-                                        <span>{tip}</span>
+                                        <span>{t(tipKey)}</span>
                                     </li>
                                 ))}
                             </ul>
@@ -167,14 +169,14 @@ export default function RouteWeather({ coordinates, routeName }: RouteWeatherPro
 
             {/* 5-day forecast */}
             <div>
-                <h4 className="font-semibold text-foreground mb-3">Próximos días</h4>
+                <h4 className="font-semibold text-foreground mb-3">{t("forecast_title")}</h4>
                 <div className="grid grid-cols-5 gap-2">
                     {weather.forecast.map((day) => (
                         <div
                             key={day.date}
                             className="rounded-xl bg-secondary/30 p-3 text-center"
                         >
-                            <p className="text-xs font-semibold text-foreground/60 mb-1">
+                            <p className="text-xs font-semibold text-foreground/60 mb-1 capitalize">
                                 {day.dayName}
                             </p>
                             <p className="text-2xl mb-1">
@@ -200,30 +202,51 @@ export default function RouteWeather({ coordinates, routeName }: RouteWeatherPro
             {/* Best times to walk */}
             <div className="rounded-xl bg-primary/5 p-4">
                 <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                    <Dog className="h-5 w-5 text-primary" />
-                    Mejores horas para pasear
+                    <ClockIcon className="h-5 w-5 text-primary" />
+                    {t("best_times_title")}
                 </h4>
                 <div className="grid grid-cols-2 gap-3 text-sm">
                     <div className="flex items-center gap-2">
                         <span className="h-2 w-2 rounded-full bg-green-500" />
-                        <span className="text-foreground/70">Mañana temprano (7:00-10:00)</span>
+                        <span className="text-foreground/70">{t("best_times.morning")}</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <span className="h-2 w-2 rounded-full bg-green-500" />
-                        <span className="text-foreground/70">Tarde-noche (18:00-21:00)</span>
+                        <span className="text-foreground/70">{t("best_times.evening")}</span>
                     </div>
                     {weather.current.temperature > 25 && (
                         <div className="col-span-2 flex items-center gap-2">
                             <span className="h-2 w-2 rounded-full bg-red-500" />
-                            <span className="text-foreground/70">Evitar horas centrales (12:00-17:00)</span>
+                            <span className="text-foreground/70">{t("best_times.avoid_midday")}</span>
                         </div>
                     )}
                 </div>
             </div>
 
             <p className="text-xs text-foreground/40 text-center">
-                Datos proporcionados por OpenWeatherMap. Actualizado hace unos minutos.
+                {t("attribution")}
             </p>
         </div>
+    );
+}
+
+// Helper component for icon
+function ClockIcon({ className }: { className?: string }) {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={className}
+        >
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+        </svg>
     );
 }
